@@ -1,3 +1,11 @@
+:root {
+  --white: #FFFFFF;
+  --bs-default: rgba(255, 0, 92, 1);
+  --body: rgb(240, 240, 240);
+  --bs-main: rgba(15, 15, 15, 0.85);
+  --bs-blue: rgb(0, 173, 181, 1);
+}
+
 *,
 *::after,
 *::before {
@@ -5,4 +13,8 @@
   padding: 0;
   box-sizing: border-box;
   font-family: 'Montserrat Variable', sans-serif;
+}
+
+body {
+  background-color: var(--body);
 }
