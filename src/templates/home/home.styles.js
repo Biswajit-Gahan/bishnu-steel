@@ -98,7 +98,7 @@ export const Container = styled.main`
   }
 
   .about-steels-container {
-    margin-top: 50px;
+    /* margin-top: 50px; */
   }
 
   @keyframes buttons {

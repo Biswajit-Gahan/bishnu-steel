@@ -2,6 +2,8 @@ import { css } from "styled-components";
 
 const homeResponsive = {
   mobile: css`
+    height: 500px;
+
     .hero-container {
       width: 95%;
     }
@@ -14,6 +16,8 @@ const homeResponsive = {
     }
   `,
   tablet: css`
+    height: 550px;
+
     .hero-container {
       width: 80%;
       gap: 10px;
