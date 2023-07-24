@@ -1,9 +1,12 @@
 :root {
   --white: #FFFFFF;
-  --bs-default: rgba(255, 0, 92, 1);
-  --body: rgb(240, 240, 240);
-  --bs-main: rgba(15, 15, 15, 0.85);
-  --bs-blue: rgb(0, 173, 181, 1);
+  --bs-default: #0267C1;
+  --body: #E6E6E6;
+  --bs-main: #252525CC;
+  --bs-blue: #0075C4;
+  --bs-yellow: #EFA00B;
+  --bs-orange: #D65108;
+  --bs-maroon: #591F0A;
 }
 
 *,

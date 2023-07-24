@@ -45,7 +45,7 @@ export const NavbarContainer = styled.nav`
       bottom: -7px;
       width: 0%;
       height: 1.45px;
-      background-color: var(--bs-blue);
+      background-color: var(--bs-orange);
       transition: width 0.3s ease-in-out;
     }
 
@@ -70,8 +70,8 @@ export const NavbarContainer = styled.nav`
     transition: background-color 0.2s ease-in-out, color 0.1s ease-in-out, border-color 0.2s ease-in-out;
 
     &:hover {
-      border-color: var(--bs-blue);
-      background-color: var(--bs-blue);
+      border-color: var(--bs-orange);
+      background-color: var(--bs-orange);
       color: var(--white);
     }
   }
@@ -84,7 +84,7 @@ export const NavbarContainer = styled.nav`
     color: var(--white);
 
     &:hover {
-      color: var(--bs-blue);
+      color: var(--bs-orange);
     }
   }
 
