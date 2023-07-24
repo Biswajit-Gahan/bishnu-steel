@@ -1,5 +1,6 @@
 import styled from "styled-components";
-// import productBgImage from "../../assets/images/bs-products-bg-curve.svg";
+import constants from "../../utils/constants";
+import aboutProductResponsive from "./about.product.responsive";
 
 export const Container = styled.div`
   width: 100%;
@@ -26,6 +27,7 @@ export const Container = styled.div`
     border-radius: 10px;
     overflow: hidden;
     position: relative;
+    
 
     &::after {
       content: "";
@@ -51,10 +53,11 @@ export const Container = styled.div`
     display: flex;
     flex-direction: column;
     gap: 20px;
+    z-index: 997;
   }
 
   .product-header-text {
-    color: var(--bs-yellow);
+    color: var(--bs-orange);
     letter-spacing: 0.5px;
   }
 
@@ -62,5 +65,17 @@ export const Container = styled.div`
     font-weight: 500;
     line-height: 25px;
     letter-spacing: 0.5px;
+  }
+
+  @media (max-width: ${constants.device.laptop_small}) {
+    ${aboutProductResponsive.laptop};
+  }
+
+  @media (max-width: ${constants.device.tablet}) {
+    ${aboutProductResponsive.tablet};
+  }
+
+  @media (max-width: ${constants.device.mobile}) {
+    ${aboutProductResponsive.mobile};
   }
 `;

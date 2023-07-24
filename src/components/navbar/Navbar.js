@@ -1,6 +1,6 @@
 import React from "react";
 import { NavbarContainer } from "./navbar.styles";
-import brandHeaderLogo from "../../assets/images/bs-footer.icon.png";
+import brandHeaderLogo from "../../assets/images/bs-footer-icon-2.png";
 // ICONS
 import MenuTwoToneIcon from '@mui/icons-material/MenuTwoTone';
 
