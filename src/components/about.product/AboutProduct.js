@@ -11,7 +11,7 @@ const AboutProduct = () => {
       </svg>
       {/* </div> */}
       <div className="product-image-container">
-        <img src={steelPipes} alt="image" className="product-image" />
+        <img src={steelPipes} alt="pipe-img" className="product-image" />
       </div>
       <div className="product-details-container">
         <h1 className="product-header-text">Stainless Steel ERW / NB Pipe</h1>

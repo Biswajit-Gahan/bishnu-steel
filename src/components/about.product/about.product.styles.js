@@ -1,5 +1,5 @@
 import styled from "styled-components";
-import productBgImage from "../../assets/images/bs-products-bg-curve.svg";
+// import productBgImage from "../../assets/images/bs-products-bg-curve.svg";
 
 export const Container = styled.div`
   width: 100%;
