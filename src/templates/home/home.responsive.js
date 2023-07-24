@@ -30,6 +30,7 @@ const homeResponsive = {
 
     .hero-tag {
       font-size: 13px;
+      line-height:20px;
     }
 
     .header-button {

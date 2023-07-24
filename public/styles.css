@@ -21,3 +21,7 @@
 body {
   background-color: var(--body);
 }
+
+::selection {
+  background: none;
+}
