@@ -101,6 +101,38 @@ export const Container = styled.main`
     /* margin-top: 50px; */
   }
 
+  .product-range-container {
+    height: 400px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .product-range-header {
+    display: flex;
+    align-items: center;
+    gap: 30px;
+    margin-bottom: 30px;
+  }
+
+  .product-range-header-text {
+    color: var(--bs-orange);
+    min-width: fit-content;
+  }
+
+  .product-range-cards-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 50px;
+  }
+
+  .header-divider {
+    width: 100%;
+    height: 0.5px;
+    background-color: gray;
+  }
+
   @keyframes buttons {
     0% {
       opacity: 0;

@@ -14,6 +14,20 @@ const homeResponsive = {
       margin: 5px;
       font-size: 13px;
     }
+
+    .product-range-container {
+      height: fit-content;
+      padding: 50px;
+    }
+
+    .product-range-cards-container {
+      flex-wrap: wrap;
+      gap: 30px;
+    }
+
+    .product-range-header {
+      flex-direction: column;
+    }
   `,
   tablet: css`
     height: 550px;
@@ -43,6 +57,14 @@ const homeResponsive = {
       margin: 5px;
       font-size: 13px;
     }
+
+    .product-range-header-text {
+      font-size: 18px;
+    }
+
+    .product-range-cards-container {
+      gap: 20px;
+    }
   `,
   laptop: css`
     height: 600px;
@@ -70,6 +92,18 @@ const homeResponsive = {
       height: 50px;
       margin: 7px;
       font-size: 14px;
+    }
+
+    .product-range-container {
+      height: 350px;
+    }
+
+    .product-range-header-text {
+      font-size: 20px;
+    }
+
+    .product-range-cards-container {
+      gap: 40px
     }
   `,
 };
