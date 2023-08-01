@@ -27,7 +27,7 @@ export const Container = styled.div`
     border-radius: 10px;
     overflow: hidden;
     position: relative;
-    
+    ${constants.boxShadow};
 
     &::after {
       content: "";
@@ -59,11 +59,11 @@ export const Container = styled.div`
   .product-header-text {
     color: var(--bs-orange);
     letter-spacing: 0.5px;
+    ${constants.fontSize.header.default};
   }
 
   .about-product-text {
     font-weight: 500;
-    line-height: 25px;
     letter-spacing: 0.5px;
   }
 

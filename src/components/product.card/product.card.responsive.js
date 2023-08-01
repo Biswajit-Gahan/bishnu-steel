@@ -1,16 +1,21 @@
 import { css } from "styled-components";
+import constants from "../../utils/constants";
 
 const productCardResponsive = {
   mobile: css`
     width: 230px;
     height: 230px;
+
+    &::after {
+      ${constants.fontSize.paragraph.mobile};
+    }
   `,
   tablet: css`
     width: 180px;
     height: 180px;
 
     &::after {
-      font-size: 12px;
+      ${constants.fontSize.paragraph.mobile};
     }
   `,
   laptop: css`
@@ -18,7 +23,7 @@ const productCardResponsive = {
     height: 220px;
 
     &::after {
-      font-size: 14px;
+      ${constants.fontSize.paragraph.laptop};
     }
   `,
 };

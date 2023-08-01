@@ -5,10 +5,11 @@ import productCardResponsive from "./product.card.responsive";
 export const Container = styled.div`
   width: 250px;
   height: 250px;
-  border-radius: 10px;
+  border-radius: 20px;
   overflow: hidden;
   cursor: pointer;
   position: relative;
+  ${constants.boxShadow};
 
   &::after {
     content: "${({ $productName }) => $productName}";
@@ -22,7 +23,7 @@ export const Container = styled.div`
     justify-content: center;
     background-color: var(--bs-orange-transparent);
     color: var(--white);
-    font-size: 16px;
+    ${constants.fontSize.paragraph.default};
     font-weight: 500;
     letter-spacing: 0.5px;
     transition: height 0.3s ease-in-out;
@@ -36,7 +37,7 @@ export const Container = styled.div`
 
   &:hover {
     &::after {
-      content: "View Now";
+      content: "Read More";
       height: 50%;
     }
 

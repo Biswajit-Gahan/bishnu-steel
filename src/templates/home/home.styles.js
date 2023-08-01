@@ -103,8 +103,17 @@ export const Container = styled.main`
 
   .product-range-container {
     height: 400px;
+    width: 100%;
     display: flex;
     align-items: center;
+    justify-content: center;
+  }
+
+  .product-range-container-wrapper {
+    width: 900px;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
     justify-content: center;
   }
 
@@ -118,19 +127,28 @@ export const Container = styled.main`
   .product-range-header-text {
     color: var(--bs-orange);
     min-width: fit-content;
+    ${constants.fontSize.header.default};
   }
 
   .product-range-cards-container {
     display: flex;
     align-items: center;
-    justify-content: center;
-    gap: 50px;
+    justify-content: space-between;
+    /* gap: 50px; */
   }
 
   .header-divider {
     width: 100%;
     height: 0.5px;
     background-color: gray;
+  }
+
+  .brochure-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 350px;
   }
 
   @keyframes buttons {

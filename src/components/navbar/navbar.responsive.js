@@ -1,4 +1,5 @@
 import { css } from "styled-components";
+import constants from "../../utils/constants";
 
 const navbarResponsive = {
   mobile: css`
@@ -33,7 +34,7 @@ const navbarResponsive = {
     }
 
     .navbar-item {
-      font-size: 13px;
+      ${constants.fontSize.paragraph.mobile};
     }
 
     .request-quote-button {

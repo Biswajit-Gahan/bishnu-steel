@@ -1,4 +1,5 @@
 import { css } from "styled-components";
+import constants from "../../utils/constants";
 
 const aboutProductResponsive = {
   mobile: css`
@@ -15,12 +16,12 @@ const aboutProductResponsive = {
 
     .product-header-text {
       text-align: center;
-      font-size: 16px;
+      ${constants.fontSize.header.mobile};
     }
 
     .about-product-text {
-      text-align: center;
-      line-height: 16px;
+      ${constants.fontSize.paragraph.mobile};
+      /* text-align: center; */
     }
   `,
   tablet: css`
@@ -40,12 +41,11 @@ const aboutProductResponsive = {
     }
 
     .product-header-text {
-      font-size: 18px;
+      ${constants.fontSize.header.tablet};
     }
 
     .about-product-text {
-      font-size: 13px;
-      line-height: 18px;
+      ${constants.fontSize.paragraph.tablet};
     }
   `,
   laptop: css`
@@ -63,12 +63,11 @@ const aboutProductResponsive = {
     }
 
     .product-header-text {
-      font-size: 20px;
+      ${constants.fontSize.header.laptop};
     }
 
     .about-product-text {
-      font-size: 14px;
-      line-height: 22px;
+      ${constants.fontSize.paragraph.laptop};
     }
   `,
 }

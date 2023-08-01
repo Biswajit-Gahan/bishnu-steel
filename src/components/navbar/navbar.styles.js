@@ -35,7 +35,7 @@ export const NavbarContainer = styled.nav`
     color: var(--white);
     font-weight: 500;
     position: relative;
-    font-size: 15px;
+    ${constants.fontSize.paragraph.laptop};
     letter-spacing: 0.5px;
 
     &::after {
@@ -65,7 +65,7 @@ export const NavbarContainer = styled.nav`
     border-radius: 50px;
     letter-spacing: 0.5px;
     font-weight: 600;
-    font-size: 12px;
+    ${constants.fontSize.paragraph.mobile};
     cursor: pointer;
     transition: background-color 0.2s ease-in-out, color 0.1s ease-in-out, border-color 0.2s ease-in-out;
 

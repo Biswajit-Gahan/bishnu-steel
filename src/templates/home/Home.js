@@ -7,12 +7,13 @@ import ProductCard from "../../components/product.card/ProductCard";
 import roundSteel from "../../assets/images/round-steels.jpg";
 import squareSteel from "../../assets/images/square.jpg";
 import rectangleSteel from "../../assets/images/rectangle-steel.jpg";
+import Brochure from "../../components/brochure/Brochure";
 
 const Home = () => {
   return (
     <Container>
       {/* VIDEO CONTAINER */}
-      <div className="video-container">
+      <section className="video-container">
         {/* BRAND VIDEO */}
         <video className="brand-video" src={factoryVideo} autoPlay muted loop poster={posterImage} />
 
@@ -28,7 +29,7 @@ const Home = () => {
             <button type="button" className="header-know-more-button header-button">Know More</button>
           </div>
         </div>
-      </div>
+      </section>
 
       {/* ABOUT STEELS */}
       <section className="about-steels-container">
@@ -37,7 +38,7 @@ const Home = () => {
       </section>
 
       {/* PRODUCT RANGE */}
-      <div className="product-range-container">
+      <section className="product-range-container">
         <div className="product-range-container-wrapper">
           {/* PRODUCT RANGE HEADER */}
           <div className="product-range-header">
@@ -53,7 +54,13 @@ const Home = () => {
             <ProductCard productImg={rectangleSteel} productName={"Rectangle Stainless Tube"} />
           </div>
         </div>
-      </div>
+      </section>
+
+      {/* BROCHURE SECTION */}
+      <section className="brochure-container">
+        {/* BROCHURE COMPONENT */}
+        <Brochure />
+      </section>
     </Container>
   );
 };

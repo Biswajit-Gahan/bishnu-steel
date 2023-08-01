@@ -1,4 +1,5 @@
 import { css } from "styled-components";
+import constants from "../../utils/constants";
 
 const homeResponsive = {
   mobile: css`
@@ -17,16 +18,33 @@ const homeResponsive = {
 
     .product-range-container {
       height: fit-content;
+      min-height: fit-content;
       padding: 50px;
     }
 
     .product-range-cards-container {
       flex-wrap: wrap;
       gap: 30px;
+      justify-content: center;
     }
 
     .product-range-header {
       flex-direction: column;
+    }
+
+    .product-range-header-text {
+      ${constants.fontSize.header.mobile};
+    }
+
+    /* .product-range-container-wrapper {
+      justify-content: center;
+      width: 600px;
+    } */
+
+    .brochure-container {
+      min-height: fit-content;
+      height: fit-content;
+      padding: 0 50px 50px;
     }
   `,
   tablet: css`
@@ -59,11 +77,15 @@ const homeResponsive = {
     }
 
     .product-range-header-text {
-      font-size: 18px;
+      ${constants.fontSize.header.tablet};
     }
 
     .product-range-cards-container {
       gap: 20px;
+    }
+
+    .product-range-container-wrapper {
+      width: 600px;
     }
   `,
   laptop: css`
@@ -95,15 +117,22 @@ const homeResponsive = {
     }
 
     .product-range-container {
-      height: 350px;
+      /* height: 350px; */
+      height: fit-content;
+      min-height: fit-content;
+      padding: 30px;
     }
 
     .product-range-header-text {
-      font-size: 20px;
+      ${constants.fontSize.header.laptop};
     }
 
     .product-range-cards-container {
       gap: 40px
+    }
+
+    .product-range-container-wrapper {
+      width: 800px;
     }
   `,
 };
