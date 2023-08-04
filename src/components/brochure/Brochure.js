@@ -13,11 +13,13 @@ const Brochure = () => {
       {/* BROCHURE CONTENT CONTAINER */}
       <div className="brochure-content-container">
         <p className="brochure-content">
-          Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quos sint ex quas illum labore! Nemo, perferendis, voluptate, in at eos praesentium enim error blanditiis magni deserunt consequuntur officia accusamus ipsum.
-          Iure, accusamus quod. Laudantium, rem. Maxime sed quo, perferendis sequi quasi quis id ipsum corporis beatae voluptatem voluptates tempore, aut, expedita nemo et. Voluptatum accusantium aspernatur vero cum enim ratione.
+          Quality is checked at every stage from the material selection to slitting, pipe making, polishing,
+          finished- product testing, packaging and warehousing every stage is strictly controlled , to ensure
+          best product reaches in hand of customers.
           <br />
           <br />
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias repellat eius officiis nesciunt, voluptas praesentium dignissimos ipsum asperiores placeat explicabo numquam dolores amet quia deserunt quam impedit beatae sint ab!
+          We are equipped with the most advanced and sophisticated products testing equipment to
+          control our product quality at stage.
         </p>
       </div>
 

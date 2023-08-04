@@ -21,8 +21,8 @@ export const Container = styled.div`
     display: flex;
     align-items: center;
     justify-content: center;
-    background-color: var(--bs-orange-transparent);
-    color: var(--white);
+    background-color: ${constants.colors.bsBlueTransparent};
+    color: ${constants.colors.bsWhite};
     ${constants.fontSize.paragraph.default};
     font-weight: 500;
     letter-spacing: 0.5px;

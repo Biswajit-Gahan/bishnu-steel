@@ -29,6 +29,21 @@ const constants = {
       mobile: css`font-size: 12.5px`,
     },
   },
+
+  colors: {
+    bsBlue: "#00ADB5",
+    bsBlueTransparent: "rgba(0,173,181,0.79)",
+    bsBlueTransparentLight: "rgba(0,138,145,0.14)",
+    bsPinkDefault: "#FF005C",
+    bsPinkDark: "#B80058",
+    bsPinkTranparent: "rgba(255,0,92,0.33)",
+    bsTextDefault: "#515151",
+    bsWhite: "#FFFFFF",
+    bsGrayTransparent: "rgba(95,94,94,0.35)",
+    bsDark: "#5F5F5F",
+    bsDarkBold: "#171717",
+    bsDarkTransparent: "rgba(37,37,37,0.84)",
+  },
 };
 
 export default constants;

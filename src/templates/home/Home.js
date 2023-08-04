@@ -8,6 +8,12 @@ import roundSteel from "../../assets/images/round-steels.jpg";
 import squareSteel from "../../assets/images/square.jpg";
 import rectangleSteel from "../../assets/images/rectangle-steel.jpg";
 import Brochure from "../../components/brochure/Brochure";
+import AboutCompanyTag from "../../components/about.company.tag/AboutCompanyTag";
+import Testimonials from "../../components/testimonials/Testimonials";
+import NeedAssistance from "../../components/need.assistance/NeedAssistance";
+import EventsSlider from "../../components/events.slider/EventsSlider";
+import MessageBox from "../../components/message.box/MessageBox";
+import Footer from "../../components/footer/Footer";
 
 const Home = () => {
   return (
@@ -61,6 +67,32 @@ const Home = () => {
         {/* BROCHURE COMPONENT */}
         <Brochure />
       </section>
+
+      {/* ABOUT COMPANY SECTION */}
+      <section className="about-company-container">
+        <AboutCompanyTag />
+      </section>
+
+      {/* TESTIMONIALS SECTION */}
+      <section className="testimonials-container">
+        <Testimonials />
+      </section>
+
+      {/* NEED ASSISTANCE SECTION*/}
+      <section className="need-assistance-container">
+        <NeedAssistance />
+      </section>
+
+      {/* EVENTS SLIDER SECTION */}
+      {/* <section className="events-slider-container">
+        <EventsSlider />
+      </section> */}
+
+      {/* MESSAGE BOX SECTION */}
+      <section className="message-box-section">
+        <MessageBox />
+      </section>
+
     </Container>
   );
 };

@@ -19,7 +19,7 @@ export const Container = styled.div`
 
   .brochure-header-text {
     min-width: fit-content;
-    color: var(--bs-orange);
+    color: ${constants.colors.bsPinkDefault};
     ${constants.fontSize.header.default};
   }
 
@@ -27,15 +27,16 @@ export const Container = styled.div`
     font-weight: 500;
     letter-spacing: 0.5px;
     ${constants.fontSize.paragraph.default};
+    color: ${constants.colors.bsTextDefault};
   }
 
   .brochure-button {
     width: 250px;
     height: 50px;
     border: none;
-    background-color: var(--bs-orange);
+    background-color: ${constants.colors.bsPinkDefault};
     border-radius: 5px;
-    color: var(--white);
+    color: ${constants.colors.bsWhite};
     cursor: pointer;
     letter-spacing: 0.5px;
     ${constants.fontSize.paragraph.default};

@@ -57,7 +57,7 @@ export const Container = styled.div`
   }
 
   .product-header-text {
-    color: var(--bs-orange);
+    color: ${constants.colors.bsPinkDefault};
     letter-spacing: 0.5px;
     ${constants.fontSize.header.default};
   }
@@ -65,6 +65,7 @@ export const Container = styled.div`
   .about-product-text {
     font-weight: 500;
     letter-spacing: 0.5px;
+    color: ${constants.colors.bsTextDefault};
   }
 
   @media (max-width: ${constants.device.laptop_small}) {

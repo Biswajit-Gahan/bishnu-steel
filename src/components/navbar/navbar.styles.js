@@ -6,12 +6,13 @@ export const NavbarContainer = styled.nav`
   height: 80px;
   width: 100%;
   padding: 0 100px;
-  background-color: var(--bs-main);
-  backdrop-filter: blur(5px);
+  /* background-color: ${constants.colors.bsDarkTransparent}; */
+  background-color: ${constants.colors.bsDarkBold};
+  /* backdrop-filter: blur(5px);
   position: fixed;
   top: 0;
   left: 0;
-  z-index: 999;
+  z-index: 999; */
 
   .navbar-wrapper {
     height: inherit;
@@ -32,7 +33,7 @@ export const NavbarContainer = styled.nav`
 
   .navbar-item {
     list-style: none;
-    color: var(--white);
+    color: ${constants.colors.bsWhite};
     font-weight: 500;
     position: relative;
     ${constants.fontSize.paragraph.laptop};
@@ -45,7 +46,7 @@ export const NavbarContainer = styled.nav`
       bottom: -7px;
       width: 0%;
       height: 1.45px;
-      background-color: var(--bs-orange);
+      background-color: ${constants.colors.bsPinkDefault};;
       transition: width 0.3s ease-in-out;
     }
 
@@ -58,10 +59,10 @@ export const NavbarContainer = styled.nav`
 
   .request-quote-button {
     background-color: transparent;
-    border: 2px solid var(--white);
+    border: 2px solid ${constants.colors.bsWhite};
     width: 170px;
     height: 50px;
-    color: var(--white);
+    color: ${constants.colors.bsWhite};
     border-radius: 50px;
     letter-spacing: 0.5px;
     font-weight: 600;
@@ -70,9 +71,9 @@ export const NavbarContainer = styled.nav`
     transition: background-color 0.2s ease-in-out, color 0.1s ease-in-out, border-color 0.2s ease-in-out;
 
     &:hover {
-      border-color: var(--bs-orange);
-      background-color: var(--bs-orange);
-      color: var(--white);
+      border-color: ${constants.colors.bsPinkDefault};
+      background-color: ${constants.colors.bsPinkDefault};
+      color: ${constants.colors.bsWhite};
     }
   }
 
@@ -81,10 +82,10 @@ export const NavbarContainer = styled.nav`
   }
 
   .hamberger-icon {
-    color: var(--white);
+    color: ${constants.colors.bsWhite};
 
     &:hover {
-      color: var(--bs-orange);
+      color: ${constants.colors.bsPinkDefault};
     }
   }
 

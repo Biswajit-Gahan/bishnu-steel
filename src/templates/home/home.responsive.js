@@ -3,7 +3,9 @@ import constants from "../../utils/constants";
 
 const homeResponsive = {
   mobile: css`
-    height: 500px;
+    .video-container {
+      height: 500px;
+    }
 
     .hero-container {
       width: 95%;
@@ -48,7 +50,9 @@ const homeResponsive = {
     }
   `,
   tablet: css`
-    height: 550px;
+    .video-container {
+      height: 550px;
+    }
 
     .hero-container {
       width: 80%;
@@ -89,7 +93,9 @@ const homeResponsive = {
     }
   `,
   laptop: css`
-    height: 600px;
+    .video-container {
+      height: 600px;
+    }
 
     .hero-container {
       gap: 15px;

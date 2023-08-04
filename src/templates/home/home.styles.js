@@ -4,11 +4,10 @@ import homeResponsive from "./home.responsive";
 
 export const Container = styled.main`
   width: 100%;
-  height: 700px;
 
   .video-container {
     width: inherit;
-    height: inherit;
+    height: 700px;
     position: relative;
     overflow: hidden;
 
@@ -19,7 +18,7 @@ export const Container = styled.main`
       left: 0;
       width: 100%;
       height: 100%;
-      background-color: rgba(18, 18, 18,0.75);
+      background-color: ${constants.colors.bsDarkTransparent};
       backdrop-filter: blur(3px);
     }
   }
@@ -47,7 +46,7 @@ export const Container = styled.main`
 
   .hero-text {
     font-size: 30px;
-    color: var(--white);
+    color: ${constants.colors.bsWhite};
     text-align: center;
     line-height: 50px;
     font-weight: 600;
@@ -55,14 +54,14 @@ export const Container = styled.main`
 
     .hero-bold {
       font-size: 40px;
-      color: var(--bs-orange);
+      color: ${constants.colors.bsPinkDefault};
       font-weight: 800;
     }
   }
 
   .hero-tag {
     font-size: 16px;
-    color: var(--white);
+    color: ${constants.colors.bsWhite};
     text-align: center;
     letter-spacing: 1px;
     line-height:25px;
@@ -87,14 +86,14 @@ export const Container = styled.main`
   }
 
   .header-our-products-button {
-    background-color: var(--bs-orange);
-    color: var(--white);
+    background-color: ${constants.colors.bsPinkDefault};
+    color: ${constants.colors.bsWhite};
   }
 
   .header-know-more-button {
     background-color: transparent;
-    border: 2px solid var(--white);
-    color: var(--white);
+    border: 2px solid ${constants.colors.bsWhite};
+    color: ${constants.colors.bsWhite};
   }
 
   .about-steels-container {
@@ -125,7 +124,7 @@ export const Container = styled.main`
   }
 
   .product-range-header-text {
-    color: var(--bs-orange);
+    color: ${constants.colors.bsPinkDefault};
     min-width: fit-content;
     ${constants.fontSize.header.default};
   }
@@ -149,6 +148,29 @@ export const Container = styled.main`
     justify-content: center;
     width: 100%;
     height: 350px;
+  }
+
+  .about-company-container {
+    margin-top: 50px;
+  }
+
+  .testimonials-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 50px;
+  }
+
+  .need-assistance-container {
+    margin-top: 50px;
+  }
+
+  .events-slider-container {
+    margin-top: 50px;
+  }
+
+  .message-box-section {
+    margin: 50px 0;
   }
 
   @keyframes buttons {
