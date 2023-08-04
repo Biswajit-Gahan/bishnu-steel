@@ -8,7 +8,7 @@ const MessageBox = () => {
       <div className="strap-design"></div>
       <div className="message-box-wrapper">
         <div className="header-container">
-          <h2 className="header-text">Still Confused ?</h2>
+          <h2 className="header-text">Still Need Help ?</h2>
           <p className="header-tag">Fill the details,<br />We'll get back to you.</p>
         </div>
         <div className="message-container">
