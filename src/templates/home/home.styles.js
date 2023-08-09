@@ -19,7 +19,7 @@ export const Container = styled.main`
       width: 100%;
       height: 100%;
       background-color: ${constants.colors.bsDarkTransparent};
-      backdrop-filter: blur(3px);
+      /* backdrop-filter: blur(0px); */
     }
   }
   .brand-video {
@@ -136,11 +136,11 @@ export const Container = styled.main`
     /* gap: 50px; */
   }
 
-  .header-divider {
+  /* .header-divider {
     width: 100%;
     height: 0.5px;
     background-color: gray;
-  }
+  } */
 
   .brochure-container {
     display: flex;

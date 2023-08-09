@@ -3,6 +3,7 @@ import { NavbarContainer } from "./navbar.styles";
 import brandHeaderLogo from "../../assets/images/bs-footer-icon-2.png";
 // ICONS
 import MenuTwoToneIcon from '@mui/icons-material/MenuTwoTone';
+import { Link } from "react-router-dom";
 
 const Navbar = () => {
   return (
@@ -12,7 +13,7 @@ const Navbar = () => {
         {/* LEFT CONTAINER */}
         <div className="left-container">
           {/* BRAND LOGO */}
-          <img className="brand-header-logo" src={brandHeaderLogo} alt="brand-logo" />
+          <Link to="/"><img className="brand-header-logo" src={brandHeaderLogo} alt="brand-logo" /></Link>
         </div>
 
         {/* MIDDLE CONTAINER */}

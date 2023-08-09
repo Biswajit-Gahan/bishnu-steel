@@ -4,6 +4,7 @@ import constants from "../../utils/constants";
 const brochureResponsive = {
   mobile: css`
     width: 100%;
+    min-width: 100%;
     
     .brochure-header-container {
       flex-direction: column;
@@ -30,6 +31,7 @@ const brochureResponsive = {
   `,
   tablet: css`
     width: 600px;
+    min-width: 600px;
 
     .brochure-header-text {
       ${constants.fontSize.header.tablet};
@@ -45,6 +47,7 @@ const brochureResponsive = {
   `,
   laptop: css`
     width: 800px;
+    min-width: 800px;
 
     .brochure-header-text {
       ${constants.fontSize.header.laptop};

@@ -4,6 +4,7 @@ import brochureResponsive from "./brochure.responsive";
 
 export const Container = styled.div`
   width: 900px;
+  min-width: 900px;
   height: inherit;
   display: flex;
   justify-content: center;
@@ -21,6 +22,12 @@ export const Container = styled.div`
     min-width: fit-content;
     color: ${constants.colors.bsPinkDefault};
     ${constants.fontSize.header.default};
+  }
+
+  .header-divider {
+    width: 100%;
+    height: 0.5px;
+    background-color: gray;
   }
 
   .brochure-content {

@@ -1,5 +1,6 @@
 import React from "react";
 import { Container } from "./brochure.styles";
+import localdb from "../../utils/localdb";
 
 const Brochure = () => {
   return (
@@ -25,7 +26,7 @@ const Brochure = () => {
 
       {/* BROCHURE BUTTON CONTAINER */}
       <div className="brochure-button-container">
-        <button type="button" className="brochure-button">Download Brochure</button>
+        <button type="button" className="brochure-button" onClick={() => { window.open(localdb.urls.brochure, "_blank") }}>Download Brochure</button>
       </div>
     </Container>
   );

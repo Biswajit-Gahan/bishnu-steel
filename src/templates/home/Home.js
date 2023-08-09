@@ -13,7 +13,7 @@ import Testimonials from "../../components/testimonials/Testimonials";
 import NeedAssistance from "../../components/need.assistance/NeedAssistance";
 import EventsSlider from "../../components/events.slider/EventsSlider";
 import MessageBox from "../../components/message.box/MessageBox";
-import Footer from "../../components/footer/Footer";
+import steelImage from "../../assets/images/steel-pipes.jpg";
 
 const Home = () => {
   return (
@@ -21,7 +21,7 @@ const Home = () => {
       {/* VIDEO CONTAINER */}
       <section className="video-container">
         {/* BRAND VIDEO */}
-        <video className="brand-video" src={factoryVideo} autoPlay muted loop poster={posterImage} />
+        <video className="brand-video" src={factoryVideo} autoPlay muted loop poster={posterImage} playsInline={true} />
 
         {/* HERO CONTAINER */}
         <div className="hero-container">
@@ -40,7 +40,11 @@ const Home = () => {
       {/* ABOUT STEELS */}
       <section className="about-steels-container">
         {/* ABOUT PRODUCT COMPONENT */}
-        <AboutProduct />
+        <AboutProduct
+          headerText={"Stainless Steel ERW / NB Pipe"}
+          aboutText={"Steel tubing can be made from various raw materials, like iron, carbon, manganese, vanadium, and zirconium. Like pipe, tubing can be produced as either seamless or welded. Seamless tubing is a solid block of steel that is rolled into a round shape and then pierced and stretched into its final length."}
+          productImage={steelImage}
+        />
       </section>
 
       {/* PRODUCT RANGE */}
@@ -55,9 +59,9 @@ const Home = () => {
           {/* PRODUCT RANGE CARDS CONTAINER */}
           <div className="product-range-cards-container">
             {/* PRODUCT RANGE COMPONENT */}
-            <ProductCard productImg={roundSteel} productName={"Round Stainless Tubes"} />
-            <ProductCard productImg={squareSteel} productName={"Square Stainless Tubes"} />
-            <ProductCard productImg={rectangleSteel} productName={"Rectangle Stainless Tube"} />
+            <ProductCard productImg={roundSteel} productName={"Round Stainless Tubes"} productType="round" />
+            <ProductCard productImg={squareSteel} productName={"Square Stainless Tubes"} productType="square" />
+            <ProductCard productImg={rectangleSteel} productName={"Rectangle Stainless Tube"} productType="rectangle" />
           </div>
         </div>
       </section>

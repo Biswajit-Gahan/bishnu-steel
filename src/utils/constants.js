@@ -9,9 +9,9 @@ const constants = {
   },
 
   boxShadow: css`
-    box-shadow: 0px 5px 16px -3px rgba(0,0,0,0.5);
-    -webkit-box-shadow: 0px 5px 16px -3px rgba(0,0,0,0.5);
-    -moz-box-shadow: 0px 5px 16px -3px rgba(0,0,0,0.5);
+    box-shadow: 0px 5px 16px -3px rgba(0,0,0,0.15);
+    -webkit-box-shadow: 0px 5px 16px -3px rgba(0,0,0,0.15);
+    -moz-box-shadow: 0px 5px 16px -3px rgba(0,0,0,0.15);
   `,
 
   fontSize: {
@@ -43,6 +43,9 @@ const constants = {
     bsDark: "#5F5F5F",
     bsDarkBold: "#171717",
     bsDarkTransparent: "rgba(37,37,37,0.84)",
+    bsOffWhite: "#f7f7f7",
+    bsWhiteTransparent: "rgba(255,255,255,0.9)",
+
   },
 };
 
