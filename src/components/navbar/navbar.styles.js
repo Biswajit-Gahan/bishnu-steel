@@ -13,6 +13,7 @@ export const NavbarContainer = styled.nav`
   top: 0;
   left: 0;
   z-index: 999; */
+  position: relative;
 
   .navbar-wrapper {
     height: inherit;
@@ -87,6 +88,84 @@ export const NavbarContainer = styled.nav`
     &:hover {
       color: ${constants.colors.bsPinkDefault};
     }
+  }
+
+  .hamburger-menu-tray-container {
+    position: fixed;
+    background-color: ${constants.colors.bsDarkTransparent};
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    z-index: 999;
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+    padding: 15px;
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+  }
+
+  .hamburger-menu-tray {
+    background-color: ${constants.colors.bsWhiteTransparent};
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding: 20px;
+    gap: 10px;
+    border-radius: 10px;
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    /* transition: transform 0.2s ease-in-out; */
+    animation: trayTranslate 0.2s forwards ease-in-out;
+
+    @keyframes trayTranslate {
+      0% {
+        opacity: 0;
+        transform: translateY(20%);
+      }
+
+      100% {
+        opacity: 1;
+        transform: translateY(0%);
+      }
+    }
+  }
+
+  .hamburger-menu-list {
+    list-style: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .hamburger-menu-item {
+    width: 200px;
+    min-width: 200px;
+    /* height: 30px;
+    min-height: 30px; */
+    text-align: center;
+    color: ${constants.colors.bsDark};
+    font-weight: 600;
+  }
+  
+  .hamburger-close-button {
+    width: 45px;
+    height: 45px;
+    background-color: ${constants.colors.bsPinkDark};
+    border-radius: 50%;
+    border: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: ${constants.colors.bsWhite};
+  }
+
+  .submenu-list {
+
   }
 
   @media (max-width: ${constants.device.laptop_small}) {

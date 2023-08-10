@@ -6,26 +6,31 @@ import MenuTwoToneIcon from '@mui/icons-material/MenuTwoTone';
 import { Link, NavLink } from "react-router-dom";
 import QuotationModal from "../modals/quotation.modal/QuotationModal";
 import constants from "../../utils/constants";
+import CloseIcon from '@mui/icons-material/Close';
 
 const Navbar = () => {
   // USESTATE FOR SHOW QUOTATION MODAL
   const [showQuotationModal, setShowQuotationModal] = useState(() => (false));
+
+  // USESTATE FOR SHOW HAMBURGER MENU
+  const [showHamburgerMenu, setShowHamburgerMenu] = useState(() => (false));
 
   // FUNCTION FOR HADLER SHOW QUOTATION MODAL
   const showQuotationModalHandler = () => {
     setShowQuotationModal((prevData) => (!prevData));
   };
 
-  // FUNCTION FOR ALL PRODUCTS
-  const browseAllProducts = (element) => {
-    element && element.scrollIntoView({ behavior: "smooth" });
-  };
+  // FUNCTION FOR HANDLE SHOW HAMBURGER MENU
+  const showHamburgerMenuHandler = () => {
+    setShowHamburgerMenu((prevData) => (!prevData));
+  }
 
   return (
     <NavbarContainer>
       {/* QUOTATION MODAL */}
       {
-        showQuotationModal && <QuotationModal clickEvent={showQuotationModalHandler} />
+        showQuotationModal &&
+        <QuotationModal clickEvent={showQuotationModalHandler} />
       }
 
       {/* NAVBAR WRAPPER */}
@@ -41,7 +46,8 @@ const Navbar = () => {
           {/* NAVBAR LIST */}
           <ul className="navbar-list">
             <li className="navbar-item"><NavLink to="/" style={({ isActive }) => ({ color: isActive ? `${constants.colors.bsPinkDefault}` : "" })}>Home</NavLink></li>
-            <li className="navbar-item">Products</li>
+            {/* <li className="navbar-item">Products</li> */}
+            <li className="navbar-item"><NavLink to="/?view-products=true" reloadDocument={true}>Products</NavLink></li>
             <li className="navbar-item"><NavLink to="quality" style={({ isActive }) => ({ color: isActive ? `${constants.colors.bsPinkDefault}` : "" })}>Quality</NavLink></li>
             <li className="navbar-item"><NavLink to="about-us" style={({ isActive }) => ({ color: isActive ? `${constants.colors.bsPinkDefault}` : "" })}>About Us</NavLink></li>
             <li className="navbar-item"><NavLink to="contact-us" style={({ isActive }) => ({ color: isActive ? `${constants.colors.bsPinkDefault}` : "" })}>Contact Us</NavLink></li>
@@ -55,10 +61,30 @@ const Navbar = () => {
         </div>
 
         {/* HAMBURGER MENU*/}
-        <div className="hamberger-menu">
+        <div className="hamberger-menu" onClick={showHamburgerMenuHandler}>
           <MenuTwoToneIcon className="hamberger-icon" />
         </div>
       </div>
+
+      {/* HAMBURGER MENU TRAY */}
+      {
+        showHamburgerMenu &&
+        <div className="hamburger-menu-tray-container">
+          {/* HAMBURGER MENU TRAY */}
+          <div className="hamburger-menu-tray">
+            {/* HAMBURGER MENU LIST */}
+            <ul className="hamburger-menu-list" onClick={showHamburgerMenuHandler}>
+              <li className="hamburger-menu-item"><NavLink to="/" style={({ isActive }) => ({ color: isActive ? `${constants.colors.bsPinkDefault}` : "" })}>Home</NavLink></li>
+              <li className="hamburger-menu-item">Products</li>
+              <li className="hamburger-menu-item"><NavLink to="quality" style={({ isActive }) => ({ color: isActive ? `${constants.colors.bsPinkDefault}` : "" })}>Quality</NavLink></li>
+              <li className="hamburger-menu-item"><NavLink to="about-us" style={({ isActive }) => ({ color: isActive ? `${constants.colors.bsPinkDefault}` : "" })}>About Us</NavLink></li>
+              <li className="hamburger-menu-item"><NavLink to="contact-us" style={({ isActive }) => ({ color: isActive ? `${constants.colors.bsPinkDefault}` : "" })}>Contact Us</NavLink></li>
+            </ul>
+            {/* HAMBURGER CLOSE BUTTON */}
+            <button type="button" className="hamburger-close-button" onClick={showHamburgerMenuHandler}><CloseIcon /></button>
+          </div>
+        </div>
+      }
     </NavbarContainer>
   );
 };
