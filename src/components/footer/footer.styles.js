@@ -11,6 +11,7 @@ export const FooterContainer = styled.div`
 
   .footer-wrapper {
     backdrop-filter: blur(5px);
+    -webkit-backdrop-filter: blur(5px);
     padding: 50px 100px;
     display: flex;
     flex-direction: column;

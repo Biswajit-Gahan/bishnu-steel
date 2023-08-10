@@ -10,6 +10,7 @@ export const QuotationModalContainer = styled.div`
   bottom: 0;
   right: 0;
   backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
   display: flex;
   /* align-items: center; */
   justify-content: center;
