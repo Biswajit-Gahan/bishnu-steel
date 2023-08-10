@@ -2,7 +2,7 @@ import React from "react";
 import { createPortal } from "react-dom";
 import { QuotationModalContainer } from "./quotation.modal.styles";
 
-const QuotationModal = ({ productType, clickEvent }) => {
+const QuotationModal = ({ productType = "round", clickEvent }) => {
   return createPortal(
     <QuotationModalContainer>
       {/* QUOTATION FORM CONTAINER */}

@@ -41,8 +41,8 @@ export const FooterContainer = styled.div`
   }
 
   .content-text {
-    color: ${constants.colors.bsWhite};
-    ${constants.fontSize.paragraph.laptop};
+    color: ${constants.colors.bsOffWhite};
+    ${constants.fontSize.paragraph.mobile};
     line-height: 22px;
     letter-spacing: 0.5px;
   }
@@ -69,6 +69,12 @@ export const FooterContainer = styled.div`
     border: 2px solid ${constants.colors.bsWhite};
     border-radius: 50px;
     color: ${constants.colors.bsWhite};
+    transition: background-color 0.2s ease-in-out, border 0.2s ease-in-out;
+
+    &:hover {
+      background-color: ${constants.colors.bsPinkDark};
+      border-color: ${constants.colors.bsPinkDark};
+    }
   }
 
   .middle-container {
@@ -116,8 +122,8 @@ export const FooterContainer = styled.div`
   }
 
   .copyright, .credit {
-    color: ${constants.colors.bsWhite};
-    ${constants.fontSize.paragraph.laptop};
+    color: ${constants.colors.bsOffWhite};
+    ${constants.fontSize.paragraph.mobile};
     font-weight: 500;
     letter-spacing: 0.5px;
   }

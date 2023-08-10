@@ -5,6 +5,7 @@ import FacebookIcon from '@mui/icons-material/Facebook';
 import TwitterIcon from '@mui/icons-material/Twitter';
 import LinkedInIcon from '@mui/icons-material/LinkedIn';
 import YouTubeIcon from '@mui/icons-material/YouTube';
+import { Link } from "react-router-dom";
 
 const Footer = () => {
   return (
@@ -55,16 +56,17 @@ const Footer = () => {
 
               {/* SOCIAL MEDIA WRAPPER */}
               <div className="social-media-wrapper">
-                <FacebookIcon className="mui-icon" />
-                <TwitterIcon className="mui-icon" />
-                <LinkedInIcon className="mui-icon" />
-                <YouTubeIcon className="mui-icon" />
+                <Link to="https://www.facebook.com" target="_blank"><FacebookIcon className="mui-icon" /></Link>
+                <Link to="https://www.twitter.com" target="_blank"><TwitterIcon className="mui-icon" /></Link>
+                <Link to="https://www.linkedin.com" target="_blank"><LinkedInIcon className="mui-icon" /></Link>
+                <Link to="https://www.youtube.com" target="_blank"><YouTubeIcon className="mui-icon" /></Link>
+
               </div>
             </div>
           </div>
 
           {/* MIDDLE CONTAIENR */}
-          <div className="middle-container">
+          {/* <div className="middle-container">
             <p className="header-text">IMPORTANT LINKS</p>
             <ul className="links">
               <li className="link">Home</li>
@@ -73,14 +75,14 @@ const Footer = () => {
               <li className="link">About Us</li>
               <li className="link">Contact Us</li>
             </ul>
-          </div>
+          </div> */}
 
           {/* BOTTOM CONTAINER */}
           <div className="bottom-container">
             <div className="divider"></div>
             <div className="credits-container">
               <p className="copyright">Copyright © 2023 | Bishnu Steels. All right reserved.</p>
-              <p className="credit">Designed & Developed by TIH.</p>
+              <p className="credit">Designed & Developed by Shaik Mehaboob Subhani.</p>
             </div>
           </div>
         </div>

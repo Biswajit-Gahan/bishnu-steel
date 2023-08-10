@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect, useRef } from "react";
 import { Container } from "./home.styles";
 import factoryVideo from "../../assets/videos/factory-video.mp4";
 import AboutProduct from "../../components/about.product/AboutProduct";
@@ -16,6 +16,9 @@ import MessageBox from "../../components/message.box/MessageBox";
 import steelImage from "../../assets/images/steel-pipes.jpg";
 
 const Home = () => {
+  // USEREF FOR ALL PRODUCTS
+  const allProducts = useRef();
+
   return (
     <Container>
       {/* VIDEO CONTAINER */}
@@ -31,7 +34,7 @@ const Home = () => {
 
           {/* BUTTONS */}
           <div className="header-bottons-container">
-            <button type="button" className="header-our-products-button header-button">Our Products</button>
+            <button type="button" className="header-our-products-button header-button" onClick={() => { allProducts.current?.scrollIntoView({ behavior: "smooth" }) }}>Our Products</button>
             <button type="button" className="header-know-more-button header-button">Know More</button>
           </div>
         </div>
@@ -48,7 +51,7 @@ const Home = () => {
       </section>
 
       {/* PRODUCT RANGE */}
-      <section className="product-range-container">
+      <section className="product-range-container" ref={allProducts}>
         <div className="product-range-container-wrapper">
           {/* PRODUCT RANGE HEADER */}
           <div className="product-range-header">
