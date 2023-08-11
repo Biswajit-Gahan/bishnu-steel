@@ -27,7 +27,7 @@ export const Container = styled.main`
     height: inherit;
     object-fit: cover;
     object-position: top;
-    animation: videoAnimation 3s;
+    /* animation: videoAnimation 3s; */
   }
 
   .hero-container {

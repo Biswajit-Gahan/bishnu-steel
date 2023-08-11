@@ -78,6 +78,55 @@ export const NavbarContainer = styled.nav`
     }
   }
 
+  .products-li {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    cursor: pointer;
+
+    &:hover {
+      .products-list-container {
+        visibility: visible;
+        opacity: 1;
+      }
+    }
+  }
+
+  .products-list-container {
+    position: absolute;
+    bottom: 0;
+    z-index: 999;
+    visibility: hidden;
+    opacity: 0;
+    transition: opacity 0.2s ease-in-out;
+    transform: translateY(100%);
+  }
+
+  .products-list {
+    margin-top: 20px;
+    list-style: none;
+    background-color: ${constants.colors.bsDarkTransparent};
+    backdrop-filter: blur(5px);
+    border-radius: 10px;
+    overflow: hidden;
+  }
+
+  .products-item {
+    width: 250px;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: ${constants.colors.bs};
+    transition: background-color 0.2s ease-in-out;
+
+    &:hover {
+      background-color: ${constants.colors.bsPinkDefault};
+    }
+  }
+
   .hamberger-menu {
     display: none;
   }

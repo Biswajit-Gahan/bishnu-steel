@@ -6,7 +6,7 @@ const ProductCard = ({ productName, productImg, productType }) => {
   const navigate = useNavigate();
 
   return (
-    <Container $productName={productName} onClick={() => { navigate(`products/${productType}`) }}>
+    <Container $productName={productName} onClick={() => { navigate(`/products/${productType}`) }}>
       {/* PRODUCT IMAGE CONTAINER */}
       <div className="product-image-container">
         <img className="card-product-img" src={productImg} alt="product-img" />

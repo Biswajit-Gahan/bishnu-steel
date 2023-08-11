@@ -46,9 +46,18 @@ const Navbar = () => {
           {/* NAVBAR LIST */}
           <ul className="navbar-list">
             <li className="navbar-item"><NavLink to="/" style={({ isActive }) => ({ color: isActive ? `${constants.colors.bsPinkDefault}` : "" })}>Home</NavLink></li>
-            {/* <li className="navbar-item">Products</li> */}
-            <li className="navbar-item"><NavLink to="/?view-products=true" reloadDocument={true}>Products</NavLink></li>
-            <li className="navbar-item"><NavLink to="quality" style={({ isActive }) => ({ color: isActive ? `${constants.colors.bsPinkDefault}` : "" })}>Quality</NavLink></li>
+            <li className="navbar-item products-li">
+              Products
+              <div className="products-list-container">
+                <ul className="products-list">
+                  <Link to="products/round"><li className="products-item">Round Stainless Steel</li></Link>
+                  <Link to="products/square"><li className="products-item">Square Stainless Steel</li></Link>
+                  <Link to="products/rectangle"><li className="products-item">Rectangle Stainless Steel</li></Link>
+                  <Link to="https://google.com"><li className="products-item">Product Quality</li></Link>
+                </ul>
+              </div>
+            </li>
+            <li className="navbar-item"><NavLink to="end-uses" style={({ isActive }) => ({ color: isActive ? `${constants.colors.bsPinkDefault}` : "" })}>End Uses</NavLink></li>
             <li className="navbar-item"><NavLink to="about-us" style={({ isActive }) => ({ color: isActive ? `${constants.colors.bsPinkDefault}` : "" })}>About Us</NavLink></li>
             <li className="navbar-item"><NavLink to="contact-us" style={({ isActive }) => ({ color: isActive ? `${constants.colors.bsPinkDefault}` : "" })}>Contact Us</NavLink></li>
           </ul>
@@ -76,7 +85,7 @@ const Navbar = () => {
             <ul className="hamburger-menu-list" onClick={showHamburgerMenuHandler}>
               <li className="hamburger-menu-item"><NavLink to="/" style={({ isActive }) => ({ color: isActive ? `${constants.colors.bsPinkDefault}` : "" })}>Home</NavLink></li>
               <li className="hamburger-menu-item">Products</li>
-              <li className="hamburger-menu-item"><NavLink to="quality" style={({ isActive }) => ({ color: isActive ? `${constants.colors.bsPinkDefault}` : "" })}>Quality</NavLink></li>
+              <li className="hamburger-menu-item"><NavLink to="end-uses" style={({ isActive }) => ({ color: isActive ? `${constants.colors.bsPinkDefault}` : "" })}>End Uses</NavLink></li>
               <li className="hamburger-menu-item"><NavLink to="about-us" style={({ isActive }) => ({ color: isActive ? `${constants.colors.bsPinkDefault}` : "" })}>About Us</NavLink></li>
               <li className="hamburger-menu-item"><NavLink to="contact-us" style={({ isActive }) => ({ color: isActive ? `${constants.colors.bsPinkDefault}` : "" })}>Contact Us</NavLink></li>
             </ul>

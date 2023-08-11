@@ -4,6 +4,7 @@ import Home from "../templates/home/Home";
 import Footer from "../components/footer/Footer";
 import Product from "../templates/product/Product";
 import { BrowserRouter, Route, Routes } from "react-router-dom";
+import AboutUs from "../templates/about.us/AboutUs";
 import "../app/app.styles.css";
 
 const App = () => {
@@ -14,6 +15,8 @@ const App = () => {
         <Route path="/">
           <Route index element={< Home />} />
           <Route path="products/:productType" element={<Product />} />
+          <Route path="about-us" element={<AboutUs />} />
+          <Route path="*" element={<Home />} />
         </Route>
       </Routes>
       <Footer />

@@ -10,7 +10,7 @@ import GenerateQuotation from "../../components/generate.quotation/GenerateQuota
 import Brochure from "../../components/brochure/Brochure";
 import MessageBox from "../../components/message.box/MessageBox";
 import localdb from "../../utils/localdb";
-import { useParams } from "react-router-dom";
+import { useNavigate, useParams } from "react-router-dom";
 import QuotationModal from "../../components/modals/quotation.modal/QuotationModal";
 
 const Product = () => {
@@ -25,13 +25,23 @@ const Product = () => {
   // USED FOR PRODUCT TYPE PARAMETER
   const { productType } = useParams();
 
+  // USED FOR NAVIGATION
+  const navigate = useNavigate();
+
   // USESTATE FOR PRODUCTTYPE
   const [steelProductType, setSteelProductType] = useState(() => (""));
 
   // USEEFFECT FRO PRODUCT TYPE
   useEffect(() => {
-    setSteelProductType((prevData) => (prevData = productType));
-    window.scrollTo(0, 0);
+    const checkProductType = () => {
+      return ["round", "square", "rectangle"].some((item) => item === productType);
+    }
+    if (checkProductType()) {
+      setSteelProductType((prevData) => (prevData = productType));
+      window.scrollTo(0, 0);
+    } else {
+      navigate("/");
+    };
   }, [productType]);
 
   // USESTATE FOR PRODUCT GRADE

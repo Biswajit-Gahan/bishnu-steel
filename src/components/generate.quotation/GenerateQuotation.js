@@ -1,7 +1,11 @@
 import React from "react";
 import { GenerateQuotationContainer } from "./generate.quotation.styles";
+import { useNavigate } from "react-router-dom";
 
 const GenerateQuotation = ({ clickEvent }) => {
+  // USE NAVIGATION
+  const navigate = useNavigate();
+
   return (
     <GenerateQuotationContainer>
       {/* LEFT CONTAINER */}
@@ -71,7 +75,7 @@ const GenerateQuotation = ({ clickEvent }) => {
         <button type="button" className="generate-quotation-button" onClick={clickEvent}>Generate Quotation</button>
 
         {/* CONTACT US BUTTON */}
-        <button type="button" className="contact-us-button">Contact Us</button>
+        <button type="button" className="contact-us-button" onClick={() => { navigate("contact-us") }}>Contact Us</button>
       </div>
     </GenerateQuotationContainer>
   );

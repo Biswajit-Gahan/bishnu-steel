@@ -95,7 +95,10 @@ const Home = () => {
 
       {/* ABOUT COMPANY SECTION */}
       <section className="about-company-container">
-        <AboutCompanyTag />
+        <AboutCompanyTag
+          aboutCompanyContent="Bishnu Steel is a visionary stainless steel tube manufacturing company located in Khurda, Barunai Industrial unit known for its commitment to excellence and innovation. With a daily production capacity of 10 tons, our state-of-the-art manufacturing unit is equipped with imported machinery, ensuring precision, efficiency, and high-quality output.<br /><br />
+        We understand the importance of design in the stainless steel tube industry. Our dedicated team  work tirelessly to create innovative designs that meet the evolving needs of our customers. We offer a wide range of sizes, catering to various industries such as home decor, furniture, kitchenware, automobile and ancillaries and fabrication.<br /><br />"
+        />
       </section>
 
       {/* TESTIMONIALS SECTION */}
