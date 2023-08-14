@@ -1,6 +1,7 @@
 import styled from "styled-components";
 import constants from "../../utils/constants";
 import footerBg from "../../assets/images/footer-steels.jpg";
+import pageTitleResponsive from "./page.title.responsive";
 
 export const PageTitleContainer = styled.div`
   /* page-name-section */
@@ -21,5 +22,17 @@ export const PageTitleContainer = styled.div`
   .page-name {
     color: ${constants.colors.bsWhite};
     ${constants.fontSize.header.default};
+  }
+
+  @media (max-width: ${constants.device.laptop_small}) {
+    ${pageTitleResponsive.laptop};
+  }
+
+  @media (max-width: ${constants.device.tablet}) {
+    ${pageTitleResponsive.tablet};
+  }
+
+  @media (max-width: ${constants.device.mobile}) {
+    ${pageTitleResponsive.mobile};
   }
 `;

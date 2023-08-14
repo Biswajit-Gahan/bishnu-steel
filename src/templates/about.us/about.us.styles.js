@@ -1,5 +1,6 @@
 import styled from "styled-components";
 import constants from "../../utils/constants";
+import aboutUsResponsive from "./about.us.responsive";
 
 export const AboutUsContainer = styled.main`
   /* page-name-section */
@@ -125,5 +126,22 @@ export const AboutUsContainer = styled.main`
     display: flex;
     align-items: center;
     justify-content: space-between;
+    flex-wrap: wrap;
+  }
+
+  .need-help-section {
+    margin-bottom: 50px;
+  }
+
+  @media (max-width: ${constants.device.laptop_small}) {
+    ${aboutUsResponsive.laptop};
+  }
+
+  @media (max-width: ${constants.device.tablet}) {
+    ${aboutUsResponsive.tablet};
+  }
+
+  @media (max-width: ${constants.device.mobile}) {
+    ${aboutUsResponsive.mobile};
   }
 `;

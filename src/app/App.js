@@ -6,6 +6,7 @@ import Product from "../templates/product/Product";
 import { BrowserRouter, Route, Routes } from "react-router-dom";
 import AboutUs from "../templates/about.us/AboutUs";
 import "../app/app.styles.css";
+import ContactUs from "../templates/contact.us/ContactUs";
 
 const App = () => {
   return (
@@ -16,6 +17,7 @@ const App = () => {
           <Route index element={< Home />} />
           <Route path="products/:productType" element={<Product />} />
           <Route path="about-us" element={<AboutUs />} />
+          <Route path="contact-us" element={<ContactUs />} />
           <Route path="*" element={<Home />} />
         </Route>
       </Routes>
