@@ -18,7 +18,7 @@ const Map = () => {
           icon={new Icon({ iconUrl: pinIcon, iconSize: [50, 50] })}
           eventHandlers={{
             click: () => {
-              window.open("https://www.google.com/maps?q=20.317766160615026,+85.84777079576398", "_blank");
+              window.open("https://www.google.com/maps/dir//20.317766160615026,%2085.84777079576398", "_blank");
             }
           }}
         >

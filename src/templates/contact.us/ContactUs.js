@@ -78,7 +78,7 @@ const ContactUs = () => {
                 <h4 className="office-address-header-title type-header-title">Office Address</h4>
 
                 {/* OFFICE ADDRESS CONTENT */}
-                <Link to="https://www.google.com/maps?q=20.317766160615026,+85.84777079576398" target="_blank">
+                <Link to="https://www.google.com/maps/dir//20.317766160615026,%2085.84777079576398" target="_blank">
                   <p className="office-address-content type-content">
                     Academy of Management and Information Technology, Plot No-836/2476, Khta No-238/1577, Khordha Mouza, Maa Barunei Road, Garh khordha, Near Khordha Industrial Area, Khordha, Odisha, 752057
                   </p>
