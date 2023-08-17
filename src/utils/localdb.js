@@ -69,6 +69,39 @@ const localdb = {
   urls: {
     brochure: bsBrochure,
   },
+
+  testimonials: [
+    {
+      userImage: "https://www.gravatar.com/avatar/2c7d99fe281ecd3bcd65ab915bac6dd5?s=250",
+      userName: "Shaik Mahaboob Subhani",
+      userDesg: "Manager At TIH Pvt. Ltd.",
+      userFeedback: "Our Engineering team works directly with Bishnu Steels to achieve our company goals. Bishnu Steels is always very helpful, gives us on-time delivery and the sales reps are always willing to research to get answers for our needs.",
+    },
+    {
+      userImage: "https://www.gravatar.com/avatar/2c7d99fe281ecd3bcd65ab915bac6dd5?s=250",
+      userName: "Rashmi Kumar Singh",
+      userDesg: "CEO At Firla Cement Pvt. Ltd.",
+      userFeedback: "Our Engineering team works directly with Bishnu Steels to achieve our company goals. Bishnu Steels is always very helpful, gives us on-time delivery and the sales reps are always willing to research to get answers for our needs.",
+    },
+    {
+      userImage: "https://www.gravatar.com/avatar/2c7d99fe281ecd3bcd65ab915bac6dd5?s=250",
+      userName: "Dhruti Habib Khan",
+      userDesg: "Managing Director At PCS Pvt. Ltd.",
+      userFeedback: "Our Engineering team works directly with Bishnu Steels to achieve our company goals. Bishnu Steels is always very helpful, gives us on-time delivery and the sales reps are always willing to research to get answers for our needs.",
+    },
+    {
+      userImage: "https://www.gravatar.com/avatar/2c7d99fe281ecd3bcd65ab915bac6dd5?s=250",
+      userName: "Biswajit Das",
+      userDesg: "CA At Jaijhakash Hospital Pvt. Ltd.",
+      userFeedback: "Our Engineering team works directly with Bishnu Steels to achieve our company goals. Bishnu Steels is always very helpful, gives us on-time delivery and the sales reps are always willing to research to get answers for our needs.",
+    },
+    {
+      userImage: "https://www.gravatar.com/avatar/2c7d99fe281ecd3bcd65ab915bac6dd5?s=250",
+      userName: "Dina Khan",
+      userDesg: "Andorid Developer At Teloit Pvt. Ltd.",
+      userFeedback: "Our Engineering team works directly with Bishnu Steels to achieve our company goals. Bishnu Steels is always very helpful, gives us on-time delivery and the sales reps are always willing to research to get answers for our needs.",
+    },
+  ],
 };
 
 export default localdb;

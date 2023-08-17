@@ -7,6 +7,14 @@ const TestimonialsResponsive = {
     min-width: 325px;
     width: 325px;
 
+    .user-info-container {
+      flex-direction: column;
+    }
+
+    .user-name-container {
+      align-items: center;
+    }
+
     .header-text  {
       ${constants.fontSize.header.mobile};
     }

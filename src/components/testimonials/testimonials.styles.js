@@ -3,87 +3,6 @@ import constants from "../../utils/constants";
 import TestimonialsResponsive from "./testimonials.responsive";
 
 export const TestimonialsContainer = styled.div`
-  /* display: flex;
-  align-content: center;
-  justify-content: center;
-  flex-direction: column;
-  gap: 30px;
-  width: 800px;
-  margin-top: 50px;
-
-  .top-header {
-    text-align: center;
-  }
-
-  .bottom-container {
-    
-    padding: 70px 100px;
-    border-radius: 10px;
-    ${constants.boxShadow};
-    position: relative;
-    background-color: var(--bs-orange);
-  }
-
-  .bottom-top-container {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    gap: 20px;
-    margin-bottom: 20px;
-  }
-
-  .userAvatar {
-    width: 70px;
-    height: 70px;
-    border-radius: 50%;
-    border: 3px solid var(--white);
-  }
-
-  .user-name {
-    ${constants.fontSize.header.tablet};
-    margin-bottom: 5px;
-    color: var(--white);
-  }
-
-  .user-designation {
-    ${constants.fontSize.paragraph.tablet};
-    color: var(--white);
-  }
-
-  .feedback {
-    ${constants.fontSize.paragraph.default};
-    color: var(--white);
-    letter-spacing: 0.5px;
-    text-align: center;
-  }
-
-  .left-button, .right-button {
-    position: absolute;
-    width: 40px;
-    height: 40px;
-    border-radius: 50%;
-    border: none;
-    ${constants.fontSize.header.laptop};
-    font-weight: 700;
-    color: var(--bs-orange);
-    margin: 0 5px;
-    cursor: pointer;
-    top: 50%;
-    transform: translateY(-50%);
-    background-color: rgba(255, 255, 255, 0.5);
-    display: flex;
-    align-items: center;
-    justify-content: center;
-  }
-
-  .left-button {
-    left: 30px;
-  }
-
-  .right-button {
-    right: 30px;
-  } */
-
   min-width: 800px;
   width: 800px;
   display: flex;
@@ -104,14 +23,41 @@ export const TestimonialsContainer = styled.div`
     gap: 40px;
     flex-direction: column;
     background-color: ${constants.colors.bsPinkDark};
-    padding: 50px;
+    padding: 30px;
     border-radius: 5px;
+    min-width: inherit;
+    width: inherit;
   }
 
   .feedback-top-container {
+    min-width: inherit;
+    width: inherit;
     display: flex;
     overflow: hidden;
+    padding: 30px;
   }
+
+  .feedback-wrapper-container {
+    display: flex;
+    gap: 30px;
+    min-width: 100%;
+    width: 100%;
+    transition: transform 0.5s ease-in-out;
+  }
+
+  .feedback-wrapper {
+    min-width: 100%;
+    width: 100%;
+  }
+
+  /* .feedback-wrapper-container {
+    min-width: inherit;
+    width: inherit;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 30px;
+  } */
 
   .feedback-wrapper {
     min-width: 100%;

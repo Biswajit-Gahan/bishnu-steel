@@ -14,28 +14,31 @@ import NeedAssistance from "../../components/need.assistance/NeedAssistance";
 import EventsSlider from "../../components/events.slider/EventsSlider";
 import MessageBox from "../../components/message.box/MessageBox";
 import steelImage from "../../assets/images/steel-pipes.jpg";
-import { useSearchParams } from "react-router-dom";
+import { useNavigate, useSearchParams } from "react-router-dom";
 
 const Home = () => {
   // USEREF FOR ALL PRODUCTS
   const allProducts = useRef();
 
-  // USE SEARCH PARAMS
-  const [searchParams, setSearchParams] = useSearchParams();
+  // USENAVIGATE
+  const navigate = useNavigate();
 
-  const isScrolled = useRef(false);
+  // USE SEARCH PARAMS
+  // const [searchParams, setSearchParams] = useSearchParams();
+
+  // const isScrolled = useRef(false);
 
   // FUNCTION GOTO PRODUCTS
   const gotoProductsHandler = () => {
     allProducts.current?.scrollIntoView({ behavior: "smooth" });
   };
 
-  useEffect(() => {
-    if (searchParams.get("view-products") === "true") {
-      gotoProductsHandler();
-      // setSearchParams({ "view-products": "false" });
-    }
-  }, []);
+  // useEffect(() => {
+  //   if (searchParams.get("view-products") === "true") {
+  //     gotoProductsHandler();
+  //     // setSearchParams({ "view-products": "false" });
+  //   }
+  // }, []);
 
   return (
     <Container>
@@ -53,7 +56,7 @@ const Home = () => {
           {/* BUTTONS */}
           <div className="header-bottons-container">
             <button type="button" className="header-our-products-button header-button" onClick={gotoProductsHandler}>Our Products</button>
-            <button type="button" className="header-know-more-button header-button">Know More</button>
+            <button type="button" className="header-know-more-button header-button" onClick={() => {navigate("end-uses")}}>Know More</button>
           </div>
         </div>
       </section>
