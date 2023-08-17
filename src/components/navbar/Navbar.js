@@ -7,6 +7,16 @@ import { Link, NavLink } from "react-router-dom";
 import QuotationModal from "../modals/quotation.modal/QuotationModal";
 import constants from "../../utils/constants";
 import CloseIcon from '@mui/icons-material/Close';
+import HomeOutlinedIcon from '@mui/icons-material/HomeOutlined';
+import CategoryOutlinedIcon from '@mui/icons-material/CategoryOutlined';
+import SingleBedOutlinedIcon from '@mui/icons-material/SingleBedOutlined';
+import InfoOutlinedIcon from '@mui/icons-material/InfoOutlined';
+import PermContactCalendarOutlinedIcon from '@mui/icons-material/PermContactCalendarOutlined';
+import ArrowRightOutlinedIcon from '@mui/icons-material/ArrowRightOutlined';
+import FacebookIcon from '@mui/icons-material/Facebook';
+import TwitterIcon from '@mui/icons-material/Twitter';
+import LinkedInIcon from '@mui/icons-material/LinkedIn';
+import YouTubeIcon from '@mui/icons-material/YouTube';
 
 const Navbar = () => {
   // USESTATE FOR SHOW QUOTATION MODAL
@@ -15,7 +25,10 @@ const Navbar = () => {
   // USESTATE FOR SHOW HAMBURGER MENU
   const [showHamburgerMenu, setShowHamburgerMenu] = useState(() => (false));
 
-  // FUNCTION FOR HADLER SHOW QUOTATION MODAL
+  // USESTATE FOR SHOW HAMBURGER PRODUCTS MENU
+  const [showHamburgerProductsMenu, setShowHamburgerProductsMenu] = useState(() => (false));
+
+  // FUNCTION FOR HANDLER SHOW QUOTATION MODAL
   const showQuotationModalHandler = () => {
     setShowQuotationModal((prevData) => (!prevData));
   };
@@ -23,7 +36,8 @@ const Navbar = () => {
   // FUNCTION FOR HANDLE SHOW HAMBURGER MENU
   const showHamburgerMenuHandler = () => {
     setShowHamburgerMenu((prevData) => (!prevData));
-  }
+    setShowHamburgerProductsMenu((prevData) => (prevData = false));
+  };
 
   return (
     <NavbarContainer>
@@ -81,16 +95,56 @@ const Navbar = () => {
         <div className="hamburger-menu-tray-container">
           {/* HAMBURGER MENU TRAY */}
           <div className="hamburger-menu-tray">
-            {/* HAMBURGER MENU LIST */}
-            <ul className="hamburger-menu-list" onClick={showHamburgerMenuHandler}>
-              <li className="hamburger-menu-item"><NavLink to="/" style={({ isActive }) => ({ color: isActive ? `${constants.colors.bsPinkDefault}` : "" })}>Home</NavLink></li>
-              <li className="hamburger-menu-item">Products</li>
-              <li className="hamburger-menu-item"><NavLink to="end-uses" style={({ isActive }) => ({ color: isActive ? `${constants.colors.bsPinkDefault}` : "" })}>End Uses</NavLink></li>
-              <li className="hamburger-menu-item"><NavLink to="about-us" style={({ isActive }) => ({ color: isActive ? `${constants.colors.bsPinkDefault}` : "" })}>About Us</NavLink></li>
-              <li className="hamburger-menu-item"><NavLink to="contact-us" style={({ isActive }) => ({ color: isActive ? `${constants.colors.bsPinkDefault}` : "" })}>Contact Us</NavLink></li>
-            </ul>
-            {/* HAMBURGER CLOSE BUTTON */}
-            <button type="button" className="hamburger-close-button" onClick={showHamburgerMenuHandler}><CloseIcon /></button>
+            {/* HAMBURGER TOP CONTAINER */}
+            <div className="hamburger-top-container">
+              {/* BRAND LOGO CONTAINER*/}
+              <div className="brand-logo-container">
+                {/* BRAND LOGO */}
+                <img src={brandHeaderLogo} alt="brand log" className="mob-brand-logo" />
+                
+                {/* HAMBURGER CLOSE BUTTON */}
+                <button type="button" className="hamburger-close-button" onClick={showHamburgerMenuHandler}><CloseIcon /></button>
+              </div>
+              
+              {/* HAMBURGER MENU LIST */}
+              <ul className="hamburger-menu-list">
+                <li className="hamburger-menu-item" onClick={showHamburgerMenuHandler}><NavLink to="/" style={({ isActive }) => ({ color: isActive ? `${constants.colors.bsWhite}` : "" })}><HomeOutlinedIcon className="mob-icons" />Home</NavLink></li>
+                <li className="hamburger-menu-item hamburger-product-items" onClick={() => { setShowHamburgerProductsMenu((prevData) => (!prevData)) }}>
+                  <div className="hamburger-menu-products-container">
+                    {/* PRODUCT TITLE */}
+                      <span className="hamburger-product-title"><CategoryOutlinedIcon className="mob-icons" />Products</span>
+                    
+                    {/* PRODUCT LIST */}
+                    {
+                      showHamburgerProductsMenu && 
+                        <ul className="hamburger-product-list">
+                        <Link to="products/round"><li className="hamburger-product-item" onClick={showHamburgerMenuHandler}><ArrowRightOutlinedIcon className="mob-icon" />Round Stainless Steels</li></Link>
+                        <Link to="products/square"><li className="hamburger-product-item" onClick={showHamburgerMenuHandler}><ArrowRightOutlinedIcon className="mob-icon" />Square Stainless Steels</li></Link>
+                        <Link to="products/rectangle"><li className="hamburger-product-item" onClick={showHamburgerMenuHandler}><ArrowRightOutlinedIcon className="mob-icon"/>Rectangular Stainless Steels</li></Link>
+                        <Link to="quality"><li className="hamburger-product-item" onClick={showHamburgerMenuHandler}><ArrowRightOutlinedIcon className="mob-icon"/>Product Quality</li></Link>
+                      </ul>
+                    }
+                  </div>
+                </li>
+                <li className="hamburger-menu-item" onClick={showHamburgerMenuHandler}><NavLink to="end-uses" style={({ isActive }) => ({ color: isActive ? `${constants.colors.bsWhite}` : "" })}><SingleBedOutlinedIcon className="mob-icons" />End Uses</NavLink></li>
+                <li className="hamburger-menu-item" onClick={showHamburgerMenuHandler}><NavLink to="about-us" style={({ isActive }) => ({ color: isActive ? `${constants.colors.bsWhite}` : "" })}><InfoOutlinedIcon className="mob-icons" />About Us</NavLink></li>
+                <li className="hamburger-menu-item" onClick={showHamburgerMenuHandler}><NavLink to="contact-us" style={({ isActive }) => ({ color: isActive ? `${constants.colors.bsWhite}` : "" })}><PermContactCalendarOutlinedIcon className="mob-icons" />Contact Us</NavLink></li>
+              </ul>
+              </div>
+              
+              {/* HAMBURGER BOTTOM CONTAINER */}
+              <div className="hamburger-bottom-container">
+                {/* SOCIAL TITLE */}
+                <p className="social-title">Follow us on</p>
+
+                {/* SOCIAL CONTAINER */}
+                <div className="social-container">
+                  <Link to="https://www.facebook.com" target="_blank"><FacebookIcon className="social-icon" /></Link>
+                  <Link to="https://www.twitter.com" target="_blank"><TwitterIcon className="social-icon" /></Link>
+                  <Link to="https://www.linkedin.com" target="_blank"><LinkedInIcon className="social-icon" /></Link>
+                  <Link to="https://www.youtube.com" target="_blank"><YouTubeIcon className="social-icon" /></Link>
+                </div>
+              </div>
           </div>
         </div>
       }

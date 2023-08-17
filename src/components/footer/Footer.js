@@ -6,6 +6,8 @@ import TwitterIcon from '@mui/icons-material/Twitter';
 import LinkedInIcon from '@mui/icons-material/LinkedIn';
 import YouTubeIcon from '@mui/icons-material/YouTube';
 import { Link } from "react-router-dom";
+import CallIcon from '@mui/icons-material/Call';
+import EmailIcon from '@mui/icons-material/Email';
 
 const Footer = () => {
   return (
@@ -22,13 +24,15 @@ const Footer = () => {
             {/* OFFICE ADDRESS CONTAINER*/}
             <div className="office-address-container">
               <p className="header-text">REGISTERED OFFICE</p>
-              <p className="content-text">
-                Academy of Management and Information Technology,<br />
-                Plot No-836/2476, Khta No-238/1577,<br />
-                Khordha Mouza, Maa Barunei Road, Garh khordha,<br />
-                Near Khordha Industrial Area, Khordha,<br />
-                Odisha, 752057
-              </p>
+              <Link to="https://www.google.com/maps/dir//20.317766160615026,%2085.84777079576398" target="_blank">
+                <p className="content-text">
+                  Academy of Management and Information Technology,<br />
+                  Plot No-836/2476, Khta No-238/1577,<br />
+                  Khordha Mouza, Maa Barunei Road, Garh khordha,<br />
+                  Near Khordha Industrial Area, Khordha,<br />
+                  Odisha, 752057
+                </p>
+              </Link>
             </div>
 
             {/* CONTACT DETAILS CONTAINER */}
@@ -36,17 +40,21 @@ const Footer = () => {
               {/* EMAIL DETAILS */}
               <div className="email-details">
                 <p className="header-text">EMAIL</p>
-                <p className="content-text">
-                  bishnusteel@gmail.com
-                </p>
+                <Link to="mailto:bishnusteel@gmail.com">
+                  <p className="content-text">
+                    <EmailIcon className="contact-icon" /> bishnusteel@gmail.com
+                  </p>
+                </Link>
               </div>
 
               {/* PHONE DETAILS */}
               <div className="phone-details">
                 <p className="header-text">PHONE</p>
-                <p className="content-text">
-                  +91 9644002222
-                </p>
+                <Link to="tel:9644002222">
+                  <p className="content-text">
+                    <CallIcon className="contact-icon" /> +91 9644002222
+                  </p>
+                </Link>
               </div>
             </div>
 

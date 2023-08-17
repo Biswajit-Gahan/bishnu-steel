@@ -46,6 +46,14 @@ export const FooterContainer = styled.div`
     ${constants.fontSize.paragraph.mobile};
     line-height: 22px;
     letter-spacing: 0.5px;
+    display: flex;
+    align-content: center;
+    justify-content: flex-start;
+    gap: 10px;
+  }
+
+  .contact-icon {
+    font-size: 20px;
   }
 
   .contact-details-container {
