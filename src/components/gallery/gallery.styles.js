@@ -1,5 +1,6 @@
 import styled from "styled-components";
 import constants from "../../utils/constants";
+import galleryResponsive from "./gallery.responsive";
 
 export const GalleryContainer = styled.div`
   display: flex;
@@ -91,5 +92,17 @@ export const GalleryContainer = styled.div`
 
   .right-button {
     right: 5%;
+  }
+
+  @media (max-width: ${constants.device.laptop_small}) {
+    ${galleryResponsive.laptop};
+  }
+
+  @media (max-width: ${constants.device.tablet}) {
+    ${galleryResponsive.tablet};
+  }
+
+  @media (max-width: ${constants.device.mobile}) {
+    ${galleryResponsive.mobile};
   }
 `;

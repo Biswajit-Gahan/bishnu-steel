@@ -2,6 +2,7 @@ import React, { useEffect, useRef } from "react";
 import { GalleryContainer } from "./gallery.styles";
 import KeyboardArrowRightRoundedIcon from '@mui/icons-material/KeyboardArrowRightRounded';
 import KeyboardArrowLeftRoundedIcon from '@mui/icons-material/KeyboardArrowLeftRounded';
+import constants from "../../utils/constants";
 
 const Gallery = ({ title, images }) => {
   const galleryWrapperRef = useRef();
@@ -11,18 +12,29 @@ const Gallery = ({ title, images }) => {
   const categoryLength = Math.floor(images.length / 2);
 
   const handleNextButton = () => {
-    if (clicks.current < categoryLength) {
-      const galleryWidth = (galleryWrapperRef.current.scrollWidth - galleryWrapperRef.current.getBoundingClientRect().width) / categoryLength;
+    const windowSize = window.innerWidth;
+    const galleryWidth = (galleryWrapperRef.current.scrollWidth - galleryWrapperRef.current.getBoundingClientRect().width) / categoryLength;
+
+    if ((windowSize > parseInt(constants.device.mobile)) && clicks.current < categoryLength) {  
       galleryWrapperRef.current.style.transform = `translateX(-${galleryWidth * ++clicks.current}px)`;
+    } else if ((windowSize <= parseInt(constants.device.mobile)) && clicks.current < images.length - 1) {
+      const imageWidth = (galleryWrapperRef.current.scrollWidth / images.length);
+      galleryWrapperRef.current.style.transform = `translateX(-${imageWidth * ++clicks.current}px)`;
     } else {
       return;
     }
   };
 
   const handlePrevButton = () => {
-    if (clicks.current > 0) {
+    const windowSize = window.innerWidth;
+    if ((windowSize > parseInt(constants.device.mobile)) && clicks.current > 0) {
       const galleryWidth = (galleryWrapperRef.current.scrollWidth - galleryWrapperRef.current.getBoundingClientRect().width) / categoryLength;
       galleryWrapperRef.current.style.transform = `translateX(-${galleryWidth * --clicks.current}px)`;
+    } else if ((windowSize <= parseInt(constants.device.mobile)) && clicks.current > 0) {
+      const imageWidth = (galleryWrapperRef.current.scrollWidth / images.length);
+      galleryWrapperRef.current.style.transform = `translateX(-${imageWidth * --clicks.current}px)`;
+    } else {
+      return;
     }
   }
 
