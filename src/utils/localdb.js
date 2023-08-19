@@ -129,27 +129,27 @@ const localdb = {
 
   endUses: {
     windows: [
-      steelWindow1, steelWindow2, steelWindow3, steelWindow4,
+      steelWindow1, steelWindow2, steelWindow3, steelWindow4, steelWindow1, steelWindow2, steelWindow3, steelWindow4,
     ],
 
     doors: [
-      steelDoor1, steelDoor2, steelDoor3, steelDoor4,
+      steelDoor1, steelDoor2, steelDoor3, steelDoor4, steelDoor1, steelDoor2, steelDoor3, steelDoor4,
     ],
 
     gates: [
-      steelGate1, steelGate2, steelGate3, steelGate4,
+      steelGate1, steelGate2, steelGate3, steelGate4, steelGate1, steelGate2, steelGate3, steelGate4,
     ],
 
     stairs: [
-      steelStairs1, steelStairs2, steelStairs3, steelStairs4,
+      steelStairs1, steelStairs2, steelStairs3, steelStairs4, steelStairs1, steelStairs2, steelStairs3, steelStairs4,
     ],
 
     swings: [
-      steelSwing1, steelSwing2, steelSwing3, steelSwing4,
+      steelSwing1, steelSwing2, steelSwing3, steelSwing4, steelSwing1, steelSwing2, steelSwing3, steelSwing4,
     ],
 
     furnitures: [
-      steelFurniture1, steelFurniture2, steelFurniture3, steelFurniture4,
+      steelFurniture1, steelFurniture2, steelFurniture3, steelFurniture4, steelFurniture1, steelFurniture2, steelFurniture3, steelFurniture4,
     ],
   },
 

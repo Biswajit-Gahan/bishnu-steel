@@ -9,9 +9,9 @@ const constants = {
   },
 
   boxShadow: css`
-    box-shadow: 0px 5px 16px -3px rgba(0,0,0,0.15);
-    -webkit-box-shadow: 0px 5px 16px -3px rgba(0,0,0,0.15);
-    -moz-box-shadow: 0px 5px 16px -3px rgba(0,0,0,0.15);
+    box-shadow: 0px 5px 10px -3px rgba(0,0,0,0.4);
+    -webkit-box-shadow: 0px 5px 10px -3px rgba(0,0,0,0.4);
+    -moz-box-shadow: 0px 5px 10px -3px rgba(0,0,0,0.4);
   `,
 
   fontSize: {
