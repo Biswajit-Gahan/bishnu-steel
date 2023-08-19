@@ -10,6 +10,7 @@ import TwitterIcon from '@mui/icons-material/Twitter';
 import LinkedInIcon from '@mui/icons-material/LinkedIn';
 import YouTubeIcon from '@mui/icons-material/YouTube';
 import MessageBox from "../../components/message.box/MessageBox";
+import localdb from "../../utils/localdb";
 
 const ContactUs = () => {
   return (
@@ -78,7 +79,7 @@ const ContactUs = () => {
                 <h4 className="office-address-header-title type-header-title">Office Address</h4>
 
                 {/* OFFICE ADDRESS CONTENT */}
-                <Link to="https://www.google.com/maps/dir//20.317766160615026,%2085.84777079576398" target="_blank">
+                <Link to={`https://www.google.com/maps/dir//${localdb.bsLocation.lat},%20${localdb.bsLocation.long}`} target="_blank">
                   <p className="office-address-content type-content">
                     Academy of Management and Information Technology, Plot No-836/2476, Khta No-238/1577, Khordha Mouza, Maa Barunei Road, Garh khordha, Near Khordha Industrial Area, Khordha, Odisha, 752057
                   </p>

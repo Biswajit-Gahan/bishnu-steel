@@ -8,6 +8,7 @@ import YouTubeIcon from '@mui/icons-material/YouTube';
 import { Link } from "react-router-dom";
 import CallIcon from '@mui/icons-material/Call';
 import EmailIcon from '@mui/icons-material/Email';
+import localdb from "../../utils/localdb";
 
 const Footer = () => {
   return (
@@ -24,7 +25,7 @@ const Footer = () => {
             {/* OFFICE ADDRESS CONTAINER*/}
             <div className="office-address-container">
               <p className="header-text">REGISTERED OFFICE</p>
-              <Link to="https://www.google.com/maps/dir//20.317766160615026,%2085.84777079576398" target="_blank">
+              <Link to={`https://www.google.com/maps/dir//${localdb.bsLocation.lat},%20${localdb.bsLocation.long}`} target="_blank">
                 <p className="content-text">
                   Academy of Management and Information Technology,<br />
                   Plot No-836/2476, Khta No-238/1577,<br />

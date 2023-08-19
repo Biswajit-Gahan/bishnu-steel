@@ -67,7 +67,7 @@ const Navbar = () => {
                   <Link to="products/round"><li className="products-item">Round Stainless Steel</li></Link>
                   <Link to="products/square"><li className="products-item">Square Stainless Steel</li></Link>
                   <Link to="products/rectangle"><li className="products-item">Rectangle Stainless Steel</li></Link>
-                  <Link to="https://google.com"><li className="products-item">Product Quality</li></Link>
+                  <Link to="quality"><li className="products-item">Product Quality</li></Link>
                 </ul>
               </div>
             </li>
