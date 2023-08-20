@@ -50,12 +50,14 @@ export const Container = styled.main`
     text-align: center;
     line-height: 50px;
     font-weight: 600;
-    animation: heroText 2s;
+    /* animation: heroText 2s; */
+    /* opacity: 0; */
 
     .hero-bold {
       font-size: 40px;
       color: ${constants.colors.bsPinkDefault};
       font-weight: 800;
+      /* opacity: 0; */
     }
   }
 
@@ -65,7 +67,8 @@ export const Container = styled.main`
     text-align: center;
     letter-spacing: 1px;
     line-height:25px;
-    animation: heroTag 2s;
+    /* animation: heroTag 2s; */
+    /* opacity: 0; */
   }
 
   .header-button {
@@ -79,7 +82,8 @@ export const Container = styled.main`
     letter-spacing: 0.2px;
     cursor: pointer;
     transition: transform 0.2s ease-in-out;
-    animation: buttons 2s;
+    /* animation: buttons 2s; */
+     /* opacity: 0; */
     &:hover {
       transform: scale(0.92);
     }
@@ -136,11 +140,11 @@ export const Container = styled.main`
     /* gap: 50px; */
   }
 
-  /* .header-divider {
+  .header-divider {
     width: 100%;
     height: 0.5px;
     background-color: gray;
-  } */
+  }
 
   .brochure-container {
     display: flex;

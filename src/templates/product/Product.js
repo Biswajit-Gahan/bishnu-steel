@@ -12,6 +12,7 @@ import MessageBox from "../../components/message.box/MessageBox";
 import localdb from "../../utils/localdb";
 import { useNavigate, useParams } from "react-router-dom";
 import QuotationModal from "../../components/modals/quotation.modal/QuotationModal";
+import observer from "../../utils/observer";
 
 const Product = () => {
   // USESTATE FOR SHOW QUOTATION MODAL
@@ -30,6 +31,11 @@ const Product = () => {
 
   // USESTATE FOR PRODUCTTYPE
   const [steelProductType, setSteelProductType] = useState(() => (""));
+
+  useEffect(() => {
+    const anime = document.querySelectorAll(".anime");
+    observer(Object.values(anime));
+  }, []);
 
   // USEEFFECT FRO PRODUCT TYPE
   useEffect(() => {

@@ -47,12 +47,12 @@ const Testimonials = () => {
   return (
     <TestimonialsContainer>
       {/* HEADER CONTAINER */}
-      <div className="header-container">
+      <div className="header-container anime" data-move="move-up" >
         <h2 className="header-text">What our customers says ?</h2>
       </div>
 
       {/* FEEDBACK CONTAINER */}
-      <div className="feedback-container">
+      <div className="feedback-container anime" data-move="zoom-out" data-delay={0.2}>
         {/* FEEDBACK TOP CONTAINER */}
         <div className="feedback-top-container">
           {/* FEEDBACK WRAPPER */}

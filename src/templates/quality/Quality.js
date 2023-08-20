@@ -1,7 +1,8 @@
-import React from "react";
+import React, { useEffect } from "react";
 import { QualityContainer } from "./quality.styles";
 import PageTitle from "../../components/page.title/PageTitle";
 import localdb from "../../utils/localdb";
+import observer from "../../utils/observer";
 
 const ProductGrade = ({ type, content, dropDownContent}) => {
   return (
@@ -13,6 +14,11 @@ const ProductGrade = ({ type, content, dropDownContent}) => {
 };
 
 const Quality = () => {
+  useEffect(() => {
+    const anime = document.querySelectorAll(".anime");
+    observer(Object.values(anime));
+  }, []);
+
   return (
     <QualityContainer>
       {/* ABOUT SECTION */}

@@ -85,6 +85,7 @@ export const NavbarContainer = styled.nav`
     justify-content: center;
     flex-direction: column;
     cursor: pointer;
+    z-index: 999;
 
     &:hover {
       .products-list-container {
@@ -97,7 +98,6 @@ export const NavbarContainer = styled.nav`
   .products-list-container {
     position: absolute;
     bottom: 0;
-    z-index: 999;
     visibility: hidden;
     opacity: 0;
     transition: opacity 0.2s ease-in-out;

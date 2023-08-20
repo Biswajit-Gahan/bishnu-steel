@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect } from "react";
 import { ContactUsContainer } from "./contact.us.styles";
 import Map from "../../components/map/Map";
 import PageTitle from "../../components/page.title/PageTitle";
@@ -11,8 +11,14 @@ import LinkedInIcon from '@mui/icons-material/LinkedIn';
 import YouTubeIcon from '@mui/icons-material/YouTube';
 import MessageBox from "../../components/message.box/MessageBox";
 import localdb from "../../utils/localdb";
+import observer from "../../utils/observer";
 
 const ContactUs = () => {
+  useEffect(() => {
+    const anime = document.querySelectorAll(".anime");
+    observer(Object.values(anime));
+  }, []);
+
   return (
     <ContactUsContainer>
       {/* CONTACT US SECTION */}

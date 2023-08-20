@@ -1,11 +1,17 @@
-import React from "react";
+import React, { useEffect } from "react";
 import { EndUsesContainer } from "./end.uses.styles";
 import localdb from "../../utils/localdb";
 import PageTitle from "../../components/page.title/PageTitle";
 import Gallery from "../../components/gallery/Gallery";
 import MessageBox from "../../components/message.box/MessageBox";
+import observer from "../../utils/observer";
 
 const EndUses = () => {
+  useEffect(() => {
+    const anime = document.querySelectorAll(".anime");
+    observer(Object.values(anime));
+  }, []);
+
   return (
     <EndUsesContainer>
       {/* ABOUT SECTION */}

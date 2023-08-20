@@ -50,7 +50,7 @@ const Navbar = () => {
       {/* NAVBAR WRAPPER */}
       <div className="navbar-wrapper">
         {/* LEFT CONTAINER */}
-        <div className="left-container">
+        <div className="left-container anime" data-move="move-up">
           {/* BRAND LOGO */}
           <Link to="/"><img className="brand-header-logo" src={brandHeaderLogo} alt="brand-logo" /></Link>
         </div>
@@ -59,8 +59,8 @@ const Navbar = () => {
         <div className="middle-container">
           {/* NAVBAR LIST */}
           <ul className="navbar-list">
-            <li className="navbar-item"><NavLink to="/" style={({ isActive }) => ({ color: isActive ? `${constants.colors.bsPinkDefault}` : "" })}>Home</NavLink></li>
-            <li className="navbar-item products-li">
+            <li className="navbar-item anime" data-move="move-up" data-delay={0.1}><NavLink to="/" style={({ isActive }) => ({ color: isActive ? `${constants.colors.bsPinkDefault}` : "" })}>Home</NavLink></li>
+            <li className="navbar-item products-li anime" data-move="move-up" data-delay={0.2}>
               Products
               <div className="products-list-container">
                 <ul className="products-list">
@@ -71,16 +71,16 @@ const Navbar = () => {
                 </ul>
               </div>
             </li>
-            <li className="navbar-item"><NavLink to="end-uses" style={({ isActive }) => ({ color: isActive ? `${constants.colors.bsPinkDefault}` : "" })}>End Uses</NavLink></li>
-            <li className="navbar-item"><NavLink to="about-us" style={({ isActive }) => ({ color: isActive ? `${constants.colors.bsPinkDefault}` : "" })}>About Us</NavLink></li>
-            <li className="navbar-item"><NavLink to="contact-us" style={({ isActive }) => ({ color: isActive ? `${constants.colors.bsPinkDefault}` : "" })}>Contact Us</NavLink></li>
+            <li className="navbar-item anime" data-move="move-up" data-delay={0.3}><NavLink to="end-uses" style={({ isActive }) => ({ color: isActive ? `${constants.colors.bsPinkDefault}` : "" })}>End Uses</NavLink></li>
+            <li className="navbar-item anime" data-move="move-up" data-delay={0.4}><NavLink to="about-us" style={({ isActive }) => ({ color: isActive ? `${constants.colors.bsPinkDefault}` : "" })}>About Us</NavLink></li>
+            <li className="navbar-item anime" data-move="move-up" data-delay={0.5}><NavLink to="contact-us" style={({ isActive }) => ({ color: isActive ? `${constants.colors.bsPinkDefault}` : "" })}>Contact Us</NavLink></li>
           </ul>
         </div>
 
         {/* RIGHT CONTAINER */}
         <div className="right-container">
           {/* REQUEST QUOTE BUTTON */}
-          <button type="button" className="request-quote-button" onClick={showQuotationModalHandler}>REQUEST A QUOTE</button>
+          <button type="button" className="request-quote-button anime" data-move="move-up" data-delay={0.6} onClick={showQuotationModalHandler}>REQUEST A QUOTE</button>
         </div>
 
         {/* HAMBURGER MENU*/}

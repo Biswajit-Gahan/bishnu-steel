@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect } from "react";
 import { AboutUsContainer } from "./about.us.styles";
 import PageTitle from "../../components/page.title/PageTitle";
 import AboutCompanyTag from "../../components/about.company.tag/AboutCompanyTag";
@@ -7,8 +7,14 @@ import roundSteel from "../../assets/images/round-steels.jpg";
 import squareSteel from "../../assets/images/square.jpg";
 import rectangleSteel from "../../assets/images/rectangle-steel.jpg";
 import MessageBox from "../../components/message.box/MessageBox";
+import observer from "../../utils/observer";
 
 const AboutUs = () => {
+  useEffect(() => {
+    const anime = document.querySelectorAll(".anime");
+    observer(Object.values(anime));
+  }, []);
+
   return (
     <AboutUsContainer>
       {/* PAGE NAME SECTION */}

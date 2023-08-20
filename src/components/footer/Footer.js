@@ -15,7 +15,7 @@ const Footer = () => {
     <FooterContainer>
       <div className="footer-wrapper">
         {/* BRAND LOGO */}
-        <img src={brandLogo} alt="brand-log" className="brand-logo" />
+        <img src={brandLogo} alt="brand-log" className="brand-logo anime" data-move="move-up" />
 
         {/* FOOTER CONTENT CONTAINER */}
         <div className="footer-content-container">
@@ -24,9 +24,9 @@ const Footer = () => {
           <div className="top-container">
             {/* OFFICE ADDRESS CONTAINER*/}
             <div className="office-address-container">
-              <p className="header-text">REGISTERED OFFICE</p>
+              <p className="header-text anime" data-move="move-up" data-delay={0.2}>REGISTERED OFFICE</p>
               <Link to={`https://www.google.com/maps/dir//${localdb.bsLocation.lat},%20${localdb.bsLocation.long}`} target="_blank">
-                <p className="content-text">
+                <p className="content-text anime" data-move="move-up" data-delay={0.3}>
                   Academy of Management and Information Technology,<br />
                   Plot No-836/2476, Khta No-238/1577,<br />
                   Khordha Mouza, Maa Barunei Road, Garh khordha,<br />
@@ -40,9 +40,9 @@ const Footer = () => {
             <div className="contact-details-container">
               {/* EMAIL DETAILS */}
               <div className="email-details">
-                <p className="header-text">EMAIL</p>
+                <p className="header-text anime" data-move="move-up" data-delay={0.2}>EMAIL</p>
                 <Link to="mailto:bishnusteel@gmail.com">
-                  <p className="content-text">
+                  <p className="content-text anime" data-move="move-up" data-delay={0.3}>
                     <EmailIcon className="contact-icon" /> bishnusteel@gmail.com
                   </p>
                 </Link>
@@ -50,9 +50,9 @@ const Footer = () => {
 
               {/* PHONE DETAILS */}
               <div className="phone-details">
-                <p className="header-text">PHONE</p>
+                <p className="header-text anime" data-move="move-up" data-delay={0.2}>PHONE</p>
                 <Link to="tel:9644002222">
-                  <p className="content-text">
+                  <p className="content-text anime" data-move="move-up" data-delay={0.3}>
                     <CallIcon className="contact-icon" /> +91 9644002222
                   </p>
                 </Link>
@@ -61,14 +61,14 @@ const Footer = () => {
 
             {/* SOCIAL MEDIA CONTAINER */}
             <div className="social-media-container">
-              <p className="header-text">FOLLOW US ON</p>
+              <p className="header-text anime" data-move="move-up" data-delay={0.2}>FOLLOW US ON</p>
 
               {/* SOCIAL MEDIA WRAPPER */}
               <div className="social-media-wrapper">
-                <Link to="https://www.facebook.com" target="_blank"><FacebookIcon className="mui-icon" /></Link>
-                <Link to="https://www.twitter.com" target="_blank"><TwitterIcon className="mui-icon" /></Link>
-                <Link to="https://www.linkedin.com" target="_blank"><LinkedInIcon className="mui-icon" /></Link>
-                <Link to="https://www.youtube.com" target="_blank"><YouTubeIcon className="mui-icon" /></Link>
+                <Link to="https://www.facebook.com" target="_blank"><FacebookIcon className="mui-icon anime" data-move="zoom-out" data-delay={0.3} /></Link>
+                <Link to="https://www.twitter.com" target="_blank"><TwitterIcon className="mui-icon anime" data-move="zoom-out" data-delay={0.5} /></Link>
+                <Link to="https://www.linkedin.com" target="_blank"><LinkedInIcon className="mui-icon anime" data-move="zoom-out" data-delay={0.7} /></Link>
+                <Link to="https://www.youtube.com" target="_blank"><YouTubeIcon className="mui-icon anime" data-move="zoom-out" data-delay={0.9} /></Link>
 
               </div>
             </div>
@@ -90,8 +90,8 @@ const Footer = () => {
           <div className="bottom-container">
             <div className="divider"></div>
             <div className="credits-container">
-              <p className="copyright">Copyright © 2023 | Bishnu Steels. All right reserved.</p>
-              <p className="credit">Designed & Developed by Shaik Mehaboob Subhani.</p>
+              <p className="copyright anime" data-move="move-down" data-delay={0.2}>Copyright © 2023 | Bishnu Steels. All right reserved.</p>
+              <p className="credit anime" data-move="move-down" data-delay={0.4}>Designed & Developed by Shaik Mehaboob Subhani.</p>
             </div>
           </div>
         </div>

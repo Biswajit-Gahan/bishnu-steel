@@ -11,6 +11,7 @@ import EndUses from "../templates/end.uses/EndUses";
 import Quality from "../templates/quality/Quality";
 
 const App = () => {
+
   return (
     <BrowserRouter>
       <Navbar />
