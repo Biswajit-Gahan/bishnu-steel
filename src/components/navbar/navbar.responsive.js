@@ -10,6 +10,10 @@ const navbarResponsive = {
     .hamberger-menu {
       display: block;
     }
+
+    .right-container {
+      display: none;
+    }
   `,
   tablet: css`
     padding: 0 20px;
@@ -18,7 +22,7 @@ const navbarResponsive = {
       gap: 20px;
     }
 
-    .right-container {
+    .right-container .request-quote-button {
       display: none;
     }
   `,

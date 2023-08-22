@@ -7,7 +7,7 @@ export const GalleryContainer = styled.div`
   justify-content: center;
   align-items: center;
   flex-direction: column;
-  gap: 30px;
+  /* gap: 10px; */
 
   .gallery-title {
     ${constants.fontSize.header.default};

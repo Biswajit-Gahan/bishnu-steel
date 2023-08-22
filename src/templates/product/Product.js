@@ -16,7 +16,7 @@ import observer from "../../utils/observer";
 
 const Product = () => {
   // USESTATE FOR SHOW QUOTATION MODAL
-  const [showQuotationModal, setShowQuotationModal] = useState(() => (false));
+  const [showQuotationModal, setShowQuotationModal] = useState(() => (false))
 
   // FUNCTION FOR HADLER SHOW QUOTATION MODAL
   const showQuotationModalHandler = () => {
@@ -80,7 +80,7 @@ const Product = () => {
       }
       {/* PRODUCT NAME SECTION */}
       <section className="product-name-section">
-        <h2 className="product-name">{localdb.aboutSteel[steelProductType]?.name}</h2>
+        <h2 className="product-name anime" data-move="move-up">{localdb.aboutSteel[steelProductType]?.name}</h2>
       </section>
 
       {/* ABOUT PRODUCT SECTION */}
@@ -98,19 +98,19 @@ const Product = () => {
         <div className="product-sizes-info-wrapper">
           {/* SIZE INFO HEADER CONTAINER */}
           <div className="sizes-info-header-container">
-            <h2 className="product-sizes-header-text">Different Sizes</h2>
-            <p className="product-sizes-header-tag">
+            <h2 className="product-sizes-header-text anime" data-move="move-up">Different Sizes</h2>
+            <p className="product-sizes-header-tag anime" data-move="move-left">
               Find the right size,<br /> that fullfill your requirements.
             </p>
           </div>
 
           {/* SIZES TABLE CONTAINER */}
-          <div className="sizes-table-container">
+          <div className="sizes-table-container anime" data-move="zoom-in" data-delay={0.2}>
             <table className="table">
               <thead className="table-header">
                 <tr className="table-row">
-                  <td className="table-header-data header-data">SL. NO.</td>
-                  <td className="table-header-data header-data">SIZES (MM)</td>
+                  <td className="table-header-data header-data" >SL. NO.</td>
+                  <td className="table-header-data header-data" >SIZES (MM)</td>
                 </tr>
               </thead>
               <tbody className="table-body">
@@ -135,7 +135,7 @@ const Product = () => {
           {/* PRODUCT DIMENTIONS TOP WRAPPER */}
           <div className="product-dimentions-top-wrapper">
             {/* PRODUCT DIMENTIONS HEADER TITLE */}
-            <h2 className="product-dimentions-header-title">Product Dimentions</h2>
+            <h2 className="product-dimentions-header-title anime" data-move="move-up">Product Dimentions</h2>
 
             {/* PRODUCT DIMENTIONS DETAILS CONTAINER */}
             <div className="product-dimentions-details-container">
@@ -146,51 +146,51 @@ const Product = () => {
                 {/* OUTER DIAMETER CONTAINER */}
                 <div className="outer-diameter-container">
                   {/* PRODUCT DIMENTIONS ICON CONTAINER */}
-                  <div className="product-dimentions-icon-container">
+                  <div className="product-dimentions-icon-container anime" data-move="move-left" data-delay={0.2}>
                     <BorderOuterIcon className="product-dimentions-icon" />
                   </div>
 
                   {/* PRODUCT DIMENTIONS TITLE CONTAINER */}
                   <div className="product-dimentions-title-container">
                     {/* PRODUCT DIMENTIONS TITLE */}
-                    <h4 className="product-dimentions-title">Outer Diameter</h4>
+                    <h4 className="product-dimentions-title anime" data-move="move-up" data-delay={0.4}>Outer Diameter</h4>
 
                     {/* PRODUCT DIMENTIONS TEXT */}
-                    <p className="product-dimentions-text">9.52 MM - 127 MM</p>
+                    <p className="product-dimentions-text anime" data-move="move-right" data-delay={0.4}>9.52 MM - 127 MM</p>
                   </div>
                 </div>
 
                 {/* THICKNESS CONTAINER */}
                 <div className="thickness-container">
                   {/* PRODUCT DIMENTIONS ICON CONTAINER */}
-                  <div className="product-dimentions-icon-container">
+                  <div className="product-dimentions-icon-container anime" data-move="move-left" data-delay={0.2}>
                     <StraightenIcon className="product-dimentions-icon" />
                   </div>
 
                   {/* PRODUCT DIMENTIONS TITLE CONTAINER */}
                   <div className="product-dimentions-title-container">
                     {/* PRODUCT DIMENTIONS TITLE */}
-                    <h4 className="product-dimentions-title">Thickness</h4>
+                    <h4 className="product-dimentions-title anime" data-move="move-up" data-delay={0.4}>Thickness</h4>
 
                     {/* PRODUCT DIMENTIONS TEXT */}
-                    <p className="product-dimentions-text">0.3 MM - 3 MM</p>
+                    <p className="product-dimentions-text anime" data-move="move-right" data-delay={0.4}>0.3 MM - 3 MM</p>
                   </div>
                 </div>
 
                 {/* LENGTH CONTAINER */}
                 <div className="length-container">
                   {/* PRODUCT DIMENTIONS ICON CONTAINER */}
-                  <div className="product-dimentions-icon-container">
+                  <div className="product-dimentions-icon-container anime" data-move="move-left" data-delay={0.2}>
                     <SquareFootIcon className="product-dimentions-icon" />
                   </div>
 
                   {/* PRODUCT DIMENTIONS TITLE CONTAINER */}
                   <div className="product-dimentions-title-container">
                     {/* PRODUCT DIMENTIONS TITLE */}
-                    <h4 className="product-dimentions-title">Length</h4>
+                    <h4 className="product-dimentions-title anime" data-move="move-up" data-delay={0.4}>Length</h4>
 
                     {/* PRODUCT DIMENTIONS TEXT */}
-                    <p className="product-dimentions-text">20 FT</p>
+                    <p className="product-dimentions-text anime" data-move="move-right" data-delay={0.4}>20 FT</p>
                   </div>
                 </div>
               </div>
@@ -201,23 +201,23 @@ const Product = () => {
                 {/* MATERIAL GRADE CONTAINER */}
                 <div className="material-grade-container">
                   {/* PRODUCT DIMENTIONS ICON CONTAINER */}
-                  <div className="product-dimentions-icon-container">
+                  <div className="product-dimentions-icon-container anime" data-move="move-left" data-delay={0.2}>
                     <GradeOutlinedIcon className="product-dimentions-icon" />
                   </div>
 
                   {/* PRODUCT DIMENTIONS TITLE CONTAINER */}
                   <div className="product-dimentions-title-container">
                     {/* PRODUCT DIMENTIONS TITLE */}
-                    <h4 className="product-dimentions-title">Material Grade</h4>
+                    <h4 className="product-dimentions-title anime" data-move="move-up" data-delay={0.4}>Material Grade</h4>
 
                     {/* GRADE TEXT CONTAINER */}
                     <div className="grade-text-container">
-                      <span className="product-dimentions-grade-text" onClick={(event) => (productGradeClickHandler(event))} >201</span>
-                      <span className="product-dimentions-grade-text" onClick={(event) => (productGradeClickHandler(event))} >202</span>
-                      <span className="product-dimentions-grade-text" onClick={(event) => (productGradeClickHandler(event))} >304</span>
-                      <span className="product-dimentions-grade-text" onClick={(event) => (productGradeClickHandler(event))} >304L</span>
-                      <span className="product-dimentions-grade-text" onClick={(event) => (productGradeClickHandler(event))} >316</span>
-                      <span className="product-dimentions-grade-text" onClick={(event) => (productGradeClickHandler(event))} >316L</span>
+                      <span className="product-dimentions-grade-text anime" data-move="move-right" data-delay={0.6} onClick={(event) => (productGradeClickHandler(event))} >201</span>
+                      <span className="product-dimentions-grade-text anime" data-move="move-right" data-delay={0.7} onClick={(event) => (productGradeClickHandler(event))} >202</span>
+                      <span className="product-dimentions-grade-text anime" data-move="move-right" data-delay={0.8} onClick={(event) => (productGradeClickHandler(event))} >304</span>
+                      <span className="product-dimentions-grade-text anime" data-move="move-right" data-delay={0.9} onClick={(event) => (productGradeClickHandler(event))} >304L</span>
+                      <span className="product-dimentions-grade-text anime" data-move="move-right" data-delay={1.0} onClick={(event) => (productGradeClickHandler(event))} >316</span>
+                      <span className="product-dimentions-grade-text anime" data-move="move-right" data-delay={1.1} onClick={(event) => (productGradeClickHandler(event))} >316L</span>
                     </div>
                   </div>
                 </div>
@@ -225,17 +225,17 @@ const Product = () => {
                 {/* USAGE CONTAINER */}
                 <div className="usage-container">
                   {/* PRODUCT DIMENTIONS ICON CONTAINER */}
-                  <div className="product-dimentions-icon-container">
+                  <div className="product-dimentions-icon-container anime" data-move="move-left" data-delay={0.2}>
                     <DataUsageOutlinedIcon className="product-dimentions-icon" />
                   </div>
 
                   {/* PRODUCT DIMENTIONS TITLE CONTAINER */}
                   <div className="product-dimentions-title-container">
                     {/* PRODUCT DIMENTIONS TITLE */}
-                    <h4 className="product-dimentions-title">Usages</h4>
+                    <h4 className="product-dimentions-title anime" data-move="move-up" data-delay={0.4}>Usages</h4>
 
                     {/* PRODUCT DIMENTIONS TEXT */}
-                    <p className="product-dimentions-text">Infrastructure, Furniture, Home Decore etc.</p>
+                    <p className="product-dimentions-text anime" data-move="move-right" data-delay={0.4}>Infrastructure, Furniture, Home Decore etc.</p>
                   </div>
                 </div>
               </div>

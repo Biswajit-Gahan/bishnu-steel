@@ -100,6 +100,10 @@ export const ContactUsContainer = styled.div`
     margin-bottom: 50px;
   }
 
+  .leaflet-top, .leaflet-bottom {
+    z-index: 500;
+  }
+
   @media (max-width: ${constants.device.laptop_small}) {
     ${contactUsResponsive.laptop};
   }

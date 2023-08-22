@@ -6,7 +6,7 @@ const PageTitle = ({ pageName }) => {
     <PageTitleContainer>
       {/* PAGE NAME SECTION */}
       <section className="page-name-section">
-        <h2 className="page-name">{pageName}</h2>
+        <h2 className="page-name anime" data-move="move-up">{pageName}</h2>
       </section>
     </PageTitleContainer>
 

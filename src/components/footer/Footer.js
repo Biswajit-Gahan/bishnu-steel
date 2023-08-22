@@ -53,7 +53,7 @@ const Footer = () => {
                 <p className="header-text anime" data-move="move-up" data-delay={0.2}>PHONE</p>
                 <Link to="tel:9644002222">
                   <p className="content-text anime" data-move="move-up" data-delay={0.3}>
-                    <CallIcon className="contact-icon" /> +91 9644002222
+                    <CallIcon className="contact-icon" /> +91 96 44 00 22 22
                   </p>
                 </Link>
               </div>

@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useEffect, useRef, useState } from "react";
 import { NavbarContainer } from "./navbar.styles";
 import brandHeaderLogo from "../../assets/images/bs-footer-icon-2.png";
 // ICONS
@@ -17,6 +17,7 @@ import FacebookIcon from '@mui/icons-material/Facebook';
 import TwitterIcon from '@mui/icons-material/Twitter';
 import LinkedInIcon from '@mui/icons-material/LinkedIn';
 import YouTubeIcon from '@mui/icons-material/YouTube';
+import jslLogo from "../../assets/images/jsl.png";
 
 const Navbar = () => {
   // USESTATE FOR SHOW QUOTATION MODAL
@@ -39,8 +40,25 @@ const Navbar = () => {
     setShowHamburgerProductsMenu((prevData) => (prevData = false));
   };
 
+  const navbarRef = useRef();
+
+  useEffect(() => { 
+    const scrollHandler = () => {
+      if (window.scrollY >= 180) {
+        navbarRef.current.style.backgroundColor = constants.colors.bsDarkTransparent;
+        navbarRef.current.style.boxShadow = "0px 5px 10px -3px rgba(0,0,0,0.4)";
+      } else {
+        navbarRef.current.style.backgroundColor = constants.colors.bsDarkBold;
+        navbarRef.current.style.boxShadow = "none";
+      }
+    }
+    window.addEventListener("scroll", scrollHandler);
+
+    return () => (window.removeEventListener("scroll", scrollHandler));
+  }, [])
+
   return (
-    <NavbarContainer>
+    <NavbarContainer ref={navbarRef}>
       {/* QUOTATION MODAL */}
       {
         showQuotationModal &&
@@ -81,6 +99,12 @@ const Navbar = () => {
         <div className="right-container">
           {/* REQUEST QUOTE BUTTON */}
           <button type="button" className="request-quote-button anime" data-move="move-up" data-delay={0.6} onClick={showQuotationModalHandler}>REQUEST A QUOTE</button>
+
+          {/* JSL LOGO CONTAINER */}
+          <div className="jsl-logo-container anime" data-move="move-up" data-delay={0.7}>
+            <span className="jsl-tag">In Association With</span>
+            <img src={ jslLogo} alt="jsl logo" className="jsl-logo" />
+          </div>
         </div>
 
         {/* HAMBURGER MENU*/}
@@ -134,6 +158,12 @@ const Navbar = () => {
               
               {/* HAMBURGER BOTTOM CONTAINER */}
               <div className="hamburger-bottom-container">
+                {/* JSL LOGO CONTAINER */}
+                <div className="ham-jsl-logo-container">
+                  <span className="jsl-tag">In Association With</span>
+                  <img src={jslLogo} alt="jsl logo" className="jsl-logo" />
+                </div>
+
                 {/* SOCIAL TITLE */}
                 <p className="social-title">Follow us on</p>
 

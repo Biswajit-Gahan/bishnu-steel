@@ -5,15 +5,21 @@ import constants from "../../utils/constants";
 export const NavbarContainer = styled.nav`
   height: 80px;
   width: 100%;
-  padding: 0 100px;
-  /* background-color: ${constants.colors.bsDarkTransparent}; */
+  padding: 0 80px;
   background-color: ${constants.colors.bsDarkBold};
+  /* background-color: ${constants.colors.bsDarkBold}; */
   /* backdrop-filter: blur(5px);
   position: fixed;
   top: 0;
   left: 0;
   z-index: 999; */
-  position: relative;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  /* ${constants.boxShadow}; */
+  backdrop-filter: blur(5px);
+  transition: background-color 0.2s ease-in-out;
+
 
   .navbar-wrapper {
     height: inherit;
@@ -146,12 +152,13 @@ export const NavbarContainer = styled.nav`
     left: 0;
     bottom: 0;
     right: 0;
-    z-index: 999;
+    z-index: 1001;
     display: flex;
     align-items: flex-start;
     justify-content: flex-start;
     backdrop-filter: blur(10px);
     -webkit-backdrop-filter: blur(10px);
+    height: 100vh;
   }
 
   .hamburger-menu-tray {
@@ -271,6 +278,37 @@ export const NavbarContainer = styled.nav`
     border: 2px solid ${constants.colors.bsWhite};
     padding: 5px;
     color: ${constants.colors.bsWhite};
+  }
+
+  .right-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+  }
+
+  .jsl-logo-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+  }
+
+  .jsl-tag {
+    font-weight: 200;
+    color: ${constants.colors.bsWhite};
+    font-size: 10px;
+    letter-spacing: 0.5px;
+  }
+
+  .jsl-logo {
+    width: 100px;
+  }
+
+  .ham-jsl-logo-container {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 30px;
   }
 
   @media (max-width: ${constants.device.laptop_small}) {

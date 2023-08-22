@@ -2,8 +2,8 @@ import { css } from "styled-components";
 
 const constants = {
   device: {
-    mobile: "650px",
-    tablet: "900px",
+    mobile: "750px",
+    tablet: "1050px",
     laptop_small: "1250px",
     desktop_small: "2000px",
   },
@@ -45,7 +45,7 @@ const constants = {
     bsDarkTransparent: "rgba(37,37,37,0.84)",
     bsOffWhite: "#f7f7f7",
     bsWhiteTransparent: "rgba(255,255,255,0.9)",
-
+    bsError: "#ff3b05",
   },
 };
 

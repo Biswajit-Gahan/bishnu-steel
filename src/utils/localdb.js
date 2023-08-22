@@ -26,6 +26,18 @@ import steelFurniture1 from "../assets/images/steel-furniture-1.jpg";
 import steelFurniture2 from "../assets/images/steel-furniture-2.jpg";
 import steelFurniture3 from "../assets/images/steel-furniture-3.jpg";
 import steelFurniture4 from "../assets/images/steel-furniture-4.jpg";
+import steelHospital1 from "../assets/images/steel-hospital-1.jpg";
+import steelHospital2 from "../assets/images/steel-hospital-2.jpg";
+import steelHospital3 from "../assets/images/steel-hospital-3.jpg";
+import steelHospital4 from "../assets/images/steel-hospital-4.jpg";
+import steelKitchen1 from "../assets/images/steel-kitchen-1.jpg"
+import steelKitchen2 from "../assets/images/steel-kitchen-2.jpg"
+import steelKitchen3 from "../assets/images/steel-kitchen-3.jpg"
+import steelKitchen4 from "../assets/images/steel-kitchen-4.jpg"
+import steelFabrication1 from "../assets/images/steel-fabrication-1.jpg"
+import steelFabrication2 from "../assets/images/steel-fabrication-2.png"
+import steelFabrication3 from "../assets/images/steel-fabrication-3.jpg"
+import steelFabrication4 from "../assets/images/steel-fabrication-4.jpg"
 
 const localdb = {
   aboutSteel: {
@@ -150,6 +162,18 @@ const localdb = {
 
     furnitures: [
       steelFurniture1, steelFurniture2, steelFurniture3, steelFurniture4, steelFurniture1, steelFurniture2, steelFurniture3, steelFurniture4,
+    ],
+
+    hospital: [
+      steelHospital1, steelHospital2, steelHospital3, steelHospital4, steelHospital1, steelHospital2, steelHospital3, steelHospital4,
+    ],
+
+    kitchen: [
+      steelKitchen1, steelKitchen2, steelKitchen3, steelKitchen4, steelKitchen1, steelKitchen2, steelKitchen3, steelKitchen4,
+    ],
+
+    fabrication: [
+      steelFabrication1, steelFabrication2, steelFabrication3, steelFabrication4, steelFabrication1, steelFabrication2, steelFabrication3, steelFabrication4,
     ],
   },
 

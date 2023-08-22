@@ -15,6 +15,7 @@ import observer from "../../utils/observer";
 
 const ContactUs = () => {
   useEffect(() => {
+    window.scrollTo(0, 0);
     const anime = document.querySelectorAll(".anime");
     observer(Object.values(anime));
   }, []);
@@ -44,7 +45,7 @@ const ContactUs = () => {
                 {/* CONTACT NUMBER CONTENT */}
                 <Link to="tel:9644002222">
                   <div className="contaict-number-content type-content">
-                    <CallIcon className="mui-icon" /> +91 9644002222
+                    <CallIcon className="mui-icon" /> +91 96 44 00 22 22
                   </div>
                 </Link>
               </div>

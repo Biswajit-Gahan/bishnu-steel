@@ -10,7 +10,7 @@ const GenerateQuotation = ({ clickEvent }) => {
     <GenerateQuotationContainer>
       {/* LEFT CONTAINER */}
       <div className="left-container">
-        <svg className="lady-image" width="479" height="307" viewBox="0 0 479 307" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <svg className="lady-image anime" data-move="move-left" width="479" height="307" viewBox="0 0 479 307" fill="none" xmlns="http://www.w3.org/2000/svg">
           <g clipPath="url(#clip0_32_194)">
             <path d="M348.611 23.3308H34.3624C34.0433 23.324 33.7395 23.1922 33.5163 22.9637C33.293 22.7352 33.168 22.4282 33.168 22.1085C33.168 21.7888 33.293 21.4818 33.5163 21.2533C33.7395 21.0248 34.0433 20.893 34.3624 20.8862H348.611C348.93 20.893 349.234 21.0248 349.457 21.2533C349.68 21.4818 349.805 21.7888 349.805 22.1085C349.805 22.4282 349.68 22.7352 349.457 22.9637C349.234 23.1922 348.93 23.324 348.611 23.3308Z" fill="#CACACA" />
             <path d="M55.2482 14.6456C59.1974 14.6456 62.3988 11.367 62.3988 7.32278C62.3988 3.27852 59.1974 0 55.2482 0C51.2991 0 48.0977 3.27852 48.0977 7.32278C48.0977 11.367 51.2991 14.6456 55.2482 14.6456Z" fill="#3F3D56" />
@@ -66,16 +66,16 @@ const GenerateQuotation = ({ clickEvent }) => {
         </svg>
 
         {/* CIRCLE DIV */}
-        <div className="circle-div"></div>
+        <div className="circle-div anime" data-move="zoom-out" data-delay={0.3}></div>
       </div>
 
       {/* RIGHT CONTAINER */}
       <div className="right-container">
         {/* GENERATE QUOTATION BUTTON */}
-        <button type="button" className="generate-quotation-button" onClick={clickEvent}>Generate Quotation</button>
+        <button type="button" className="generate-quotation-button anime" data-move="move-right" data-delay={0.3} onClick={clickEvent}>Generate Quotation</button>
 
         {/* CONTACT US BUTTON */}
-        <button type="button" className="contact-us-button" onClick={() => { navigate("contact-us") }}>Contact Us</button>
+        <button type="button" className="contact-us-button anime" data-move="move-right" data-delay={0.5} onClick={() => { navigate("contact-us") }}>Contact Us</button>
       </div>
     </GenerateQuotationContainer>
   );

@@ -1,8 +1,29 @@
-import React from "react";
+import React, { useState } from "react";
 import { createPortal } from "react-dom";
 import { QuotationModalContainer } from "./quotation.modal.styles";
+import regex from "../../../utils/regex";
 
 const QuotationModal = ({ productType = "round", clickEvent }) => {
+  const [allInputs, setAllInputs] = useState(() => ({
+    username: "", useremail: "", usermobile: "", company: "", productType: "", thickness: "", gradeType: "", quantity: "", exReq: ""
+  }));
+
+  const handleInputs = ({ target}) => {
+    const { id, value } = target;
+    if (target.nodeName !== "SELECT") {
+      if (regex[id].test(value)) {
+        target.style.borderColor = "green";
+        setAllInputs((prevData) => ({ ...prevData, [id]: value }));
+      } else {
+        target.style.borderColor = "red";
+      };
+    }
+  };
+
+  const handleRequest = () => {
+
+  };
+
   return createPortal(
     <QuotationModalContainer>
       {/* QUOTATION FORM CONTAINER */}
@@ -19,13 +40,13 @@ const QuotationModal = ({ productType = "round", clickEvent }) => {
               {/* INPUTS CONTAINER */}
               <div className="inputs-container">
                 <label htmlFor="username" className="input-label">Full Name</label>
-                <input type="text" id="username" className="name-input input" placeholder="your full name..." />
+                <input type="text" id="username" className="name-input input" placeholder="your full name..." onInput={handleInputs} />
               </div>
 
               {/* INPUTS CONTAINER */}
               <div className="inputs-container">
                 <label htmlFor="useremail" className="input-label">Email ID</label>
-                <input type="email" id="useremail" className="email-input input" placeholder="your email id..." />
+                <input type="email" id="useremail" className="email-input input" placeholder="your email id..." onInput={handleInputs} />
               </div>
             </div>
 
@@ -34,13 +55,13 @@ const QuotationModal = ({ productType = "round", clickEvent }) => {
               {/* INPUTS CONTAINER */}
               <div className="inputs-container">
                 <label htmlFor="usermobile" className="input-label">Mobile Number</label>
-                <input type="text" id="usermobile" className="mobile-input input" placeholder="your mobile number..." />
+                <input type="text" id="usermobile" className="mobile-input input" placeholder="your mobile number..." onInput={handleInputs} />
               </div>
 
               {/* INPUTS CONTAINER */}
               <div className="inputs-container">
                 <label htmlFor="company" className="input-label">Company Name</label>
-                <input type="text" id="company" className="company-input input" placeholder="your company name..." />
+                <input type="text" id="company" className="company-input input" placeholder="your company name..." onInput={handleInputs} />
               </div>
             </div>
           </div>
@@ -57,7 +78,7 @@ const QuotationModal = ({ productType = "round", clickEvent }) => {
               {/* INPUTS CONTAINER */}
               <div className="inputs-container">
                 <label htmlFor="productType" className="input-label">Steel Type</label>
-                <select defaultValue={productType} id="productType" className="productType-select input">
+                <select defaultValue={productType} id="productType" className="productType-select input" onChange={handleInputs}>
                   <option value="round" className="option">Round Stainless Tube</option>
                   <option value="square" className="option">Square Stainless Tube</option>
                   <option value="rectangle" className="option">Rectangle Stainless Tube</option>
@@ -67,7 +88,7 @@ const QuotationModal = ({ productType = "round", clickEvent }) => {
               {/* INPUTS CONTAINER */}
               <div className="inputs-container">
                 <label htmlFor="thickness" className="input-label">Thickness <strong className="bold-text">(MM)</strong></label>
-                <input type="text" id="thickness" className="thickness-input input" placeholder="eg: 0.3mm - 3.0mm" />
+                <input type="text" id="thickness" className="thickness-input input" placeholder="eg: 0.3mm - 3.0mm" onInput={handleInputs} />
               </div>
             </div>
 
@@ -77,7 +98,7 @@ const QuotationModal = ({ productType = "round", clickEvent }) => {
               {/* INPUTS CONTAINER */}
               <div className="inputs-container">
                 <label htmlFor="gradeType" className="input-label">Grade</label>
-                <select defaultValue="201" id="gradeType" className="gradeType-select input">
+                <select defaultValue="201" id="gradeType" className="gradeType-select input" onChange={handleInputs}>
                   <option value="201" className="option">201</option>
                   <option value="202" className="option">202</option>
                   <option value="304" className="option">304</option>
@@ -90,7 +111,7 @@ const QuotationModal = ({ productType = "round", clickEvent }) => {
               {/* INPUTS CONTAINER */}
               <div className="inputs-container">
                 <label htmlFor="quantity" className="input-label">Quantity <strong className="bold-text">(TON)</strong></label>
-                <input type="text" id="quantity" className="quantity-input input" placeholder="quantity in tons..." />
+                <input type="text" id="quantity" className="quantity-input input" placeholder="quantity in tons..." onInput={handleInputs} />
               </div>
             </div>
 
@@ -98,8 +119,8 @@ const QuotationModal = ({ productType = "round", clickEvent }) => {
             <div className="input-container-stack">
               {/* INPUTS CONTAINER */}
               <div className="inputs-container">
-                <label htmlFor="quantity" className="input-label">Other Requirements</label>
-                <textarea type="text" id="quantity" className="text-area-input input" placeholder="please specify your addition requirements, if any..." />
+                <label htmlFor="exReq" className="input-label">Other Requirements</label>
+                <textarea type="text" id="exReq" className="text-area-input input" placeholder="please specify your addition requirements, if any..." onInput={handleInputs} />
               </div>
             </div>
           </div>

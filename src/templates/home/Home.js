@@ -35,6 +35,7 @@ const Home = () => {
   };
 
   useEffect(() => {
+    window.scrollTo(0, 0);
     const anime = document.querySelectorAll(".anime");
     observer(Object.values(anime));
   }, []);

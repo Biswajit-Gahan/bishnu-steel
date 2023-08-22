@@ -11,6 +11,7 @@ import observer from "../../utils/observer";
 
 const AboutUs = () => {
   useEffect(() => {
+    window.scrollTo(0, 0);
     const anime = document.querySelectorAll(".anime");
     observer(Object.values(anime));
   }, []);
@@ -27,7 +28,7 @@ const AboutUs = () => {
         <div className="our-vision-container">
           <h4 className="our-vision-header-text">Our Vision</h4>
           <p className="our-vision-content">
-            Our vision is to establish ourselves as a leading manufacturer of stainless steel tubes, renowned for our unmatched robustness, durability, and uncompromising quality across the India.
+            Our vision is to establish ourselves as a leading manufacturer of stainless steel tubes, renowned for our unmatched robustness, durability, and uncompromising quality across India.
           </p>
         </div>
       </section>
@@ -38,7 +39,7 @@ const AboutUs = () => {
           <h4 className="our-mission-header-text">Our Mission</h4>
           <p className="our-mission-content">
             We aim to expand our domestic footprint across India, catering to a diverse range of markets and customers with cutting edge innovation design and finishes within next 5 years.<br /><br />
-            Our mission is to solidify our position as a trusted partner and preferred supplier in the stainless steel tube industrywith  an aim to reach-out 50 Lakh Household  in next 5 Years.
+            Our mission is to solidify our position as a trusted partner and preferred supplier in the stainless steel tube industry with  an aim to reachout 50 Lakh Household  in next 5 Years.
           </p>
         </div>
       </section>
