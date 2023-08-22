@@ -160,7 +160,7 @@ const Navbar = () => {
               <div className="hamburger-bottom-container">
                 {/* JSL LOGO CONTAINER */}
                 <div className="ham-jsl-logo-container">
-                  <span className="jsl-tag">In Association With</span>
+                  <span className="ham-jsl-tag">In Association With</span>
                   <img src={jslLogo} alt="jsl logo" className="jsl-logo" />
                 </div>
 

@@ -11,8 +11,22 @@ const navbarResponsive = {
       display: block;
     }
 
+    .jsl-logo {
+      width: 90px;
+    }
+
     .right-container {
+      justify-content: flex-end;
+      flex: 1;
+      margin-right: 20px;
+    }
+
+    .jsl-tag {
       display: none;
+    }
+
+    .brand-header-logo {
+      height: 30px;
     }
   `,
   tablet: css`

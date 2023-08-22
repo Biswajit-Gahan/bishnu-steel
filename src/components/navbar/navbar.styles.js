@@ -294,7 +294,7 @@ export const NavbarContainer = styled.nav`
     flex-direction: column;
   }
 
-  .jsl-tag {
+  .jsl-tag, .ham-jsl-tag {
     font-weight: 200;
     color: ${constants.colors.bsWhite};
     font-size: 10px;
