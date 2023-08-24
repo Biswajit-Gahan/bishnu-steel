@@ -1,6 +1,7 @@
 import styled from "styled-components";
 import constants from "../../utils/constants";
 import galleryResponsive from "./gallery.responsive";
+import bsLogo from "../../assets/images/bs-footer-icon-2.png";
 
 export const GalleryContainer = styled.div`
   display: flex;
@@ -54,6 +55,58 @@ export const GalleryContainer = styled.div`
     /* overflow: hidden; */
   }
 
+  .image-wrapper {
+    position: relative;
+
+    &:hover .gallery-image{
+      padding: 5px;
+      transform: scale(1.1);
+      cursor: pointer;
+    }
+    
+    &:hover .water-mark {
+      transform: translate(50%, 50%) scale(1.1);
+    }
+
+    /* &::after {
+      content: "Bishnu Steel";
+      position: absolute;
+      z-index: 5;
+      top: 0;
+      left: 0;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      width: 100%;
+      height: 100%;
+      color: ${constants.colors.bsWhiteTransparentTwo};
+      cursor: pointer;
+      font-size: 25px;
+      font-weight: 700;
+      transform: rotateZ(15deg);
+    } */
+
+    /* &:hover .gallery-image {
+      padding: 5px;
+      transform: scale(1.1);
+    } */
+  }
+
+  .water-mark {
+    position: absolute;
+    z-index: 50;
+    bottom: 50%;
+    right: 50%;
+    width: 150px;
+    transform: translate(50%, 50%);
+    filter: drop-shadow(0 5px 10px ${constants.colors.bsDarkTransparent});
+    transition: transform 0.2s ease-in-out;
+
+    &:hover {
+      cursor: pointer;
+    }
+  }
+
   .gallery-image {
     width: 220px;
     height: 220px;
@@ -64,13 +117,9 @@ export const GalleryContainer = styled.div`
     ${constants.boxShadow};
     border-radius: 5px;
     transition: transform 0.2s ease-in-out, padding 0.2s ease-in-out;
-    
-    &:hover {
-      padding: 5px;
-      transform: scale(1.1);
-      cursor: pointer;
-    }
   }
+
+  
 
   .left-button, .right-button {
     position: absolute;

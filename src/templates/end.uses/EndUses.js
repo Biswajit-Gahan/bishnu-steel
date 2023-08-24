@@ -56,9 +56,9 @@ const EndUses = () => {
       </section>
 
       {/* GALLERY OF KITCHEN SECTION */}
-      <section className="gallery-of-kitchen-section gallery-sections anime" data-move="move-up" data-delay={0.2}>
+      {/* <section className="gallery-of-kitchen-section gallery-sections anime" data-move="move-up" data-delay={0.2}>
         <Gallery title="Kitchen" images={localdb.endUses.kitchen} />
-      </section>
+      </section> */}
 
       {/* NEED HELP SECTION */}
       <section className="need-help-section">

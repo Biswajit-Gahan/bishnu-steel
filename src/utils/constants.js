@@ -45,6 +45,7 @@ const constants = {
     bsDarkTransparent: "rgba(37,37,37,0.84)",
     bsOffWhite: "#f7f7f7",
     bsWhiteTransparent: "rgba(255,255,255,0.9)",
+    bsWhiteTransparentTwo: "rgba(255,255,255,0.5)",
     bsError: "#ff3b05",
   },
 };

@@ -9,6 +9,11 @@ const ProductGrade = ({ type, content, dropDownContent}) => {
     <div className="product-grade-container">
       <p className="content"><strong>{type} series of stainless steel products: </strong>{content}</p>
       <p className="content-link">Click the link here to know more about the <u className="underline">{type} series of stainless steel products.</u></p>
+      
+      {/* DROPDOWN CONTAINER */}
+      <div className="drop-down-container">
+        
+      </div>
     </div>
   );
 };

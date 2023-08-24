@@ -55,7 +55,7 @@ const localdb = {
     square: {
       name: "Square Stainless Steel",
       desc: "Square pipes on the other hand, feature a square cross-section and are commonly utilized in the construction of frames, handrails, and decorative accents. The precise outer diameter, thickness, and length of square stainless steel welded tubes ensure the stability and durability necessary for furniture applications. They offer a clean and contemporary aesthetic that complements modern home decor styles.",
-      size: ["12 x 12", "20 x 20", "25 x 25", "40 x 40", "60 x 60"],
+      size: ["12 x 12", "15 x 15", "20 x 20", "25 x 25", "30 x 30","40 x 40", "50 x 50","60 x 60"],
       outerDiameter: "9.52 MM - 127 MM",
       thickness: "0.3 MM - 3 MM",
       length: "20 FT",
