@@ -46,7 +46,7 @@ export const Container = styled.div`
     }
   }
 
-  .product-image-container::after {
+  /* .product-image-container::after {
     content: "";
     position: absolute;
     top: 0;
@@ -54,7 +54,7 @@ export const Container = styled.div`
     width: 100%;
     height: 100%;
     background-color: rgba(18, 18, 18,0.3);
-  }
+  } */
 
   .card-product-img {
     width: inherit;

@@ -1,7 +1,7 @@
 import bsBrochure from "../assets/documents/bs_brochure.pdf";
-import roundSteelImage from "../assets/images/round-steels.jpg";
-import squareSteelImage from "../assets/images/square.jpg";
-import rectangleSteelImage from "../assets/images/rectangle-steel.jpg";
+import roundSteelImage from "../assets/images/round-steel-n1.jpeg";
+import squareSteelImage from "../assets/images/square-steel-n1.jpeg";
+import rectangleSteelImage from "../assets/images/rectangular-steel-n1.jpeg";
 import steelWindow1 from "../assets/images/steel-window-1.jpg";
 import steelWindow2 from "../assets/images/steel-window-2.jpg";
 import steelWindow3 from "../assets/images/steel-window-3.jpg";
@@ -181,11 +181,108 @@ const localdb = {
     {
       type: 200,
       content: "200 series is an austenitic alloy. It has the chemical composition of chromium, manganese, and nitrogen with low nickel. It has higher tensile and yield strength. The main applications of the 200 series are in washing machines, cutlery, the automotive industry, and the food and beverage industry.",
+      dropDownContent: `
+        <h2 class="header-text">J201  AUSTENITIC STAINLESS STEEL :</h2>
+        <h4 class="sub-header-text">General Characteristics:</h4>
+        <p class="paragraph-text">J201 type steels are lean nickel alloy austenitic stainless steel designed as a cost-effective solution for 301 grades in various applications.</p>
+        <br/>
+        <h4 class="sub-header-text">J201 Applications:</h4>
+        <p class="paragraph-text">Structural members, siding and roofing for railway cars and trailer sand a variety of severely formed parts.</p>
+        <br/>
+        <h4 class="sub-header-text">Corrosion Resistance:</h4>
+        <p class="paragraph-text">J201 grades have comparable corrosion resistance to 301 grades.</p>
+        <br/>
+        <h2 class="header-text">J202 AUSTENITIC STAINLESS STEEL :</h2>
+        <h4 class="sub-header-text">General Characteristics:</h4>
+        <p class="paragraph-text">J202 is manganese alloyed austenitic stainless steel which is designed as a cost-effective solution to 302 grade with similar corrosion and mechanical properties.</p>
+        <br/>
+        <h4 class="sub-header-text">Applications:</h4>
+        <p class="paragraph-text">Antennas, Refrigerator trays, Wire mesh, Cookware & Sinks, Hose Clamps, Frames, Industrial Strapping, Railway Rolling Stock, Furniture, Bins</p>
+        <br/>
+        <h4 class="sub-header-text">Corrosion Resistance:</h4>
+        <p class="paragraph-text">J202 grade is comparable to 304 grades in moderately corrosive media.</p>
+      `,
     },
 
     {
       type: 300,
       content: "300 series alloys are the most commercially used worldwide. 304-grade stainless steel and 316 stainless steel are popular alloys of the 300 series. It is a corrosion-resistant austenitic alloy with high chromium-nickel content. In acidic environments, molybdenum increases corrosion resistance. It functions effectively at below-freezing temperatures and has a lot of strength, heat resistance, and corrosion resistance.",
+      dropDownContent: `
+        <h2 class="header-text">J304/J304L AUSTENITIC STAINLESS STEEL :</h2>
+        <h4 class="sub-header-text">General Characteristics:</h4>
+        <p class="paragraph-text">304 is most popular and versatile austenitic stain less steel grade with excellent corrosion resistance, formability, deep drawability and weldability.<br/>304L is lower carbon version of 304 for excellent intergranular corrosion resistance. So, 304L can be extensively used in welded condition and does not require any post weldheat treatment.</p>
+        <br/>
+        <h4 class="sub-header-text">Applications:</h4>
+        <p class="paragraph-text">304 - 304- Transport, chemical, petrochemical and fertilizers industries, dairy, food processing, pharmaceutical industries, hospital equipment, cryogenic vessels, households as utensils & appliances , heat exchangers, machinery in paper, pulp, textile and beverage industries; architectural applications like panels, curtain walls, roofing etc.<br/>304L - Tanks and containers for a large variety of liquids and solids, Process equipment in the mining, chemical, cryogenic, food, dairy and pharmaceutical industries</p>
+        <br/>
+        <h4 class="sub-header-text">Corrosion Resistance:</h4>
+        <p class="paragraph-text">These grades exhibit excellent resistance to wide range of atmosphere and corrosive media like petroleum, food, pharmaceutical, textile etc.</p>
+        <br/>
+        <h2 class="header-text">304* Austenitic Stainless Steel :</h2>
+        <h4 class="sub-header-text">General Characteristics:</h4>
+        <p class="paragraph-text">304 is most popular and versatile austenitic stainless steel grade with excellent corrosion resistance, formability, deep drawability and weldability.<br/>304* is having same chromium level as 304 with higher nitrogen and lower nickel content and ensure comparable performance with respect to 304 in respect of corrosion resistance with added advantage of superior yield strength at a lower cost.</p>
+        <br/>
+        <h4 class="sub-header-text">Corrosion Resistance:</h4>
+        <p class="paragraph-text">Pitting is the most common form of corrosion in stainless steels. The resistance to pitting of a grade is generally assessed by Pitting Resistance Equivalent Number (PREN).</p>
+        <br/>
+        <h4 class="sub-header-text">SaltSpraytests:</h4>
+        <p class="paragraph-text">304* exhibited no rusts after subjecting it to 500 hours of tests in Salt Spray chamber in 5% NaCl spray at 35degC as per ASTM B 117. This behavior is at par with ASTM 304.</p>
+        <br/>
+        <h4 class="sub-header-text">Applications:</h4>
+        <p class="paragraph-text">304* exhibits lustrous surface, very good weldability, very good formability and higher toughness. Equally good corrosion resistance and cost effectiveness make it a highly suitable material as replacement for 304 grade for a wide variety of applications:</p>
+        <br/>
+        <p class="paragraph-text"><strong>Appliances:</strong></p>
+        <p class="paragraph-text">Clock cases, Home mixers, ice cube maker parts, Name plates, stove supports, stove trims, Vacuum cleaner parts, Floor polisher covers, Washing machine parts. Water coolers, refrigerators, microwave ovens</p>
+        <br/>
+        <p class="paragraph-text"><strong>Architectural:</strong></p>
+        <p class="paragraph-text">Airport exterior and interior trims, Angles, Mailbox, bathroom cabinet, Cafeteria equipment, Washroom fixtures, Window parts, Kitchen exhaust hoods, Revolving doors, Ventilation panels</p>
+        <br/>
+        <p class="paragraph-text"><strong>Automotive:</strong></p>
+        <p class="paragraph-text">Bumper bolt caps, Door accessories, Seat anchor belts</p>
+        <br/>
+        <p class="paragraph-text"><strong>Beverages:</strong></p>
+        <p class="paragraph-text">Beer barrels, Brewery conveyor belts, Drinking tumblers, Soft drink liners/ parts/coolers, Wine serving buckets/ tanks, fermentation Vats.</p>
+        <br/>
+        <p class="paragraph-text"><strong>Citrus and Fruit Juices Manufacturing:</strong></p>
+        <p class="paragraph-text">Handling, Crushing, Storage, Pipelines, Transportation for fruit-juice manufacturing plant.</p>
+        <br/>
+        <p class="paragraph-text"><strong>Communications:</strong></p>
+        <p class="paragraph-text">Suspension brackets, Telephone coin chutes</p>
+        <br/>
+        <p class="paragraph-text"><strong>Construction:</strong></p>
+        <p class="paragraph-text">Canopies- door and window, Masonry trowel, Sump pump starters</p>
+        <br/>
+        <p class="paragraph-text"><strong>Cookware and utensils:</strong></p>
+        <p class="paragraph-text">Bread box, Cake covers, Coffee makers, Cookie cutters, Kitchen accessories</p>
+        <br/>
+        <p class="paragraph-text"><strong>Dairy:</strong></p>
+        <p class="paragraph-text">Bulk milk containers, Cheese manufacturing, Cream separator parts, Milk transport tanks</p>
+        <br/>
+        <p class="paragraph-text"><strong>Electrical and electronic:</strong></p>
+        <p class="paragraph-text">Bases for electronic, Capacitor cans, Circuit breaker parts, Electrical panel trims</p>
+        <br/>
+        <p class="paragraph-text"><strong>Food Processing and serving:</strong></p>
+        <p class="paragraph-text">Bakery Dough carts, Cafeteria trays, Chocolate moulds, Commercial dishwater (interior and exterior), Ice buckets, trays, Counter tops, Restaurant cabinets, carts, Vending machine parts</p>
+        <br/>
+        <p class="paragraph-text"><strong>Household, Tableware and Cutlery:</strong></p>
+        <p class="paragraph-text">House mail box, Medicine cabinet frames, Shower stalls, Dog and cat feeding bowls, Water bottles Cake Servers, Forks and spoons, Meat Steak Platters, Salad forks, servers, teaspoons</p>
+        <br/>
+        <p class="paragraph-text"><strong>Jewellery:</strong></p>
+        <p class="paragraph-text">Watch case backs, Watch expansion bracelets</p>
+        <br/>
+        <p class="paragraph-text"><strong>Plumbing:</strong></p>
+        <p class="paragraph-text">Bath tub drains, Toilet floats, Sinks</p>
+        <br/>
+        <h2 class="header-text">J316/J316L AUSTENITIC STAINLESS STEEL :</h2>
+        <h4 class="sub-header-text">General Characteristics:</h4>
+        <p class="paragraph-text">J316 is standard Mo added austenitic stainless steel. Addition of Mo increases general corrosion resistance, resistance to pitting and crevice corrosion in chloride environments and high temperature strength. J316L is low carbon version of 316 for excellent intergranular corrosion resistance during welding.</p>
+        <br/>
+        <h4 class="sub-header-text">Applications:</h4>
+        <p class="paragraph-text">316- architectural trims, marine exteriors, chemical processing equipment, food processing equipment, petroleum refining equipment, pharmaceuticals equipment, photographic equipment, pulp & paper processing equipment and textile finishing equipment.<br/>316L- food processing, chemical and petrochemical equipment, brewery equipment, coastal architectural paneling ,laboratory equipment, heat exchangers, mining screens, chemical transportation containers.</p>
+        <br/>
+        <h4 class="sub-header-text">Corrosion Resistance:</h4>
+        <p class="paragraph-text">These grade exhibits excellent resistance to wide range of atmosphere and corrosive media like petroleum, food, pharmaceutical, textile etc.</p>
+      `,
     },
   ],
 

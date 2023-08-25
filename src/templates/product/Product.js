@@ -13,6 +13,7 @@ import localdb from "../../utils/localdb";
 import { useNavigate, useParams } from "react-router-dom";
 import QuotationModal from "../../components/modals/quotation.modal/QuotationModal";
 import observer from "../../utils/observer";
+import uid from "../../utils/uid";
 
 const Product = () => {
   // USESTATE FOR SHOW QUOTATION MODAL
@@ -116,7 +117,7 @@ const Product = () => {
               <tbody className="table-body">
                 {
                   localdb.aboutSteel[steelProductType]?.size.map((item, index) => (
-                    <tr key={index} className="table-row">
+                    <tr key={uid()} className="table-row">
                       <td className="table-header-data">{index + 1}</td>
                       <td className="table-header-data">{item}</td>
                     </tr>

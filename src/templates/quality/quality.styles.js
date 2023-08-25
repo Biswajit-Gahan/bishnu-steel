@@ -24,7 +24,9 @@ export const QualityContainer = styled.div`
     gap: 30px;
     flex-direction: column;
   }
+`;
 
+export const ProductGradesContainer = styled.div`
   .product-grade-container {
     display: flex;
     flex-direction: column;
@@ -41,5 +43,41 @@ export const QualityContainer = styled.div`
     color: ${constants.colors.bsPinkDark};
     cursor: pointer;
     font-weight: 600;
+  }
+
+  .drop-down-container {
+    padding: 30px;
+    ${constants.boxShadow};
+    border-radius: 10px;
+  }
+  .header-text {
+    color: ${constants.colors.bsPinkDark};
+    ${constants.fontSize.header.laptop};
+    margin-bottom: 10px;
+  }
+
+  .sub-header-text {
+    color: ${constants.colors.bsPinkDefault};
+    ${constants.fontSize.header.mobile};
+    margin-bottom: 5px;
+  }
+
+  .paragraph-text strong {
+    color: ${constants.colors.bsBlue};
+    ${constants.fontSize.header.mobile};
+  }
+
+  .paragraph-text {
+    margin-bottom: 5px;
+  }
+
+  .close-button {
+    margin-top: 10px;
+    padding: 8px 25px;
+    cursor: pointer;
+    border: none;
+    background-color: ${constants.colors.bsPinkDark};
+    border-radius: 3px;
+    color: ${constants.colors.bsWhite};
   }
 `;

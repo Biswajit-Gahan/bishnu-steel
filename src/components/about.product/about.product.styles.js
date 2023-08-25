@@ -29,7 +29,7 @@ export const Container = styled.div`
     position: relative;
     ${constants.boxShadow};
 
-    &::after {
+    /* &::after {
       content: "";
       position: absolute;
       top: 0;
@@ -37,7 +37,7 @@ export const Container = styled.div`
       width: 100%;
       height: 100%;
       background-color: rgba(18, 18, 18,0.3);
-    }
+    } */
   }
 
   .product-image {

@@ -4,6 +4,7 @@ import KeyboardArrowRightRoundedIcon from '@mui/icons-material/KeyboardArrowRigh
 import KeyboardArrowLeftRoundedIcon from '@mui/icons-material/KeyboardArrowLeftRounded';
 import constants from "../../utils/constants";
 import bsLogo from "../../assets/images/bs-footer-icon-2.png";
+import uid from "../../utils/uid";
 
 const Gallery = ({ title, images }) => {
   const galleryWrapperRef = useRef();
@@ -46,8 +47,8 @@ const Gallery = ({ title, images }) => {
         <div className="gallery-wrapper" ref={galleryWrapperRef}>
           {
             images.map((item, index) => (
-              <div className="image-wrapper">
-                <img key={index} src={item} alt={title} className="gallery-image" />
+              <div className="image-wrapper" key={uid()}>
+                <img src={item} alt={title} className="gallery-image" />
                 <img src={bsLogo} alt="brand logo" className="water-mark" />
               </div>
             ))

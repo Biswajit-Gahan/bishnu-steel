@@ -3,6 +3,7 @@ import { TestimonialsContainer } from "./testimonials.styles";
 import ArrowBackIcon from '@mui/icons-material/ArrowBack';
 import ArrowForwardIcon from '@mui/icons-material/ArrowForward';
 import localdb from "../../utils/localdb";
+import uid from "../../utils/uid";
 
 const Testimonials = () => {
   const wrapperElement = useRef();
@@ -59,7 +60,7 @@ const Testimonials = () => {
           <div ref={wrapperElement} className="feedback-wrapper-container">
             {
               localdb.testimonials.map((item, index) => (
-                <div className="feedback-wrapper" key={index}>
+                <div className="feedback-wrapper" key={uid()}>
                   {/* USER INFO CONTAINER */}
                   <div className="user-info-container">
                     {/* USER AVATAR */}
