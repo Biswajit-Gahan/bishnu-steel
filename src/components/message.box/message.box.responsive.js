@@ -34,6 +34,11 @@ const messageBoxResponsive = {
       width: 250px;
       height: 40px;
     }
+
+    .input-message {
+      height: 150px;
+    }
+
   `,
   laptop: css`
     .message-box-wrapper {
@@ -58,6 +63,10 @@ const messageBoxResponsive = {
     .input {
       width: 250px;
       height: 40px;
+    }
+    
+    .input-message {
+      height: 150px;
     }
   `,
 };

@@ -10,6 +10,8 @@
 helper.txt
 notes.md
 
+.env
+
 # production
 /build
 

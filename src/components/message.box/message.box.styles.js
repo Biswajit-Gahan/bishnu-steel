@@ -84,7 +84,7 @@ export const MessageBoxContainer = styled.div`
     align-items: center;
     justify-content: center;
     gap: 8px;
-    cursor: pointer;
+    /* cursor: not-allowed; */
     transition: box-shadow 0.2s ease-in-out;
 
     &:hover {

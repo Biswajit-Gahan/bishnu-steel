@@ -116,6 +116,10 @@ export const QuotationModalContainer = styled.div`
     cursor: pointer;
     background-color: ${constants.colors.bsPinkDark};
     color: ${constants.colors.bsWhite};
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 5px;
   }
 
   @media (max-width: ${constants.device.laptop_small}) {
