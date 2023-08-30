@@ -7,9 +7,11 @@ const observer = (target, threshold = 0.1) => {
 
       if (element.isIntersecting) {
         element.target.style.animation = `${element.target.dataset?.move ?? "move-down"} ${element.target.dataset?.duration ?? 1}s ${element.target.dataset?.delay ?? 0}s ease-in-out forwards`;
+        elementObserver.unobserve(element.target);
       } else {
         element.target.style.animation = `none`;
       };
+
       
     });
   }, { threshold });
