@@ -30,14 +30,19 @@ import steelHospital1 from "../assets/images/steel-hospital-1.jpg";
 import steelHospital2 from "../assets/images/steel-hospital-2.jpg";
 import steelHospital3 from "../assets/images/steel-hospital-3.jpg";
 import steelHospital4 from "../assets/images/steel-hospital-4.jpg";
-import steelKitchen1 from "../assets/images/steel-kitchen-1.jpg"
-import steelKitchen2 from "../assets/images/steel-kitchen-2.jpg"
-import steelKitchen3 from "../assets/images/steel-kitchen-3.jpg"
-import steelKitchen4 from "../assets/images/steel-kitchen-4.jpg"
-import steelFabrication1 from "../assets/images/steel-fabrication-1.jpg"
-import steelFabrication2 from "../assets/images/steel-fabrication-2.png"
-import steelFabrication3 from "../assets/images/steel-fabrication-3.jpg"
-import steelFabrication4 from "../assets/images/steel-fabrication-4.jpg"
+import steelKitchen1 from "../assets/images/steel-kitchen-1.jpg";
+import steelKitchen2 from "../assets/images/steel-kitchen-2.jpg";
+import steelKitchen3 from "../assets/images/steel-kitchen-3.jpg";
+import steelKitchen4 from "../assets/images/steel-kitchen-4.jpg";
+import steelFabrication1 from "../assets/images/steel-fabrication-1.jpg";
+import steelFabrication2 from "../assets/images/steel-fabrication-2.png";
+import steelFabrication3 from "../assets/images/steel-fabrication-3.jpg";
+import steelFabrication4 from "../assets/images/steel-fabrication-4.jpg";
+import cert1 from "../assets/images/cert-1.jpg";
+import cert2 from "../assets/images/cert-2.jpg";
+import cert3 from "../assets/images/cert-3.jpg";
+import cert4 from "../assets/images/cert-4.jpg";
+import cert5 from "../assets/images/cert-5.jpg";
 
 const localdb = {
   aboutSteel: {
@@ -290,6 +295,10 @@ const localdb = {
     lat: 20.164677427955464,
     long: 85.63153433089008,
   },
+
+  certificates: [
+    cert1, cert2, cert3, cert4, cert5,
+  ],
 };
 
 export default localdb;

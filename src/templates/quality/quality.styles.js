@@ -1,5 +1,6 @@
 import styled from "styled-components";
 import constants from "../../utils/constants";
+import tubeMill from "../../assets/images/tube-mill.jpg";
 
 export const QualityContainer = styled.div`
   /* about-section */
@@ -19,10 +20,184 @@ export const QualityContainer = styled.div`
     width: 1000px;
     min-width: 1000px;
     display: flex;
-    align-items: center;
+    /* align-items: center; */
     justify-content: center;
     gap: 30px;
     flex-direction: column;
+  }
+
+  /* steel-quality-section */
+  .steel-quality-section {
+    margin-bottom: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .steel-quality-container {
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    gap: 100px;
+    width: 1000px;
+  }
+
+  .bishnu-quality-wrapper {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  .bishnu-quality-certificate-wrapper {
+    width: 450px;
+    position: relative;
+    overflow: hidden;
+    background-color: red;
+    border: 3px solid ${constants.colors.bsOffWhite};
+    border-radius: 5px;
+  }
+
+  .all-certificates-container {
+    width: 100%;
+    display: flex;
+  }
+
+  .certificate-image {
+    width: 100%;
+    /* height: auto; */
+  }
+
+  .scroll-button {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: none;
+    background-color: ${constants.colors.bsWhiteTransparentTwo};
+    color: ${constants.colors.bsDark};
+    font-weight: 900;
+    ${constants.boxShadow};
+    cursor: pointer;
+  }
+
+  .scroll-button-left {
+    left: 30px;
+  }
+
+  .scroll-button-right {
+    right: 30px;
+  }
+
+  /* jsl-section */
+  .jsl-section {
+    margin-bottom: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .jsl-wrapper {
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    gap: 100px;
+    width: 1000px;
+  }
+
+  .jsl-certificate-container {
+    width: 450px;
+    border: 3px solid ${constants.colors.bsOffWhite};
+    border-radius: 5px;
+    padding: 5px;
+  }
+
+  .jsl-certificate-image {
+    width: 100%;
+  }
+
+  .jsl-content-container {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  /* manufacturing-section */
+  .manufacturing-section {
+    margin-bottom: 50px;
+  }
+
+  .manufacturing-wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 50px;
+  }
+
+  .header-container {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 30px;
+  }
+
+  .yxh-image {
+    width: 80%;
+    height: auto;
+    object-fit: cover;
+  }
+
+  .data-container {
+    /* width: 1000px; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: url(${tubeMill});
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+  }
+
+  .data-wrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 20px;
+    backdrop-filter: blur(3px);
+    /* width: 1000px; */
+    padding: 100px;
+    background-color: ${constants.colors.bsDarkTransparent};
+  }
+
+  .header-text {
+    font-weight: 900;
+    color: ${constants.colors.bsPinkDark};
+    ${constants.fontSize.header.default};
+  }
+
+  .header-tag {
+    font-weight: 500;
+    ${constants.fontSize.paragraph.default};
+    letter-spacing: 0.5px;
+    color: ${constants.colors.bsTextDefault};
+  }
+
+  .data-wrapper .header-tag {
+    color: ${constants.colors.bsWhite};
+  }
+
+  /* message-box-section */
+  .message-box-section {
+    margin-bottom: 50px;
   }
 `;
 
