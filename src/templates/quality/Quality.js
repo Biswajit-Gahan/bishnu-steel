@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from "react";
+import React, { useEffect, useRef, useState } from "react";
 import { ProductGradesContainer, QualityContainer } from "./quality.styles";
 import PageTitle from "../../components/page.title/PageTitle";
 import localdb from "../../utils/localdb";
@@ -10,6 +10,46 @@ import MessageBox from "../../components/message.box/MessageBox";
 
 const Quality = () => {
   const [showGrade, setShowGrade] = useState(() => ({ g200: false, g300: false }));
+
+  const certContainer = useRef();
+
+  const certificatesLength = localdb.certificates.length - 1;
+
+  const count = useRef(1);
+
+  useEffect(() => { 
+    const resizeCertificates = () => {
+      const { width } = certContainer.current.getBoundingClientRect();
+      certContainer.current.style.transform = `translateX(-${width * count.current}px)`;
+    };
+
+    window.addEventListener("resize", resizeCertificates);
+
+    return () => {
+      window.removeEventListener("resize", resizeCertificates);
+    };
+  }, []);
+
+  const handleNextButton = () => {
+    const { width } = certContainer.current.getBoundingClientRect();
+    if (count.current < certificatesLength) {
+      count.current++;
+      certContainer.current.style.transform = `translateX(-${width * count.current}px)`;
+    } else {
+      return;
+    };
+  };
+
+  const handlePrevButton = () => {
+    const { width } = certContainer.current.getBoundingClientRect();
+    if (count.current > 0) {
+      count.current--;
+      certContainer.current.style.transform = `translateX(-${width * count.current}px)`;
+    } else {
+      return;
+    }
+  }
+  
 
   const handleShowGradeButton = (grade) => {
     grade === 200
@@ -48,7 +88,7 @@ const Quality = () => {
           {/* BISHNU QUALITY CERTFICATE WRAPPER */}
           <div className="bishnu-quality-certificate-wrapper anime" data-move="move-right" data-delay={0.1}>
             {/* ALL CERTIFICATES CONTAINER */}
-            <div className="all-certificates-container">
+            <div ref={certContainer} className="all-certificates-container">
               {
                 localdb.certificates.map((item, index) => {
                   return <img key={index} src={item} alt="bishnu steel certificate" className="certificate-image" />
@@ -57,8 +97,8 @@ const Quality = () => {
             </div>
 
             {/* SCROLL BUTTONS */}
-            <button type="button" className="scroll-button scroll-button-left">&lt;</button>
-            <button type="button" className="scroll-button scroll-button-right">&gt;</button>
+            <button type="button" className="scroll-button scroll-button-left" onClick={handlePrevButton}>&lt;</button>
+            <button type="button" className="scroll-button scroll-button-right" onClick={handleNextButton}>&gt;</button>
           </div>
         </div>
       </section>

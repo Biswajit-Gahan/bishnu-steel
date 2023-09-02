@@ -20,6 +20,7 @@ export const FooterContainer = styled.div`
 
   .brand-logo {
     width: 250px;
+    cursor: pointer;
   }
 
   .footer-content-container {

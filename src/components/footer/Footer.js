@@ -5,17 +5,19 @@ import FacebookIcon from '@mui/icons-material/Facebook';
 import TwitterIcon from '@mui/icons-material/Twitter';
 import LinkedInIcon from '@mui/icons-material/LinkedIn';
 import YouTubeIcon from '@mui/icons-material/YouTube';
-import { Link } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 import CallIcon from '@mui/icons-material/Call';
 import EmailIcon from '@mui/icons-material/Email';
 import localdb from "../../utils/localdb";
 
 const Footer = () => {
+  const navigate = useNavigate();
+
   return (
     <FooterContainer>
       <div className="footer-wrapper">
         {/* BRAND LOGO */}
-        <img src={brandLogo} alt="brand-log" className="brand-logo anime" data-move="move-up" />
+        <img src={brandLogo} alt="brand-log" className="brand-logo anime" data-move="move-up" onClick={() => {navigate("/")}} />
 
         {/* FOOTER CONTENT CONTAINER */}
         <div className="footer-content-container">

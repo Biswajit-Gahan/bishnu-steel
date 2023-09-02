@@ -54,7 +54,6 @@ export const QualityContainer = styled.div`
     width: 450px;
     position: relative;
     overflow: hidden;
-    background-color: red;
     border: 3px solid ${constants.colors.bsOffWhite};
     border-radius: 5px;
   }
@@ -62,6 +61,7 @@ export const QualityContainer = styled.div`
   .all-certificates-container {
     width: 100%;
     display: flex;
+    transition: transform 0.3s ease-in-out;
   }
 
   .certificate-image {

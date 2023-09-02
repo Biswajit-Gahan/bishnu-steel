@@ -7,6 +7,7 @@ import { BrowserRouter, Route, Routes } from "react-router-dom";
 // import AboutUs from "../templates/about.us/AboutUs";
 import "../app/app.styles.css";
 import LoadingScreen from "../components/loading.screen/LoadingScreen";
+import TopNavigator from "../components/top.navigator/TopNavigator";
 // import ContactUs from "../templates/contact.us/ContactUs";
 // import EndUses from "../templates/end.uses/EndUses";
 // import Quality from "../templates/quality/Quality";
@@ -22,6 +23,7 @@ const App = () => {
 
   return (
     <BrowserRouter>
+      <TopNavigator />
       <Navbar />
       <Routes>
         <Route path="/">
