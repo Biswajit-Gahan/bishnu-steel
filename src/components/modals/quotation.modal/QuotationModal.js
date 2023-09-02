@@ -12,9 +12,9 @@ import RestartAltIcon from '@mui/icons-material/RestartAlt';
 import SendRoundedIcon from '@mui/icons-material/SendRounded';
 import CloseIcon from '@mui/icons-material/Close';
 
-const QuotationModal = ({ productType = "round", clickEvent }) => {
+const QuotationModal = ({ productType = "round", clickEvent, quantity = "" }) => {
   const [allInputs, setAllInputs] = useState(() => ({
-    username: "", useremail: "", usermobile: "", company: "", productType, thickness: "", gradeType: "201", quantity: "", exReq: ""
+    username: "", useremail: "", usermobile: "", company: "", productType, thickness: "", gradeType: "201", quantity, exReq: ""
   }));
 
   const [buttonState, setButtonState] = useState(() => ({

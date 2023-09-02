@@ -1,9 +1,46 @@
-import React from "react";
+import React, { useState } from "react";
 import { NeedAssistanceContainer } from "./need.assistance.styles";
+import regex from "../../utils/regex";
+import QuotationModal from "../modals/quotation.modal/QuotationModal";
 
 const NeedAssistance = () => {
+  const [quantity, setQuantity] = useState(() => (""));
+
+  const [productType, setProductType] = useState(() => ("round"));
+
+  const [isChecked, setIsChecked] = useState(() => (false));
+
+  const [showModal, setShowModal] = useState(() => (false));
+
+  const handleInput = (event) => {
+    const { value } = event.target;
+    setQuantity((prevData) => (prevData = value));
+    const check = regex.quantity.test(value);
+    if (check) {
+      setIsChecked((prevData) => (prevData = true));
+    } else {
+      setIsChecked((prevData) => (prevData = false));
+    };
+  };
+
+  const handleSelection = (event) => {
+    const { value } = event.target;
+    setProductType((prevData) => (prevData = value.split("-")[0]));
+  }
+
+  const handleRequestButton = () => {
+    if (isChecked) {
+      setShowModal((prevData) => (prevData = !prevData));
+    } else {
+      setShowModal((prevData) => (prevData = false));
+    };
+  };
+
   return (
     <NeedAssistanceContainer>
+      {
+        showModal && <QuotationModal quantity={quantity} productType={productType} clickEvent={handleRequestButton} />
+      }
       <div className="wrapper">
         <div className="content-container">
           {/* WRAPPER LEFT CONTAINER */}
@@ -23,18 +60,18 @@ const NeedAssistance = () => {
           {/* WRAPPER RIGHT CONTAINER */}
           <div className="wrapper-right-container">
             {/* MATERIAL TYPE */}
-            <select defaultValue="Material Types" name="material-type" id="material-type" className="material-type anime" data-move="move-down" data-delay={0.4}>
-              <option className="material-option" value="Material Types" disabled={true}>Material Types</option>
+            <select defaultValue="round-tubes" name="material-type" id="material-type" className="material-type anime" data-move="move-down" data-delay={0.4} onChange={handleSelection}>
+              {/* <option className="material-option" value="Material Types" disabled={true}>Material Types</option> */}
               <option className="material-option" value="round-tubes">Round Stainless Tubes</option>
               <option className="material-option" value="square-tubes">Square Stainless Tubes</option>
               <option className="material-option" value="rectangle-tubes">Rectangle Stainless Tubes</option>
             </select>
 
             {/* MATERIAL QUANTITY */}
-            <input type="text" name="material-quantity" id="material-quantity" className="material-quantity anime" placeholder="Material Quantity" data-move="move-down" data-delay={0.5} />
+            <input type="text" name="material-quantity" id="material-quantity" className="material-quantity anime" placeholder="Material Quantity" data-move="move-down" data-delay={0.5} onInput={handleInput}/>
 
             {/* GENERATE QUOTATION BUTTON */}
-            <button type="button" className="generate-quotation-button anime" data-move="move-down" data-delay={0.6}>Generate Quotation</button>
+            <button type="button" className="generate-quotation-button anime" data-move="move-down" data-delay={0.6} onClick={handleRequestButton}>Generate Quotation</button>
           </div>
         </div>
       </div>

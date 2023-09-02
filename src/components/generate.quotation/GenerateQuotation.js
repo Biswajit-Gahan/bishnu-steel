@@ -75,7 +75,7 @@ const GenerateQuotation = ({ clickEvent }) => {
         <button type="button" className="generate-quotation-button anime" data-move="move-right" data-delay={0.3} onClick={clickEvent}>Generate Quotation</button>
 
         {/* CONTACT US BUTTON */}
-        <button type="button" className="contact-us-button anime" data-move="move-right" data-delay={0.5} onClick={() => { navigate("contact-us") }}>Contact Us</button>
+        <button type="button" className="contact-us-button anime" data-move="move-right" data-delay={0.5} onClick={() => { navigate("/contact-us") }}>Contact Us</button>
       </div>
     </GenerateQuotationContainer>
   );

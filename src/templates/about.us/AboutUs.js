@@ -26,8 +26,8 @@ const AboutUs = () => {
       {/* OUR VISION SECTION */}
       <section className="our-vision-section">
         <div className="our-vision-container">
-          <h4 className="our-vision-header-text">Our Vision</h4>
-          <p className="our-vision-content">
+          <h4 className="our-vision-header-text anime" data-move="move-up">Our Vision</h4>
+          <p className="our-vision-content anime" data-move="move-right" data-delay={0.2}>
             Our vision is to establish ourselves as a leading manufacturer of stainless steel tubes, renowned for our unmatched robustness, durability, and uncompromising quality across India.
           </p>
         </div>
@@ -36,8 +36,8 @@ const AboutUs = () => {
       {/* OUR MISSION SECTION */}
       <section className="our-mission-section">
         <div className="our-mission-container">
-          <h4 className="our-mission-header-text">Our Mission</h4>
-          <p className="our-mission-content">
+          <h4 className="our-mission-header-text anime" data-move="move-up">Our Mission</h4>
+          <p className="our-mission-content anime" data-move="move-right" data-delay={0.2}>
             We aim to expand our domestic footprint across India, catering to a diverse range of markets and customers with cutting edge innovation design and finishes within next 5 years.<br /><br />
             Our mission is to solidify our position as a trusted partner and preferred supplier in the stainless steel tube industry with  an aim to reachout 50 Lakh Household  in next 5 Years.
           </p>
@@ -47,8 +47,8 @@ const AboutUs = () => {
       {/* OUR MISSION SECTION */}
       <section className="our-products-section">
         <div className="our-products-container">
-          <h4 className="our-products-header-text">Our Products</h4>
-          <p className="our-products-content">
+          <h4 className="our-products-header-text anime" data-move="move-up">Our Products</h4>
+          <p className="our-products-content anime" data-move="move-right" data-delay={0.2}>
             Stainless steel welded tubes are available in various shapes and sizes, including rectangular, square, and circle pipes. These tubes are categorized based on their outer diameter, thickness, steel grade, specification, length, and application in home decor and furniture. Some common material grades used in these tubes include 304/304L, 316/316L, 316TI, and 202.
           </p>
           <div className="products-container">

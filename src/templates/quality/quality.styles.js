@@ -1,6 +1,7 @@
 import styled from "styled-components";
 import constants from "../../utils/constants";
 import tubeMill from "../../assets/images/tube-mill.jpg";
+import QualityResponsive from "./quality.responsive";
 
 export const QualityContainer = styled.div`
   /* about-section */
@@ -199,6 +200,20 @@ export const QualityContainer = styled.div`
   .message-box-section {
     margin-bottom: 50px;
   }
+  
+  @media (max-width: ${constants.device.laptop_small}) {
+    ${QualityResponsive.laptop};
+  }
+
+  @media (max-width: ${constants.device.tablet}) {
+    ${QualityResponsive.tablet};
+  }
+
+  @media (max-width: ${constants.device.mobile}) {
+    ${QualityResponsive.mobile};
+  }
+
+
 `;
 
 export const ProductGradesContainer = styled.div`
@@ -225,6 +240,7 @@ export const ProductGradesContainer = styled.div`
     ${constants.boxShadow};
     border-radius: 10px;
   }
+  
   .header-text {
     color: ${constants.colors.bsPinkDark};
     ${constants.fontSize.header.laptop};
@@ -244,6 +260,8 @@ export const ProductGradesContainer = styled.div`
 
   .paragraph-text {
     margin-bottom: 5px;
+    ${constants.fontSize.paragraph.default};
+    letter-spacing: 0.5px;
   }
 
   .close-button {
@@ -254,5 +272,17 @@ export const ProductGradesContainer = styled.div`
     background-color: ${constants.colors.bsPinkDark};
     border-radius: 3px;
     color: ${constants.colors.bsWhite};
+  }
+
+  @media (max-width: ${constants.device.laptop_small}) {
+    ${QualityResponsive.laptop};
+  }
+
+  @media (max-width: ${constants.device.tablet}) {
+    ${QualityResponsive.tablet};
+  }
+
+  @media (max-width: ${constants.device.mobile}) {
+    ${QualityResponsive.mobile};
   }
 `;

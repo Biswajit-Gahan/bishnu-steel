@@ -6,7 +6,7 @@ const messageBoxResponsive = {
     .message-box-wrapper {
       flex-direction: column;
       width: 300px;
-      height: 500px;
+      height: 550px;
       padding: 10px;
     }
   `,

@@ -27,7 +27,6 @@ const Footer = () => {
               <p className="header-text anime" data-move="move-up" data-delay={0.2}>REGISTERED OFFICE</p>
               <Link to={`https://www.google.com/maps/dir//${localdb.bsLocation.lat},%20${localdb.bsLocation.long}`} target="_blank">
                 <p className="content-text anime" data-move="move-up" data-delay={0.3}>
-                  Academy of Management and Information Technology,<br />
                   Plot No-836/2476, Khta No-238/1577,<br />
                   Khordha Mouza, Maa Barunei Road, Garh khordha,<br />
                   Near Khordha Industrial Area, Khordha,<br />
@@ -91,7 +90,7 @@ const Footer = () => {
             <div className="divider"></div>
             <div className="credits-container">
               <p className="copyright anime" data-move="move-down" data-delay={0.2}>Copyright © 2023 | Bishnu Steels. All right reserved.</p>
-              <p className="credit anime" data-move="move-down" data-delay={0.4}>Designed & Developed by Shaik Mehaboob Subhani.</p>
+              <p className="credit anime" data-move="move-down" data-delay={0.4}>Designed & Developed by Shaik Mahaboob Subhani.</p>
             </div>
           </div>
         </div>

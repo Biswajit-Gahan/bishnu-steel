@@ -31,7 +31,7 @@ const ContactUs = () => {
       <section className="address-section">
         <div className="address-wrapper">
           {/* ADDRESS HEADER TITLE */}
-          <h4 className="address-header-title">Contact Details</h4>
+          <h4 className="address-header-title anime" data-move="move-up">Contact Details</h4>
 
           {/* ALL ADDRESS CONTAINER */}
           <div className="all-address-container">
@@ -40,11 +40,11 @@ const ContactUs = () => {
               {/* CONTACT NUMBER CONTAINER*/}
               <div className="contact-number-container type-container">
                 {/* CONTACT NUMBER HEADER TITLE */}
-                <h4 className="contact-number-header-title type-header-title">Contact Number</h4>
+                <h4 className="contact-number-header-title type-header-title anime" data-move="move-up" data-delay={0.2}>Contact Number</h4>
                 
                 {/* CONTACT NUMBER CONTENT */}
                 <Link to="tel:9644002222">
-                  <div className="contaict-number-content type-content">
+                  <div className="contaict-number-content type-content anime" data-move="move-right" data-delay={0.4}>
                     <CallIcon className="mui-icon" /> +91 96 44 00 22 22
                   </div>
                 </Link>
@@ -53,11 +53,11 @@ const ContactUs = () => {
               {/* EMAIL ADDRESS CONTAINER*/}
               <div className="email-address-container type-container">
                 {/* EMAIL ADDRESS HEADER TITLE */}
-                <h4 className="email-address-header-title type-header-title">Email</h4>
+                <h4 className="email-address-header-title type-header-title anime" data-move="move-up" data-delay={0.2}>Email</h4>
 
                 {/* EMAIL ADDRESS CONTENT */}
                 <Link to="mailto:bishnusteel@gmail.com">
-                  <div className="email-address-content type-content">
+                  <div className="email-address-content type-content anime" data-move="move-right" data-delay={0.4}>
                     <EmailIcon className="mui-icon" /> bishnusteel@gmail.com
                   </div>
                 </Link>
@@ -66,14 +66,14 @@ const ContactUs = () => {
               {/* SOCIAL MEDIA CONTAINER */}
               <div className="social-media-container type-container">
                 {/* SOCIAL MEDIA HEADER TITLE */}
-                <h4 className="social-media-header-title type-header-title">Social Media</h4>
+                <h4 className="social-media-header-title type-header-title anime" data-move="move-up" data-delay={0.2}>Social Media</h4>
 
                 {/* SOCIAL MEDIA CONTENT */}
                 <div className="social-media-content type-content">
-                  <Link to="https://www.facebook.com" target="_blank"><FacebookIcon className="mui-icon" /></Link>
-                  <Link to="https://www.twitter.com" target="_blank"><TwitterIcon className="mui-icon" /></Link>
-                  <Link to="https://www.linkedin.com" target="_blank"><LinkedInIcon className="mui-icon" /></Link>
-                  <Link to="https://www.youtube.com" target="_blank"><YouTubeIcon className="mui-icon" /></Link>
+                  <Link to="https://www.facebook.com" target="_blank"><FacebookIcon className="mui-icon anime" data-move="zoom-out" data-delay={0.3} /></Link>
+                  <Link to="https://www.twitter.com" target="_blank"><TwitterIcon className="mui-icon anime" data-move="zoom-out" data-delay={0.5} /></Link>
+                  <Link to="https://www.linkedin.com" target="_blank"><LinkedInIcon className="mui-icon anime" data-move="zoom-out" data-delay={0.7} /></Link>
+                  <Link to="https://www.youtube.com" target="_blank"><YouTubeIcon className="mui-icon anime" data-move="zoom-out" data-delay={0.9} /></Link>
                 </div>
               </div>
             </div>
@@ -83,12 +83,12 @@ const ContactUs = () => {
               {/* OFFICE ADDRESS CONTAINER*/}
               <div className="office-address-container type-container">
                 {/* OFFICE ADDRESS HEADER TITLE */}
-                <h4 className="office-address-header-title type-header-title">Office Address</h4>
+                <h4 className="office-address-header-title type-header-title anime" data-move="move-up" data-delay={0.2}>Office Address</h4>
 
                 {/* OFFICE ADDRESS CONTENT */}
                 <Link to={`https://www.google.com/maps/dir//${localdb.bsLocation.lat},%20${localdb.bsLocation.long}`} target="_blank">
-                  <p className="office-address-content type-content">
-                    Academy of Management and Information Technology, Plot No-836/2476, Khta No-238/1577, Khordha Mouza, Maa Barunei Road, Garh khordha, Near Khordha Industrial Area, Khordha, Odisha, 752057
+                  <p className="office-address-content type-content anime" data-move="move-right" data-delay={0.4}>
+                    Plot No-836/2476, Khta No-238/1577, Khordha Mouza, Maa Barunei Road, Garh khordha, Near Khordha Industrial Area, Khordha, Odisha, 752057
                   </p>
                 </Link>
               </div>
@@ -102,10 +102,10 @@ const ContactUs = () => {
         {/* MAP WRAPPER */}
         <div className="map-wrapper">
           {/* MAP HEADER TEXT */}
-          <h4 className="locate-us-heading">Find Us On Earth.</h4>
+          <h4 className="locate-us-heading anime" data-move="move-up">Find Us On Earth.</h4>
 
           {/* MAP CONTAINER */}
-          <div className="map-container">
+          <div className="map-container anime" data-move="move-up" data-delay={0.4}>
             <Map />
           </div>
         </div>

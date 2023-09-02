@@ -34,6 +34,7 @@ const Product = () => {
   const [steelProductType, setSteelProductType] = useState(() => (""));
 
   useEffect(() => {
+    window.scrollTo(0, 0);
     const anime = document.querySelectorAll(".anime");
     observer(Object.values(anime));
   }, []);
@@ -45,7 +46,6 @@ const Product = () => {
     }
     if (checkProductType()) {
       setSteelProductType((prevData) => (prevData = productType));
-      window.scrollTo(0, 0);
     } else {
       navigate("/");
     };
@@ -77,7 +77,7 @@ const Product = () => {
     <ProductContainer>
       {/* QUOTATION MODAL */}
       {
-        showQuotationModal && <QuotationModal clickEvent={showQuotationModalHandler} />
+        showQuotationModal && <QuotationModal productType={productType} clickEvent={showQuotationModalHandler} />
       }
       {/* PRODUCT NAME SECTION */}
       <section className="product-name-section">

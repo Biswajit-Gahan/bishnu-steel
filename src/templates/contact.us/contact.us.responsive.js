@@ -14,7 +14,7 @@ const contactUsResponsive = {
       gap: 30px;
     }
 
-    .address-header-title {
+    .address-header-title, .locate-us-heading {
       ${constants.fontSize.header.mobile};
     }
 
@@ -36,7 +36,7 @@ const contactUsResponsive = {
       width: 600px;
     }
 
-    .address-header-title {
+    .address-header-title, .locate-us-heading {
       ${constants.fontSize.header.tablet};
     }
 
@@ -58,7 +58,7 @@ const contactUsResponsive = {
       width: 800px;
     }
 
-    .address-header-title {
+    .address-header-title, .locate-us-heading {
       ${constants.fontSize.header.laptop};
     }
 
