@@ -2,8 +2,8 @@ import { css } from "styled-components";
 
 const constants = {
   device: {
-    mobile: "750px",
-    tablet: "1050px",
+    mobile: "900px",
+    tablet: "1100px",
     laptop_small: "1250px",
     desktop_small: "2000px",
   },

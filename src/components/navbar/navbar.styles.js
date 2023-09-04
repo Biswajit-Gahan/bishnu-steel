@@ -5,7 +5,7 @@ import constants from "../../utils/constants";
 export const NavbarContainer = styled.nav`
   height: 80px;
   width: 100%;
-  padding: 0 80px;
+  padding: 0 50px;
   background-color: ${constants.colors.bsDarkBold};
   /* background-color: ${constants.colors.bsDarkBold}; */
   /* backdrop-filter: blur(5px);
@@ -29,7 +29,7 @@ export const NavbarContainer = styled.nav`
   }
 
   .brand-header-logo {
-    height: 50px;
+    height: 35px;
   }
 
   .navbar-list {

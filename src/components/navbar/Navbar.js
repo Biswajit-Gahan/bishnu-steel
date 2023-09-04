@@ -18,6 +18,8 @@ import TwitterIcon from '@mui/icons-material/Twitter';
 import LinkedInIcon from '@mui/icons-material/LinkedIn';
 import YouTubeIcon from '@mui/icons-material/YouTube';
 import jslLogo from "../../assets/images/jsl.png";
+import ArticleIcon from '@mui/icons-material/Article';
+import HighQualityIcon from '@mui/icons-material/HighQuality';
 
 const Navbar = () => {
   // USESTATE FOR SHOW QUOTATION MODAL
@@ -85,13 +87,15 @@ const Navbar = () => {
                   <Link to="products/round"><li className="products-item">Round Stainless Steel</li></Link>
                   <Link to="products/square"><li className="products-item">Square Stainless Steel</li></Link>
                   <Link to="products/rectangle"><li className="products-item">Rectangle Stainless Steel</li></Link>
-                  <Link to="quality"><li className="products-item">Product Quality</li></Link>
+                  {/* <Link to="quality"><li className="products-item">Product Quality</li></Link> */}
                 </ul>
               </div>
             </li>
-            <li className="navbar-item anime" data-move="move-up" data-delay={0.3}><NavLink to="end-uses" style={({ isActive }) => ({ color: isActive ? `${constants.colors.bsPinkDefault}` : "" })}>End Uses</NavLink></li>
-            <li className="navbar-item anime" data-move="move-up" data-delay={0.4}><NavLink to="about-us" style={({ isActive }) => ({ color: isActive ? `${constants.colors.bsPinkDefault}` : "" })}>About Us</NavLink></li>
-            <li className="navbar-item anime" data-move="move-up" data-delay={0.5}><NavLink to="contact-us" style={({ isActive }) => ({ color: isActive ? `${constants.colors.bsPinkDefault}` : "" })}>Contact Us</NavLink></li>
+            <li className="navbar-item anime" data-move="move-up" data-delay={0.3}><NavLink to="quality" style={({ isActive }) => ({ color: isActive ? `${constants.colors.bsPinkDefault}` : "" })}>Quality</NavLink></li>
+            <li className="navbar-item anime" data-move="move-up" data-delay={0.4}><NavLink to="end-uses" style={({ isActive }) => ({ color: isActive ? `${constants.colors.bsPinkDefault}` : "" })}>End Uses</NavLink></li>
+            <li className="navbar-item anime" data-move="move-up" data-delay={0.5}><NavLink to="news" style={({ isActive }) => ({ color: isActive ? `${constants.colors.bsPinkDefault}` : "" })}>News</NavLink></li>
+            <li className="navbar-item anime" data-move="move-up" data-delay={0.6}><NavLink to="about-us" style={({ isActive }) => ({ color: isActive ? `${constants.colors.bsPinkDefault}` : "" })}>About Us</NavLink></li>
+            <li className="navbar-item anime" data-move="move-up" data-delay={0.7}><NavLink to="contact-us" style={({ isActive }) => ({ color: isActive ? `${constants.colors.bsPinkDefault}` : "" })}>Contact Us</NavLink></li>
           </ul>
         </div>
 
@@ -145,12 +149,14 @@ const Navbar = () => {
                         <Link to="products/round"><li className="hamburger-product-item" onClick={showHamburgerMenuHandler}><ArrowRightOutlinedIcon className="mob-icon" />Round Stainless Steels</li></Link>
                         <Link to="products/square"><li className="hamburger-product-item" onClick={showHamburgerMenuHandler}><ArrowRightOutlinedIcon className="mob-icon" />Square Stainless Steels</li></Link>
                         <Link to="products/rectangle"><li className="hamburger-product-item" onClick={showHamburgerMenuHandler}><ArrowRightOutlinedIcon className="mob-icon"/>Rectangular Stainless Steels</li></Link>
-                        <Link to="quality"><li className="hamburger-product-item" onClick={showHamburgerMenuHandler}><ArrowRightOutlinedIcon className="mob-icon"/>Product Quality</li></Link>
+                        {/* <Link to="quality"><li className="hamburger-product-item" onClick={showHamburgerMenuHandler}><ArrowRightOutlinedIcon className="mob-icon"/>Product Quality</li></Link> */}
                       </ul>
                     }
                   </div>
                 </li>
+                <li className="hamburger-menu-item" onClick={showHamburgerMenuHandler}><NavLink to="quality" style={({ isActive }) => ({ color: isActive ? `${constants.colors.bsWhite}` : "" })}><HighQualityIcon className="mob-icons" />Quality</NavLink></li>
                 <li className="hamburger-menu-item" onClick={showHamburgerMenuHandler}><NavLink to="end-uses" style={({ isActive }) => ({ color: isActive ? `${constants.colors.bsWhite}` : "" })}><SingleBedOutlinedIcon className="mob-icons" />End Uses</NavLink></li>
+                  <li className="hamburger-menu-item" onClick={showHamburgerMenuHandler}><NavLink to="news" style={({ isActive }) => ({ color: isActive ? `${constants.colors.bsWhite}` : "" })}><ArticleIcon className="mob-icons" />News</NavLink></li>
                 <li className="hamburger-menu-item" onClick={showHamburgerMenuHandler}><NavLink to="about-us" style={({ isActive }) => ({ color: isActive ? `${constants.colors.bsWhite}` : "" })}><InfoOutlinedIcon className="mob-icons" />About Us</NavLink></li>
                 <li className="hamburger-menu-item" onClick={showHamburgerMenuHandler}><NavLink to="contact-us" style={({ isActive }) => ({ color: isActive ? `${constants.colors.bsWhite}` : "" })}><PermContactCalendarOutlinedIcon className="mob-icons" />Contact Us</NavLink></li>
               </ul>

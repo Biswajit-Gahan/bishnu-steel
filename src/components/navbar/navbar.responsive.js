@@ -44,7 +44,7 @@ const navbarResponsive = {
     padding: 0 10px;
 
     .brand-header-logo {
-      height: 40px;
+      height: 35px;
     }
 
     .navbar-list {
