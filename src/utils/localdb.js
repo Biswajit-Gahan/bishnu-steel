@@ -43,6 +43,14 @@ import cert2 from "../assets/images/cert-2.jpg";
 import cert3 from "../assets/images/cert-3.jpg";
 import cert4 from "../assets/images/cert-4.jpg";
 import cert5 from "../assets/images/cert-5.jpg";
+import news1 from "../assets/news/news-1.jpg";
+import news2 from "../assets/news/news-2.jpg";
+import news3 from "../assets/news/news-3.jpg";
+import news4 from "../assets/news/news-4.jpg";
+import news5 from "../assets/news/news-5.jpg";
+import news6 from "../assets/news/news-6.png";
+import news7 from "../assets/news/news-7.jpg";
+import news8 from "../assets/news/news-8.jpg";
 
 const localdb = {
   aboutSteel: {
@@ -298,6 +306,10 @@ const localdb = {
 
   certificates: [
     cert1, cert2, cert3, cert4, cert5,
+  ],
+
+  news: [
+    news1, news2, news3, news4, news5, news6, news7, news8,
   ],
 };
 

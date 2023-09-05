@@ -18,6 +18,7 @@ const ContactUs = lazy(() => (import("../templates/contact.us/ContactUs")));
 const AboutUs = lazy(() => (import("../templates/about.us/AboutUs")));
 const Product = lazy(() => (import("../templates/product/Product")));
 const Quality = lazy(() => (import("../templates/quality/Quality")));
+const News = lazy(() => (import("../templates/news/News")));
 
 const App = () => {
 
@@ -38,6 +39,7 @@ const App = () => {
           <Route path="end-uses" element={<Suspense fallback={<LoadingScreen />}><EndUses /></Suspense>} />
           {/* <Route path="quality" element={ <Quality />} /> */}
           <Route path="quality" element={<Suspense fallback={<LoadingScreen />}><Quality /></Suspense>} />
+          <Route path="news" element={<Suspense fallback={<LoadingScreen />}><News /></Suspense>} />
           <Route path="*" element={<Suspense fallback={<LoadingScreen />}>< Home /></Suspense>} />
         </Route>
       </Routes>
