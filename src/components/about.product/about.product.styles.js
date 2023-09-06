@@ -40,11 +40,18 @@ export const Container = styled.div`
     } */
   }
 
+  .product-images-wrapper {
+    display: flex;
+    width: 100%;
+    height: 100%;
+    transition: transform 0.3s ease-in-out;
+  }
+
   .product-image {
-    width: inherit;
-    height: inherit;
-    min-width: inherit;
-    min-height: inherit;
+    width: 100%;
+    height: 100%;
+    min-width: 100%;
+    min-height: 100%;
     object-fit: cover;
   }
 

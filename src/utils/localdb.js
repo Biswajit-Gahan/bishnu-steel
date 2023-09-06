@@ -1,7 +1,13 @@
 import bsBrochure from "../assets/documents/bs_brochure.pdf";
-import roundSteelImage from "../assets/images/round-steel-n1.jpeg";
-import squareSteelImage from "../assets/images/square-steel-n1.jpeg";
-import rectangleSteelImage from "../assets/images/rectangular-steel-n1.jpeg";
+import roundSteelImage from "../assets/images/round-steel-n1.jpg";
+import roundSteelImage2 from "../assets/images/round-steel-n2.jpg";
+import roundSteelImage3 from "../assets/images/round-steel-n3.jpg";
+import squareSteelImage from "../assets/images/square-steel-n1.jpg";
+import squareSteelImage2 from "../assets/images/square-steel-n2.jpg";
+import squareSteelImage3 from "../assets/images/square-steel-n3.jpg";
+import rectangleSteelImage from "../assets/images/rectangular-steel-n1.jpg";
+import rectangleSteelImage2 from "../assets/images/rectangular-steel-n2.jpg";
+import rectangleSteelImage3 from "../assets/images/rectangular-steel-n3.jpg";
 import steelWindow1 from "../assets/images/steel-window-1.jpg";
 import steelWindow2 from "../assets/images/steel-window-2.jpg";
 import steelWindow3 from "../assets/images/steel-window-3.jpg";
@@ -62,7 +68,7 @@ const localdb = {
       thickness: "0.3 MM - 3 MM",
       length: "20 FT",
       usages: "Infrastructure, Furniture, Home Decore etc.",
-      productImg: roundSteelImage,
+      productImg: [roundSteelImage, roundSteelImage2, roundSteelImage3],
     },
 
     square: {
@@ -73,7 +79,7 @@ const localdb = {
       thickness: "0.3 MM - 3 MM",
       length: "20 FT",
       usages: "Infrastructure, Furniture, Home Decore etc.",
-      productImg: squareSteelImage
+      productImg: [squareSteelImage, squareSteelImage2, squareSteelImage3],
     },
 
     rectangle: {
@@ -84,7 +90,7 @@ const localdb = {
       thickness: "0.3 MM - 3 MM",
       length: "20 FT",
       usages: "Infrastructure, Furniture, Home Decore etc.",
-      productImg: rectangleSteelImage,
+      productImg: [rectangleSteelImage, rectangleSteelImage2, rectangleSteelImage3],
     },
   },
 

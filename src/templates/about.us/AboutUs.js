@@ -3,9 +3,9 @@ import { AboutUsContainer } from "./about.us.styles";
 import PageTitle from "../../components/page.title/PageTitle";
 import AboutCompanyTag from "../../components/about.company.tag/AboutCompanyTag";
 import ProductCard from "../../components/product.card/ProductCard";
-import roundSteel from "../../assets/images/round-steel-n1.jpeg";
-import squareSteel from "../../assets/images/square-steel-n1.jpeg";
-import rectangleSteel from "../../assets/images/rectangular-steel-n1.jpeg";
+import roundSteel from "../../assets/images/round-steel-n1.jpg";
+import squareSteel from "../../assets/images/square-steel-n1.jpg";
+import rectangleSteel from "../../assets/images/rectangular-steel-n1.jpg";
 import MessageBox from "../../components/message.box/MessageBox";
 import observer from "../../utils/observer";
 

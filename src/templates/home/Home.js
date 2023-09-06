@@ -4,9 +4,9 @@ import factoryVideo from "../../assets/videos/factory-video.mp4";
 import AboutProduct from "../../components/about.product/AboutProduct";
 import posterImage from "../../assets/images/steel-pipes.jpg"
 import ProductCard from "../../components/product.card/ProductCard";
-import roundSteel from "../../assets/images/round-steel-n1.jpeg";
-import squareSteel from "../../assets/images/square-steel-n1.jpeg";
-import rectangleSteel from "../../assets/images/rectangular-steel-n1.jpeg";
+import roundSteel from "../../assets/images/round-steel-n1.jpg";
+import squareSteel from "../../assets/images/square-steel-n1.jpg";
+import rectangleSteel from "../../assets/images/rectangular-steel-n1.jpg";
 import Brochure from "../../components/brochure/Brochure";
 import AboutCompanyTag from "../../components/about.company.tag/AboutCompanyTag";
 import Testimonials from "../../components/testimonials/Testimonials";
