@@ -28,7 +28,7 @@ const AboutProduct = ({ headerText, aboutText, productImage }) => {
     }, 3000);
 
     return () => {
-      console.log("return clearInterval");
+      clearInterval(intervalId.current);
     };
   }, [productImageWidth]);
 
