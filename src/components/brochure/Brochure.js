@@ -8,7 +8,7 @@ const Brochure = () => {
     <Container>
       {/* BROCHURE HEADER CONTAINER */}
       <div className="brochure-header-container">
-        <h2 className="brochure-header-text anime" data-move="move-up">Strict Quality Control Stystem</h2>
+        <h2 className="brochure-header-text anime" data-move="move-up">Strict Quality Control System</h2>
         <div className="header-divider anime" data-move="move-left" data-delay={0.2}></div>
       </div>
 
