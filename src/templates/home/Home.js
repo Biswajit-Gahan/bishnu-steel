@@ -11,9 +11,9 @@ import Brochure from "../../components/brochure/Brochure";
 import AboutCompanyTag from "../../components/about.company.tag/AboutCompanyTag";
 import Testimonials from "../../components/testimonials/Testimonials";
 import NeedAssistance from "../../components/need.assistance/NeedAssistance";
-import EventsSlider from "../../components/events.slider/EventsSlider";
+// import EventsSlider from "../../components/events.slider/EventsSlider";
 import MessageBox from "../../components/message.box/MessageBox";
-import steelImage from "../../assets/images/steel-pipes.jpg";
+// import steelImage from "../../assets/images/steel-pipes.jpg";
 import { useNavigate, useSearchParams } from "react-router-dom";
 import observer from "../../utils/observer";
 
@@ -75,7 +75,7 @@ const Home = () => {
         <AboutProduct
           headerText={"Stainless Steel ERW / NB Pipe"}
           aboutText={"Steel tubing can be made from various raw materials, like iron, carbon, manganese, vanadium, and zirconium. Like pipe, tubing can be produced as either seamless or welded. Seamless tubing is a solid block of steel that is rolled into a round shape and then pierced and stretched into its final length."}
-          productImage={steelImage}
+          productImage={[roundSteel, squareSteel, rectangleSteel]}
         />
       </section>
 

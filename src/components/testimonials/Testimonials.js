@@ -49,7 +49,7 @@ const Testimonials = () => {
     <TestimonialsContainer>
       {/* HEADER CONTAINER */}
       <div className="header-container anime" data-move="move-up" >
-        <h2 className="header-text">What our customers says ?</h2>
+        <h2 className="header-text">Testimonials</h2>
       </div>
 
       {/* FEEDBACK CONTAINER */}

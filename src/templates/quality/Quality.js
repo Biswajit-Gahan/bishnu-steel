@@ -71,11 +71,11 @@ const Quality = () => {
       </section>
 
       {/* STEEL QUALITY */}
-      <section className="steel-quality-section">
+      {/* <section className="steel-quality-section"> */}
         {/* STEEL QUALITY CONTAINER */}
-        <div className="steel-quality-container">
+        {/* <div className="steel-quality-container"> */}
           {/* BISHNU QUALITY WRAPPER */}
-          <div className="bishnu-quality-wrapper">
+          {/* <div className="bishnu-quality-wrapper">
             <h1 className="header-text anime" data-move="move-up">Product Quality</h1>
             <p className="header-tag anime" data-move="move-left" data-delay={0.1}>Bishnu Steel strives for total customer satisfaction by consistently supplying quality stainless steel pipes and tubes conforming to mutually agreed product specifications & delivery schedule.</p>
             <p className="header-tag anime" data-move="move-left" data-delay={0.2}>We are committed to involve all employees for the continuous improvement of our product in quality & customer satisfaction & achieve leadership in the global market.</p>
@@ -83,37 +83,37 @@ const Quality = () => {
             <p className="header-tag anime" data-move="move-left" data-delay={0.4}>&raquo; Stated Quality</p>
             <p className="header-tag anime" data-move="move-left" data-delay={0.5}>&raquo; Timely Delivery</p>
             <p className="header-tag anime" data-move="move-left" data-delay={0.6}>&raquo; Quality Services at all Times</p>
-          </div>
+          </div> */}
 
           {/* BISHNU QUALITY CERTFICATE WRAPPER */}
-          <div className="bishnu-quality-certificate-wrapper anime" data-move="move-right" data-delay={0.1}>
+          {/* <div className="bishnu-quality-certificate-wrapper anime" data-move="move-right" data-delay={0.1}> */}
             {/* ALL CERTIFICATES CONTAINER */}
-            <div ref={certContainer} className="all-certificates-container">
+            {/* <div ref={certContainer} className="all-certificates-container">
               {
                 localdb.certificates.map((item, index) => {
                   return <img key={index} src={item} alt="bishnu steel certificate" className="certificate-image" />
                 })
               }
-            </div>
+            </div> */}
 
             {/* SCROLL BUTTONS */}
-            <button type="button" className="scroll-button scroll-button-left" onClick={handlePrevButton}>&lt;</button>
+            {/* <button type="button" className="scroll-button scroll-button-left" onClick={handlePrevButton}>&lt;</button>
             <button type="button" className="scroll-button scroll-button-right" onClick={handleNextButton}>&gt;</button>
           </div>
         </div>
-      </section>
+      </section> */}
 
       {/* JSL SECTION */}
-      <section className="jsl-section">
+      {/* <section className="jsl-section"> */}
         {/* JSL WRAPPER */}
-        <div className="jsl-wrapper">
+        {/* <div className="jsl-wrapper"> */}
           {/* JSL CERTFICATE CONTAINER */}
-          <div className="jsl-certificate-container anime" data-move="move-left">
+          {/* <div className="jsl-certificate-container anime" data-move="move-left">
             <img src={jslImage} alt="jsl certificate" className="jsl-certificate-image" />
-          </div>
+          </div> */}
 
           {/* JSL CONTENT CONTAINER */}
-          <div className="jsl-content-container">
+          {/* <div className="jsl-content-container">
             <p className="header-tag anime" data-move="move-right" data-delay={0.1}>We have well Equipped in house testing laboratory. We assessed and found to be in accordance with the requirements of quality standards. We have Certificate that the Quality Management System ISO 9001:2015 Certificate.</p>
             <h1 className="header-text anime" data-move="move-right" data-delay={ 0.2}>MANUFACTURE AND SUPPLIER OF STAINLESS STEEL PIPES, TUBES, AND S.S COIL.</h1>
             <p className="header-tag anime" data-move="move-right" data-delay={0.3}>We have well equipped in-house testing laboratory. We ensure output quality by adopting the following procedure batch-wise.</p>
@@ -123,7 +123,7 @@ const Quality = () => {
             <p className="header-tag anime" data-move="move-right" data-delay={0.7}>Our technically advanced Rectangular Pipes are intended to serve various industries such as Automobile & Ancillaries, Furniture, Railways, Engineering, etc.</p>
           </div>
         </div>
-      </section>
+      </section> */}
 
       {/* MANUFACTURING SECTION */}
       <section className="manufacturing-section">
