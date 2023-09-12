@@ -6,12 +6,13 @@ import { Link } from "react-router-dom";
 import CallIcon from '@mui/icons-material/Call';
 import EmailIcon from '@mui/icons-material/Email';
 import FacebookIcon from '@mui/icons-material/Facebook';
-import TwitterIcon from '@mui/icons-material/Twitter';
+// import TwitterIcon from '@mui/icons-material/Twitter';
 import LinkedInIcon from '@mui/icons-material/LinkedIn';
 import YouTubeIcon from '@mui/icons-material/YouTube';
 import MessageBox from "../../components/message.box/MessageBox";
 import localdb from "../../utils/localdb";
 import observer from "../../utils/observer";
+import { FaXTwitter } from "react-icons/fa6";
 
 const ContactUs = () => {
   useEffect(() => {
@@ -71,7 +72,7 @@ const ContactUs = () => {
                 {/* SOCIAL MEDIA CONTENT */}
                 <div className="social-media-content type-content">
                   <Link to="https://www.facebook.com" target="_blank"><FacebookIcon className="mui-icon anime" data-move="zoom-out" data-delay={0.3} /></Link>
-                  <Link to="https://www.twitter.com" target="_blank"><TwitterIcon className="mui-icon anime" data-move="zoom-out" data-delay={0.5} /></Link>
+                  <Link to="https://www.twitter.com" target="_blank"><FaXTwitter className="mui-icon anime" data-move="zoom-out" data-delay={0.5} /></Link>
                   <Link to="https://www.linkedin.com" target="_blank"><LinkedInIcon className="mui-icon anime" data-move="zoom-out" data-delay={0.7} /></Link>
                   <Link to="https://www.youtube.com" target="_blank"><YouTubeIcon className="mui-icon anime" data-move="zoom-out" data-delay={0.9} /></Link>
                 </div>

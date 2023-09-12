@@ -26,7 +26,7 @@ const QuotationModal = ({ productType = "round", clickEvent, quantity = "" }) =>
       if (item === "productType" || item === "gradeType") {
         return true;
       } else {
-        return allInputs[item] != "" && regex[item].test(allInputs[item]);
+        return allInputs[item] !== "" && regex[item].test(allInputs[item]);
       }
     });
     return obj;

@@ -2,13 +2,14 @@ import React from "react";
 import { FooterContainer } from "./footer.styles";
 import brandLogo from "../../assets/images/bs-footer-icon-2.png";
 import FacebookIcon from '@mui/icons-material/Facebook';
-import TwitterIcon from '@mui/icons-material/Twitter';
+// import TwitterIcon from '@mui/icons-material/Twitter';
 import LinkedInIcon from '@mui/icons-material/LinkedIn';
 import YouTubeIcon from '@mui/icons-material/YouTube';
 import { Link, useNavigate } from "react-router-dom";
 import CallIcon from '@mui/icons-material/Call';
 import EmailIcon from '@mui/icons-material/Email';
 import localdb from "../../utils/localdb";
+import { FaXTwitter } from "react-icons/fa6";
 
 const Footer = () => {
   const navigate = useNavigate();
@@ -67,7 +68,7 @@ const Footer = () => {
               {/* SOCIAL MEDIA WRAPPER */}
               <div className="social-media-wrapper">
                 <Link to="https://www.facebook.com" target="_blank"><FacebookIcon className="mui-icon anime" data-move="zoom-out" data-delay={0.3} /></Link>
-                <Link to="https://www.twitter.com" target="_blank"><TwitterIcon className="mui-icon anime" data-move="zoom-out" data-delay={0.5} /></Link>
+                <Link to="https://www.twitter.com" target="_blank"><FaXTwitter className="mui-icon anime" data-move="zoom-out" data-delay={0.5} /></Link>
                 <Link to="https://www.linkedin.com" target="_blank"><LinkedInIcon className="mui-icon anime" data-move="zoom-out" data-delay={0.7} /></Link>
                 <Link to="https://www.youtube.com" target="_blank"><YouTubeIcon className="mui-icon anime" data-move="zoom-out" data-delay={0.9} /></Link>
 

@@ -14,12 +14,13 @@ import InfoOutlinedIcon from '@mui/icons-material/InfoOutlined';
 import PermContactCalendarOutlinedIcon from '@mui/icons-material/PermContactCalendarOutlined';
 import ArrowRightOutlinedIcon from '@mui/icons-material/ArrowRightOutlined';
 import FacebookIcon from '@mui/icons-material/Facebook';
-import TwitterIcon from '@mui/icons-material/Twitter';
+// import TwitterIcon from '@mui/icons-material/Twitter';
 import LinkedInIcon from '@mui/icons-material/LinkedIn';
 import YouTubeIcon from '@mui/icons-material/YouTube';
 import jslLogo from "../../assets/images/jsl.png";
 import ArticleIcon from '@mui/icons-material/Article';
 import HighQualityIcon from '@mui/icons-material/HighQuality';
+import { FaXTwitter } from "react-icons/fa6";
 
 const Navbar = () => {
   // USESTATE FOR SHOW QUOTATION MODAL
@@ -176,7 +177,7 @@ const Navbar = () => {
                 {/* SOCIAL CONTAINER */}
                 <div className="social-container">
                   <Link to="https://www.facebook.com" target="_blank"><FacebookIcon className="social-icon" /></Link>
-                  <Link to="https://www.twitter.com" target="_blank"><TwitterIcon className="social-icon" /></Link>
+                  <Link to="https://www.twitter.com" target="_blank"><FaXTwitter className="social-icon" /></Link>
                   <Link to="https://www.linkedin.com" target="_blank"><LinkedInIcon className="social-icon" /></Link>
                   <Link to="https://www.youtube.com" target="_blank"><YouTubeIcon className="social-icon" /></Link>
                 </div>
